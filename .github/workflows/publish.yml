@@ -1,4 +1,4 @@
-name: Publicar Web (Final)
+name: Publicar PDF en Web
 
 on:
   push:
@@ -14,42 +14,75 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Instalar Python y Pandoc
+      - name: Instalar Python (MkDocs)
         uses: actions/setup-python@v5
         with:
           python-version: 3.x
       
-      - run: |
-          pip install mkdocs-material
-          sudo apt-get update
-          sudo apt-get install -y pandoc
-
-      - name: Convertir LaTeX a Markdown
+      - name: Instalar dependencias
         run: |
-          find solutions -type f -iname "*.tex" | while read source_file; do
-            # 1. Limpiar ruta origen
-            clean_source=$(echo "$source_file" | sed 's|^./||')
-            
-            # 2. Calcular ruta destino (quitando 'solutions/' del inicio)
-            # Esto convierte "solutions/set-theory/..." en "set-theory/..."
-            rel_path=$(echo "$clean_source" | sed -E 's|^[Ss]olutions/||')
-            
-            out_path="docs/${rel_path%.*}.md"
-            mkdir -p "$(dirname "$out_path")"
-            
-            echo "Convirtiendo: $clean_source -> $out_path"
-            
-            # 3. Ejecutar Pandoc (Usando 'gfm' en lugar de markdown_github)
-            pandoc "$clean_source" \
-              -f latex \
-              -t gfm \
-              --mathjax \
-              -o "$out_path"
-          done
+          pip install mkdocs-material
+          # Instalamos LaTeX (versión ligera pero con paquetes matemáticos)
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended
 
-      # Truco para asegurar que MathJax cargue bien
-      - name: Ajuste MathJax
-        run: find docs -name "*.md" -print0 | xargs -0 sed -i '$a\\'
+      - name: Compilar LaTeX y Generar Páginas
+        run: |
+          # 1. Crear carpeta para los PDFs dentro de docs
+          mkdir -p docs/pdfs
+
+          # 2. Buscar todos los archivos .tex
+          find solutions -type f -iname "*.tex" | while read source_file; do
+            
+            echo "---------------------------------------"
+            echo "Procesando: $source_file"
+
+            # Obtener nombre base y directorios
+            clean_source=$(echo "$source_file" | sed 's|^./||')
+            # Quitamos 'solutions/' para la estructura web
+            rel_path=$(echo "$clean_source" | sed -E 's|^[Ss]olutions/||')
+            dir_structure=$(dirname "$rel_path")
+            filename=$(basename "$source_file" .tex)
+
+            # --- A. COMPILAR PDF ---
+            # Creamos la carpeta de destino para el PDF
+            pdf_dest_dir="docs/pdfs/$dir_structure"
+            mkdir -p "$pdf_dest_dir"
+
+            # Compilamos (pdflatex). 
+            # -output-directory es clave para mandarlo a docs/pdfs/...
+            # -interaction=nonstopmode evita que se pare si hay error leve
+            pdflatex -interaction=nonstopmode -output-directory "$pdf_dest_dir" "$source_file"
+            
+            # --- B. CREAR LA PÁGINA VISOR (WRAPPER) ---
+            # Esta es la página .md que tendrá el menú y mostrará el PDF dentro
+            md_dest_dir="docs/$dir_structure"
+            mkdir -p "$md_dest_dir"
+            md_file="$md_dest_dir/$filename.md"
+
+            # Calculamos la ruta relativa para llegar al PDF desde el archivo MD
+            # (Truco: ../ para salir de docs, pero estamos dentro de carpetas)
+            # Simplificación: Usamos ruta absoluta del sitio web o relativa profunda
+            # Vamos a usar ruta relativa calculada:
+            
+            # Ruta del PDF final: pdfs/set-theory/pinter/chapter1.pdf
+            pdf_web_path="/open-undergraduate-math-books-solutions/pdfs/$dir_structure/$filename.pdf"
+
+            echo "Generando visor en: $md_file"
+            
+            # Escribimos el archivo Markdown con código HTML para incrustar
+            echo "# $filename" > "$md_file"
+            echo "" >> "$md_file"
+            echo "Here is the solution document:" >> "$md_file"
+            echo "" >> "$md_file"
+            # Usamos <object> que es mejor que <iframe> para PDFs
+            echo "<div style='height: 800px; width: 100%;'>" >> "$md_file"
+            echo "  <object data='$pdf_web_path' type='application/pdf' width='100%' height='100%'>" >> "$md_file"
+            echo "    <p>Tu navegador no puede mostrar este PDF. <a href='$pdf_web_path'>Descárgalo aquí</a>.</p>" >> "$md_file"
+            echo "  </object>" >> "$md_file"
+            echo "</div>" >> "$md_file"
+
+          done
 
       - name: Publicar
         run: mkdocs gh-deploy --force
