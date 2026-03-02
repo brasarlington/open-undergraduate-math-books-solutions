@@ -1,51 +1,37 @@
-name: Build & Deploy site
+name: Pages test
 
 on:
   push:
     branches: ["main"]
 
 permissions:
-  contents: read
   pages: write
   id-token: write
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Install Pandoc
-        run: sudo apt-get update && sudo apt-get install -y pandoc
-
-      - name: Clean docs
-        run: rm -rf docs
-
-      - name: Create folder structure
-        run: mkdir -p docs/pinter-set-theory
-
-      - name: Copy homepage
-        run: cp site/index.html docs/index.html
-
-      - name: Copy book index
-        run: cp site/pinter-set-theory/index.html docs/pinter-set-theory/index.html
-
-      - name: Build exercise HTML
+      - name: Create site
         run: |
-          pandoc books/pinter-set-theory/chapter-01/ex-1-1.md \
-            -s --mathjax \
-            -o docs/pinter-set-theory/ex-1-1.html
+          mkdir docs
+          cat <<EOF > docs/index.html
+          <!DOCTYPE html>
+          <html>
+          <body style="font-family:sans-serif">
+            <h1>DEPLOY OK</h1>
+            <p>If you see this, GitHub Pages works.</p>
+          </body>
+          </html>
+          EOF
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
