@@ -1,38 +1,64 @@
-name: Build site
+name: Build & Deploy site
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
+    branches: ["main"]
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Install Pandoc
-      run: sudo apt-get update && sudo apt-get install -y pandoc
+      - name: Install Pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
 
-    - name: Create docs directory
-      run: mkdir -p docs
+      - name: Clean and create docs directory
+        run: |
+          rm -rf docs
+          mkdir -p docs/pinter-set-theory
 
-    - name: Build HTML from Markdown
-      run: |
-        pandoc books/pinter-set-theory/chapter-01/ex-1-1.md \
-          -s \
-          --mathjax \
-          -o docs/pinter-set-theory.html
+      - name: Build HTML from Markdown
+        run: |
+          pandoc books/pinter-set-theory/chapter-01/ex-1-1.md \
+            -s \
+            --mathjax \
+            -o docs/pinter-set-theory/ex-1-1.html
 
-    - name: Commit generated site
-      run: |
-        git config user.name "github-actions"
-        git config user.email "github-actions@github.com"
-        git add docs
-        git commit -m "Auto-build site" || echo "No changes"
-        git push
+      - name: Create index.html
+        run: |
+          cat <<EOF > docs/index.html
+          <html>
+          <head><title>Open Undergraduate Math Solutions</title></head>
+          <body>
+            <h1>Books</h1>
+            <ul>
+              <li>
+                <a href="pinter-set-theory/ex-1-1.html">
+                  A Book of Set Theory – Pinter
+                </a>
+              </li>
+            </ul>
+          </body>
+          </html>
+          EOF
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
