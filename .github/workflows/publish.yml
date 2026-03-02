@@ -70,11 +70,10 @@ jobs:
 
             echo "Generando visor en: $md_file"
             
-            # Escribimos el archivo Markdown con código HTML para incrustar
-            pretty_title=$(echo "$filename" | sed -E 's/([a-zA-Z]+)([0-9]+)/\u\1 \2/g')
+           first_upper=$(echo "$filename" | sed 's/./\upper&/')
             
-            # Si prefieres que siempre diga lo mismo, borra la línea de arriba y usa esta:
-            pretty_title="Chapter 1"
+            # 2. Insertamos un espacio antes de los números: Chapter1 -> Chapter 1
+            pretty_title=$(echo "$first_upper" | sed -E 's/([0-9]+)/ \1/')
 
             echo "# $pretty_title" > "$md_file"
             echo "" >> "$md_file"
