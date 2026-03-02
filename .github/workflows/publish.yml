@@ -1,0 +1,48 @@
+name: Publicar Web
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Instalar MkDocs y Material
+        run: pip install mkdocs-material
+
+      - name: Instalar Pandoc (Convertidor)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Convertir LaTeX a Markdown
+        run: |
+          # 1. Crear estructura de carpetas espejo en docs/
+          mkdir -p docs/set-theory/pinter/
+
+          # 2. Convertir Pinter Capítulo 1
+          echo "Convirtiendo Pinter..."
+          pandoc solutions/set-theory/pinter/chapter1.tex \
+            -f latex \
+            -t markdown_github \
+            --mathjax \
+            -o docs/set-theory/pinter/chapter1.md
+
+          # 3. Pequeño ajuste para que MathJax detecte bien los entornos
+          # (Esto agrega un script invisible al final de cada archivo convertido)
+          find docs -name "*.md" -print0 | xargs -0 sed -i '$a\\'
+
+      - name: Publicar en GitHub Pages
+        run: mkdocs gh-deploy --force
