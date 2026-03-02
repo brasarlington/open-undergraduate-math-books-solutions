@@ -1,4 +1,4 @@
-name: Publicar Web (Debug Mode)
+name: Publicar Web (Debug Final)
 
 on:
   push:
@@ -24,36 +24,46 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y pandoc
 
-      - name: 🔍 DIAGNÓSTICO DE ARCHIVOS (Mira el log de este paso)
+      - name: Convertir LaTeX a Markdown (Con ruta corregida)
         run: |
-          echo "=== Listando estructura de carpetas ==="
-          find solutions -maxdepth 4
-          echo "======================================="
-
-      - name: Convertir LaTeX a Markdown
-        run: |
-          # Usamos -iname para que encuentre .tex, .TeX, .TEX
+          # 1. Buscar archivos .tex
           find solutions -type f -iname "*.tex" | while read source_file; do
             
-            echo "--> Encontrado: $source_file"
+            # Limpieza de ruta: Quitamos "./" si existe al inicio
+            clean_source=$(echo "$source_file" | sed 's|^./||')
             
-            # Truco para normalizar ruta: quitar 'solutions/' del inicio
-            # Si la carpeta se llama 'Solutions', esto fallaba antes. Ahora lo hacemos genérico.
-            # Cortamos los primeros 10 caracteres (soluciones/) aprox o usamos sed
-            rel_path=$(echo "$source_file" | sed -e "s|^solutions/||" -e "s|^Solutions/||")
+            # Limpieza clave: Quitamos "solutions/" del inicio para la ruta destino
+            # De "solutions/set-theory/pinter/chapter1.tex" -> "set-theory/pinter/chapter1.tex"
+            rel_path=$(echo "$clean_source" | sed 's|^solutions/||')
             
-            # Definir salida
+            # Definir destino final en docs/
+            # De "set-theory/pinter/chapter1.tex" -> "docs/set-theory/pinter/chapter1.md"
             out_path="docs/${rel_path%.*}.md"
+            
+            # Crear carpeta destino
             mkdir -p "$(dirname "$out_path")"
             
-            echo "    Destino: $out_path"
+            echo "🛠 CONVIRTIENDO:"
+            echo "   Origen:  $clean_source"
+            echo "   Destino: $out_path"
             
-            pandoc "$source_file" \
+            # Ejecutar Pandoc
+            pandoc "$clean_source" \
               -f latex \
               -t markdown_github \
               --mathjax \
               -o "$out_path"
+              
           done
+
+      - name: 🔍 VERIFICACIÓN
+        run: |
+          echo "=== CONTENIDO DE LA CARPETA DOCS ==="
+          find docs -type f
+          echo "===================================="
+
+      - name: Publicar
+        run: mkdocs gh-deploy --force
 
       - name: Ajuste MathJax
         run: find docs -name "*.md" -print0 | xargs -0 sed -i '$a\\'
