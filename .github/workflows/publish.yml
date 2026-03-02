@@ -1,4 +1,4 @@
-name: Publicar Web Automática
+name: Publicar Web (Debug Mode)
 
 on:
   push:
@@ -14,50 +14,49 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Instalar Python
+      - name: Instalar Python y Pandoc
         uses: actions/setup-python@v5
         with:
           python-version: 3.x
-
-      - name: Instalar MkDocs y Material
-        run: pip install mkdocs-material
-
-      - name: Instalar Pandoc
-        run: |
+      
+      - run: |
+          pip install mkdocs-material
           sudo apt-get update
           sudo apt-get install -y pandoc
 
-      - name: Convertir TODOS los archivos LaTeX a Markdown
+      - name: 🔍 DIAGNÓSTICO DE ARCHIVOS (Mira el log de este paso)
         run: |
-          # Este script busca cualquier archivo .tex dentro de 'solutions'
-          find solutions -type f -name "*.tex" | while read source_file; do
+          echo "=== Listando estructura de carpetas ==="
+          find solutions -maxdepth 4
+          echo "======================================="
+
+      - name: Convertir LaTeX a Markdown
+        run: |
+          # Usamos -iname para que encuentre .tex, .TeX, .TEX
+          find solutions -type f -iname "*.tex" | while read source_file; do
             
-            echo "Procesando archivo: $source_file"
+            echo "--> Encontrado: $source_file"
             
-            # 1. Quitamos el prefijo 'solutions/' para saber la ruta destino
-            # Ejemplo: de 'solutions/set-theory/pinter/chapter1.tex' obtenemos 'set-theory/pinter/chapter1.tex'
-            rel_path=${source_file#solutions/}
+            # Truco para normalizar ruta: quitar 'solutions/' del inicio
+            # Si la carpeta se llama 'Solutions', esto fallaba antes. Ahora lo hacemos genérico.
+            # Cortamos los primeros 10 caracteres (soluciones/) aprox o usamos sed
+            rel_path=$(echo "$source_file" | sed -e "s|^solutions/||" -e "s|^Solutions/||")
             
-            # 2. Cambiamos la extensión de .tex a .md y agregamos el prefijo docs/
-            # Destino: 'docs/set-theory/pinter/chapter1.md'
-            out_path="docs/${rel_path%.tex}.md"
-            
-            # 3. Creamos la carpeta de destino si no existe
+            # Definir salida
+            out_path="docs/${rel_path%.*}.md"
             mkdir -p "$(dirname "$out_path")"
             
-            # 4. Convertimos usando Pandoc
+            echo "    Destino: $out_path"
+            
             pandoc "$source_file" \
               -f latex \
               -t markdown_github \
               --mathjax \
               -o "$out_path"
-              
-            echo "Generado exitosamente: $out_path"
           done
 
-      - name: Ajuste para MathJax
-        # Agrega un salto de línea al final para evitar errores de renderizado
+      - name: Ajuste MathJax
         run: find docs -name "*.md" -print0 | xargs -0 sed -i '$a\\'
 
-      - name: Publicar en GitHub Pages
+      - name: Publicar
         run: mkdocs gh-deploy --force
