@@ -11,10 +11,11 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Create site
         run: |
-          mkdir docs
+          mkdir -p docs
           cat <<EOF > docs/index.html
           <!DOCTYPE html>
           <html>
