@@ -1,4 +1,4 @@
-name: Publicar Web
+name: Publicar Web Automática
 
 on:
   push:
@@ -22,27 +22,42 @@ jobs:
       - name: Instalar MkDocs y Material
         run: pip install mkdocs-material
 
-      - name: Instalar Pandoc (Convertidor)
+      - name: Instalar Pandoc
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc
 
-      - name: Convertir LaTeX a Markdown
+      - name: Convertir TODOS los archivos LaTeX a Markdown
         run: |
-          # 1. Crear estructura de carpetas espejo en docs/
-          mkdir -p docs/set-theory/pinter/
+          # Este script busca cualquier archivo .tex dentro de 'solutions'
+          find solutions -type f -name "*.tex" | while read source_file; do
+            
+            echo "Procesando archivo: $source_file"
+            
+            # 1. Quitamos el prefijo 'solutions/' para saber la ruta destino
+            # Ejemplo: de 'solutions/set-theory/pinter/chapter1.tex' obtenemos 'set-theory/pinter/chapter1.tex'
+            rel_path=${source_file#solutions/}
+            
+            # 2. Cambiamos la extensión de .tex a .md y agregamos el prefijo docs/
+            # Destino: 'docs/set-theory/pinter/chapter1.md'
+            out_path="docs/${rel_path%.tex}.md"
+            
+            # 3. Creamos la carpeta de destino si no existe
+            mkdir -p "$(dirname "$out_path")"
+            
+            # 4. Convertimos usando Pandoc
+            pandoc "$source_file" \
+              -f latex \
+              -t markdown_github \
+              --mathjax \
+              -o "$out_path"
+              
+            echo "Generado exitosamente: $out_path"
+          done
 
-          # 2. Convertir Pinter Capítulo 1
-          echo "Convirtiendo Pinter..."
-          pandoc solutions/set-theory/pinter/chapter1.tex \
-            -f latex \
-            -t markdown_github \
-            --mathjax \
-            -o docs/set-theory/pinter/chapter1.md
-
-          # 3. Pequeño ajuste para que MathJax detecte bien los entornos
-          # (Esto agrega un script invisible al final de cada archivo convertido)
-          find docs -name "*.md" -print0 | xargs -0 sed -i '$a\\'
+      - name: Ajuste para MathJax
+        # Agrega un salto de línea al final para evitar errores de renderizado
+        run: find docs -name "*.md" -print0 | xargs -0 sed -i '$a\\'
 
       - name: Publicar en GitHub Pages
         run: mkdocs gh-deploy --force
