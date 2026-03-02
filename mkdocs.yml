@@ -26,7 +26,7 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-#nav:
- # - Home: index.md
-  #- Set Theory:
-   # - 'Charles Pinter - Chapter 1': set-theory/pinter/chapter1.md
+nav:
+  - Home: index.md
+  - Set Theory:
+    - 'Charles Pinter - Chapter 1': set-theory/pinter/chapter1.md
