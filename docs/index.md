@@ -9,9 +9,6 @@ This repository aims to build a collaborative, open-source collection of solutio
 ### Set Theory
 * [Charles Pinter - A Book of Set Theory](set-theory/pinter/chapter1.md)
 
-### Calculus (Upcoming)
-* Michael Spivak - Calculus (4th Edition)
-
 ---
 
 ## How to Contribute
