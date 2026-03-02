@@ -30,3 +30,18 @@ nav:
   - Home: index.md
   - Set Theory:
     - 'Charles Pinter - Chapter 1': set-theory/pinter/chapter1.md
+    - Chapter 2: set-theory/pinter/chapter2.md
+        - Chapter 3: set-theory/pinter/chapter3.md
+        - Chapter 4: set-theory/pinter/chapter4.md
+        - Chapter 5: set-theory/pinter/chapter5.md
+        - Chapter 6: set-theory/pinter/chapter6.md
+        - Chapter 7: set-theory/pinter/chapter7.md
+        - Chapter 8: set-theory/pinter/chapter8.md
+        - Chapter 9: set-theory/pinter/chapter9.md
+        - Chapter 10: set-theory/pinter/chapter10.md
+        - Chapter 11: set-theory/pinter/chapter11.md
+
+  # Nueva sección de Análisis
+  - Analysis:
+      - Walter Rudin:
+        - 'Chapter 1 - Real Numbers': analysis/rudin/chapter1.md
