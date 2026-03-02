@@ -1,10 +1,11 @@
-site_name: Open Math Solutions
+site_name: Open Undergraduate Math Solutions
 site_url: https://brasarlington.github.io/open-undergraduate-math-books-solutions/
 repo_url: https://github.com/brasarlington/open-undergraduate-math-books-solutions
+edit_uri: edit/main/docs/ # Esto agrega un botón "Edit this page"
 
 theme:
   name: material
-  language: es
+  language: en # Cambiamos a inglés
   palette:
     scheme: default
     primary: indigo
@@ -13,12 +14,12 @@ theme:
     - navigation.indexes
     - content.code.copy
 
-# Configuración vital para Matemáticas
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences
-  - tables # Habilita tablas estilo Markdown
+  - tables
+  - admonition
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -26,6 +27,6 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-  - Inicio: index.md
-  - Teoría de Conjuntos:
-    - 'Charles Pinter': set-theory/pinter/chapter1.md
+  - Home: index.md
+  - Set Theory:
+    - 'Charles Pinter - Chapter 1': set-theory/pinter/chapter1.md
