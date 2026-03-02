@@ -70,11 +70,19 @@ jobs:
 
             echo "Generando visor en: $md_file"
             
-           first_upper=$(echo "$filename" | sed 's/./\upper&/')
-            
-            # 2. Insertamos un espacio antes de los números: Chapter1 -> Chapter 1
-            pretty_title=$(echo "$first_upper" | sed -E 's/([0-9]+)/ \1/')
+           word_part=$(echo "$filename" | sed 's/[0-9]*//g')
+            # 2. Nos quedamos solo con el número (ej: 4)
+            num_part=$(echo "$filename" | sed 's/[a-zA-Z]*//g')
+            # 3. Ponemos la primera en mayúscula manualmente
+            if [ "$word_part" == "chapter" ]; then
+                pretty_word="Chapter"
+            elif [ "$word_part" == "exercise" ]; then
+                pretty_word="Exercise"
+            else
+                pretty_word=$(echo "$word_part" | sed 's/./\upper&/')
+            fi
 
+            pretty_title="$pretty_word $num_part"
             echo "# $pretty_title" > "$md_file"
             echo "" >> "$md_file"
             echo "Here is the solution document:" >> "$md_file"
