@@ -13,6 +13,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
+      - name: 🕵️ LISTAR TODOS LOS ARCHIVOS
+        run: |
+          echo "=========================================="
+          echo "ESTRUCTURA EXACTA DEL REPOSITORIO:"
+          echo "=========================================="
+          # Lista todo recursivamente para ver carpetas y nombres reales
+          find . -maxdepth 5 -not -path '*/.*'
+          
+          echo "=========================================="
+          echo "BUSCANDO ARCHIVOS CON NOMBRE PARECIDO A TEX:"
+          echo "=========================================="
+          # Busca cualquier cosa que tenga "tex" en el nombre
+          find . -type f -name "*tex*"
 
       - name: Instalar Python y Pandoc
         uses: actions/setup-python@v5
