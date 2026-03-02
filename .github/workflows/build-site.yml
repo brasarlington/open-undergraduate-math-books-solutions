@@ -20,35 +20,23 @@ jobs:
       - name: Install Pandoc
         run: sudo apt-get update && sudo apt-get install -y pandoc
 
-      - name: Clean and create docs directory
-        run: |
-          rm -rf docs
-          mkdir -p docs/pinter-set-theory
+      - name: Clean docs
+        run: rm -rf docs
 
-      - name: Build HTML from Markdown
+      - name: Create folder structure
+        run: mkdir -p docs/pinter-set-theory
+
+      - name: Copy homepage
+        run: cp site/index.html docs/index.html
+
+      - name: Copy book index
+        run: cp site/pinter-set-theory/index.html docs/pinter-set-theory/index.html
+
+      - name: Build exercise HTML
         run: |
           pandoc books/pinter-set-theory/chapter-01/ex-1-1.md \
-            -s \
-            --mathjax \
+            -s --mathjax \
             -o docs/pinter-set-theory/ex-1-1.html
-
-      - name: Create index.html
-        run: |
-          cat <<EOF > docs/index.html
-          <html>
-          <head><title>Open Undergraduate Math Solutions</title></head>
-          <body>
-            <h1>Books</h1>
-            <ul>
-              <li>
-                <a href="pinter-set-theory/ex-1-1.html">
-                  A Book of Set Theory – Pinter
-                </a>
-              </li>
-            </ul>
-          </body>
-          </html>
-          EOF
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -58,7 +46,6 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
