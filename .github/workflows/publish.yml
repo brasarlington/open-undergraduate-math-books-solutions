@@ -1,4 +1,4 @@
-name: Publicar Web (Corrector de Mayúsculas)
+name: Publicar Web (Final)
 
 on:
   push:
@@ -13,20 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - name: 🕵️ LISTAR TODOS LOS ARCHIVOS
-        run: |
-          echo "=========================================="
-          echo "ESTRUCTURA EXACTA DEL REPOSITORIO:"
-          echo "=========================================="
-          # Lista todo recursivamente para ver carpetas y nombres reales
-          find . -maxdepth 5 -not -path '*/.*'
-          
-          echo "=========================================="
-          echo "BUSCANDO ARCHIVOS CON NOMBRE PARECIDO A TEX:"
-          echo "=========================================="
-          # Busca cualquier cosa que tenga "tex" en el nombre
-          find . -type f -name "*tex*"
 
       - name: Instalar Python y Pandoc
         uses: actions/setup-python@v5
@@ -40,30 +26,28 @@ jobs:
 
       - name: Convertir LaTeX a Markdown
         run: |
-          # Buscamos archivos .tex (case insensitive)
           find solutions -type f -iname "*.tex" | while read source_file; do
-            
-            # Limpieza 1: Quitar "./" del inicio si existe
+            # 1. Limpiar ruta origen
             clean_source=$(echo "$source_file" | sed 's|^./||')
             
-            # Limpieza 2 (LA CLAVE): Quitar 'solutions/' o 'Solutions/' del inicio
-            # Esto asegura que la ruta final empiece con 'set-theory/...'
+            # 2. Calcular ruta destino (quitando 'solutions/' del inicio)
+            # Esto convierte "solutions/set-theory/..." en "set-theory/..."
             rel_path=$(echo "$clean_source" | sed -E 's|^[Ss]olutions/||')
             
-            # Definir destino: docs/set-theory/pinter/chapter1.md
             out_path="docs/${rel_path%.*}.md"
-            
             mkdir -p "$(dirname "$out_path")"
             
             echo "Convirtiendo: $clean_source -> $out_path"
             
+            # 3. Ejecutar Pandoc (Usando 'gfm' en lugar de markdown_github)
             pandoc "$clean_source" \
               -f latex \
-              -t markdown_github \
+              -t gfm \
               --mathjax \
               -o "$out_path"
           done
 
+      # Truco para asegurar que MathJax cargue bien
       - name: Ajuste MathJax
         run: find docs -name "*.md" -print0 | xargs -0 sed -i '$a\\'
 
