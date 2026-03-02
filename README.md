@@ -1,7 +1,7 @@
-# open-undergraduate-math-books-solutions
+# OPEN SOLUTIONS MANUAL TO SOME MATHEMATICS TEXTBOOKS  
 
 This repository contains **open, community-driven solutions** to selected
-undergraduate-level mathematics textbooks.
+undergraduate-level mathematics textbooks. 
 
 ## Goals
 - Provide clear, rigorous, and readable solutions
@@ -14,4 +14,4 @@ undergraduate-level mathematics textbooks.
 ## Disclaimer
 This project provides **original solutions**.  
 No copyrighted text from the books is reproduced.
-Feel free to give any comment or correction to any of the execercises
+Feel free to give any comment about textbooks or corrections to any of the exercises. 
