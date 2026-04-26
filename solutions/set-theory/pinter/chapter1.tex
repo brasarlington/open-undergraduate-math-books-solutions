@@ -1,25 +1,81 @@
 \documentclass{article}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\usepackage[all]{xy}
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{geometry}        
+\geometry{letterpaper}    
+\usepackage{graphicx}
 
 \begin{document}
-
-\section*{Charles Pinter - A Book of Set Theory}
-\subsection*{Chapter 1}
-
-\begin{center}
-\begin{tabular}{|c|c|c|c|}
-\hline
-$A$ & $B$ & $A \cup B$ & $(A \cup B)'$ \\
-\hline
-1 & 1 & 1 & 0 \\
-1 & 0 & 1 & 0 \\
-0 & 1 & 1 & 0 \\
-0 & 0 & 0 & 1 \\
-\hline
-\end{tabular}
-\end{center}
-
-
-
+	
+	\section*{Charles Pinter - A Book of Set Theory}
+	\subsection*{Chapter 1}
+	\par\bigskip
+	\subsection*{Exercises 1.1}
+	\begin{enumerate}
+		\item \begin{proof}
+		For all sentences $P,Q$ and $R$, we are going to prove the following statments to be true, using its associated truth table. First of all, notice the truth table for the expression $P \iff Q $ (that is, the abbreviaton of $(P \Rightarrow Q) \land (P \Rightarrow P)$): 
+		
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				$P$ & $Q$ & $P \Rightarrow Q$ & $Q \Rightarrow P$ & $P \iff Q: \tiny (P \Rightarrow Q) \land (P \Rightarrow P)$ \\
+				\hline
+				1 & 1 & 1 & 1 & 1\\
+				1 & 0 & 1 & 0 & 0\\
+				0 & 1 & 0 & 1 & 0\\
+				0 & 0 & 1 & 1 & 1\\
+				\hline
+			\end{tabular}
+		\end{center} 
+		
+		{
+		\begin{enumerate}
+			\item[i.] $P \lor Q \iff Q \lor P$
+			
+		    \begin{center}
+	        	\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				$P$ & $Q$ & $P \lor Q$ & $Q \lor P$ & $P \lor Q \iff Q \lor P $ \\
+				\hline
+				1 & 1 & 1 & 1 & 1\\
+				1 & 0 & 1 & 1 & 1\\
+				0 & 1 & 1 & 1 & 1\\
+				0 & 0 & 0 & 0 & 1\\
+				\hline
+				\end{tabular}
+     		\end{center}
+     		 
+			\item[ii.] $P \lor (Q \lor R) \iff (P \lor Q) \lor R$
+			
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|c|c|c|}
+					\hline
+					$P$ & $Q$ & $R$ & $Q \lor R$ & $P \lor Q$ & $P \lor (Q \lor R)$ & $(P \lor Q) \lor R$ & $P \lor (Q \lor R) \iff (P \lor Q) \lor R$ \\
+					\hline
+					1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+					1 & 1 & 0 & 1 & 1 & 1 & 1 & 1 \\
+					1 & 0 & 1 & 1 & 1 & 1 & 1 & 1 \\
+					1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
+					0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+					0 & 1 & 0 & 1 & 1 & 1 & 1 & 1 \\
+					0 & 0 & 1 & 1 & 0 & 1 & 1 & 1 \\
+					0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+					\hline
+				\end{tabular}
+			\end{center} 
+			
+			\item[iii.]$P \land (Q \lor R) \iff (P \land Q) \lor (P \land R)$
+			
+			\item[iv.] $P \lor P \iff P$ 
+			
+			
+			
+			
+		\end{enumerate}
+	    }  
+		\end{proof}
+	\end{enumerate}
+	
+	
+	
 \end{document}
