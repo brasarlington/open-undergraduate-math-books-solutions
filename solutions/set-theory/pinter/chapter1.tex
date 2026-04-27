@@ -13,7 +13,7 @@
 	\subsection*{Exercises 1.1}
 	\begin{enumerate}
 		\item \begin{proof}
-		For all sentences $P,Q$ and $R$, we are going to prove the following statments to be true, using its associated truth table. First of all, notice the truth table for the expression $P \iff Q $ (that is, the abbreviaton of $(P \Rightarrow Q) \land (P \Rightarrow P)$): 
+		For all sentences $P,Q$ and $R$, we are going to proof the following statments to be true, using its associated truth table. First of all, notice the truth table for the expression $P \iff Q $ (that is, the abbreviaton of $(P \Rightarrow Q) \land (P \Rightarrow P)$): 
 		
 		\begin{center}
 			\begin{tabular}{|c|c|c|c|c|}
@@ -87,12 +87,59 @@
 			
 			\item[iv.] $P \lor P \iff P$ 
 			
-			
-			
-			
+			\begin{center}
+	        	\begin{tabular}{|c|c|c|c|}
+				\hline
+				$P$ & $P$ & $P \lor P$ & $P \lor P \iff P$ \\
+				\hline
+				1 & 1 & 1 & 1 \\
+				O & 0 & 0 & 1 \\
+				\hline
+				\end{tabular}
+     		\end{center}
 		\end{enumerate}
 	    }  
 		\end{proof}
+        \item \begin{proof}
+            Let's proof DeMorgan's laws using its derive truth table:
+
+            \begin{enumerate}
+                \item[a)] $\neg (P  \lor Q) \iff \neg P \land \neg Q$
+
+                \begin{center}
+				\begin{tabular}{|c|c|c|c|c|c|c|c|}
+					\hline
+					$P$ & $Q$ & $P \lor Q$ & $\neg P$ & $\neg Q$ & $\neg(P \lor Q)$ & $\neg P \land \neg Q$ & $  \neg(P \lor Q) \iff \neg P \land \neg Q$ \\
+					\hline
+					1 & 1 & 1 & 0 & 0 & 0 & 0 & 1 \\
+					1 & 0 & 1 & 0 & 1 & 0 & 0 & 1 \\
+					0 & 1 & 1 & 1 & 0 & 0 & 0 & 1 \\
+					0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 \\
+					\hline
+				\end{tabular}
+			\end{center}
+
+                \item[b)] $\neg (P  \land Q) \iff \neg P \lor \neg Q$
+
+                \begin{center}
+				\begin{tabular}{|c|c|c|c|c|c|c|c|}
+					\hline
+					$P$ & $Q$ & $P \land Q$ & $\neg P$ & $\neg Q$ & $\neg(P \land Q)$ & $\neg P \lor \neg Q$ & $  \neg(P \land Q) \iff \neg P \lor \neg Q$ \\
+					\hline
+					1 & 1 & 1 & 0 & 0 & 0 & 0 & 1 \\
+					1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
+					0 & 1 & 0 & 1 & 0 & 1 & 1 & 1 \\
+					0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 \\
+					\hline
+				\end{tabular}
+			\end{center} 
+           \end{enumerate}
+           \end{proof}
+            
+        \item \begin{proof}
+            
+        \end{proof}
+        
 	\end{enumerate}
 	
 	
