@@ -64,7 +64,26 @@
 				\end{tabular}
 			\end{center} 
 			
-			\item[iii.]$P \land (Q \lor R) \iff (P \land Q) \lor (P \land R)$
+			\item[iii.]$P \land (Q \lor R) \iff (P \land Q) \lor (P \land R)$.
+			
+			Let $X = P \land (Q \lor R)$ and $Y = (P \land Q) \lor (P \land R)$.
+			
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+					\hline
+					$P$ & $Q$ & $R$ & $Q \lor R$ & $P \lor Q$ & $P \land (Q \lor R)$ & $P \land Q$ & $P \land R$ & $(P \land Q) \lor (P \land R)$ & $X \iff Y$ \\
+					\hline
+					1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+					1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 1& 1 \\
+					1 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 \\
+					1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1\\
+					0 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 &  1 \\
+					0 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1\\
+					0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 1\\
+					0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 &  1\\
+					\hline
+				\end{tabular}
+			\end{center} 
 			
 			\item[iv.] $P \lor P \iff P$ 
 			
