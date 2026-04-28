@@ -1,0 +1,84 @@
+DIGEST 40fc3996ef8c269f2f0255fb5691675e
+FOUMBS.chapter_1_exercises_1_point_4
+R26:54 OUMBS.chapter_1_exercises_1_point_2 <> <> lib
+prf 66:79 <> exercise_1_4_a
+binder 91:91 <> P:1
+binder 93:93 <> Q:2
+R103:103 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R110:116 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R125:125 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R105:108 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R104:104 OUMBS.chapter_1_exercises_1_point_4 <> P:1 var
+R109:109 OUMBS.chapter_1_exercises_1_point_4 <> Q:2 var
+R119:122 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R117:117 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R118:118 OUMBS.chapter_1_exercises_1_point_4 <> Q:2 var
+R123:123 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R124:124 OUMBS.chapter_1_exercises_1_point_4 <> P:1 var
+R179:181 Corelib.Init.Logic <> not def
+R262:264 Corelib.Init.Logic <> not def
+R302:315 OUMBS.chapter_1_exercises_1_point_2 <> invalid_middle prfax
+R302:315 OUMBS.chapter_1_exercises_1_point_2 <> invalid_middle prfax
+prf 398:411 <> exercise_1_4_b
+binder 423:423 <> P:3
+binder 425:425 <> Q:4
+R435:435 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R442:448 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R456:456 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R437:440 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R436:436 OUMBS.chapter_1_exercises_1_point_4 <> P:3 var
+R441:441 OUMBS.chapter_1_exercises_1_point_4 <> Q:4 var
+R451:454 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R449:449 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R450:450 OUMBS.chapter_1_exercises_1_point_4 <> P:3 var
+R455:455 OUMBS.chapter_1_exercises_1_point_4 <> Q:4 var
+R513:526 OUMBS.chapter_1_exercises_1_point_2 <> invalid_middle prfax
+R513:526 OUMBS.chapter_1_exercises_1_point_2 <> invalid_middle prfax
+R594:596 Corelib.Init.Logic <> not def
+prf 708:721 <> exercise_1_4_c
+binder 733:733 <> P:5
+binder 735:735 <> Q:6
+R745:745 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R752:757 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R747:750 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R746:746 OUMBS.chapter_1_exercises_1_point_4 <> P:5 var
+R751:751 OUMBS.chapter_1_exercises_1_point_4 <> Q:6 var
+R758:759 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R767:767 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R761:764 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R760:760 OUMBS.chapter_1_exercises_1_point_4 <> P:5 var
+R765:765 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R766:766 OUMBS.chapter_1_exercises_1_point_4 <> Q:6 var
+R821:823 Corelib.Init.Logic <> not def
+R898:900 Corelib.Init.Logic <> not def
+R930:943 OUMBS.chapter_1_exercises_1_point_2 <> invalid_middle prfax
+R930:943 OUMBS.chapter_1_exercises_1_point_2 <> invalid_middle prfax
+R985:988 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R989:989 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R985:988 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R989:989 Corelib.Init.Logic <> ::type_scope:'~'_x not
+prf 1070:1083 <> exercise_1_4_d
+binder 1095:1095 <> P:7
+binder 1097:1097 <> Q:8
+R1107:1107 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1121:1125 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1109:1113 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1120:1120 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1108:1108 OUMBS.chapter_1_exercises_1_point_4 <> P:7 var
+R1115:1118 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1114:1114 OUMBS.chapter_1_exercises_1_point_4 <> P:7 var
+R1119:1119 OUMBS.chapter_1_exercises_1_point_4 <> Q:8 var
+R1126:1126 OUMBS.chapter_1_exercises_1_point_4 <> Q:8 var
+prf 1202:1215 <> exercise_1_4_e
+binder 1227:1227 <> P:9
+binder 1229:1229 <> Q:10
+R1239:1239 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1254:1258 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1240:1240 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1247:1251 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1242:1245 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1241:1241 OUMBS.chapter_1_exercises_1_point_4 <> P:9 var
+R1246:1246 OUMBS.chapter_1_exercises_1_point_4 <> Q:10 var
+R1252:1252 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1253:1253 OUMBS.chapter_1_exercises_1_point_4 <> P:9 var
+R1259:1259 OUMBS.chapter_1_exercises_1_point_4 <> Q:10 var

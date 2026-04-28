@@ -1,0 +1,14 @@
+DIGEST 5770f680188ba00f3475f2315123feb8
+FOUMBS.chapter_1_exercises_1_point_3
+R26:54 OUMBS.chapter_1_exercises_1_point_2 <> <> lib
+prf 66:79 <> exercise_1_3_a
+binder 91:91 <> P:1
+R104:108 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R101:101 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R102:102 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R103:103 OUMBS.chapter_1_exercises_1_point_3 <> P:1 var
+R109:109 OUMBS.chapter_1_exercises_1_point_3 <> P:1 var
+R133:135 Corelib.Init.Logic <> not def
+R160:173 OUMBS.chapter_1_exercises_1_point_2 <> invalid_middle prfax
+R160:173 OUMBS.chapter_1_exercises_1_point_2 <> invalid_middle prfax
+R253:255 Corelib.Init.Logic <> not def
