@@ -1,0 +1,16 @@
+DIGEST aabef3126ce59a82fa6074e8928456cb
+FOUMBS.chapter_1_exercises_2_point_8
+R176:189 Stdlib.Sets.Ensembles <> <> lib
+def 209:219 <> Russell_Set
+binder 231:231 <> U:1
+R277:277 OUMBS.chapter_1_exercises_2_point_8 <> U:1 var
+binder 273:273 <> x:2
+R283:284 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R285:286 Stdlib.Sets.Ensembles <> In def
+R290:290 OUMBS.chapter_1_exercises_2_point_8 <> x:2 var
+R292:292 OUMBS.chapter_1_exercises_2_point_8 <> x:2 var
+R288:288 OUMBS.chapter_1_exercises_2_point_8 <> U:1 var
+R254:261 Stdlib.Sets.Ensembles <> Ensemble def
+R263:263 OUMBS.chapter_1_exercises_2_point_8 <> U:1 var
+binder 250:250 <> S:3
+R299:299 OUMBS.chapter_1_exercises_2_point_8 <> S:3 var

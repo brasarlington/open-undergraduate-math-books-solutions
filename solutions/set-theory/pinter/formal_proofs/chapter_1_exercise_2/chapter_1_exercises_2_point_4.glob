@@ -1,0 +1,23 @@
+DIGEST 33d0a570e764923516d30adc58c74930
+FOUMBS.chapter_1_exercises_2_point_4
+R27:40 Stdlib.Sets.Ensembles <> <> lib
+prf 52:63 <> exercise_2_4
+binder 75:75 <> U:1
+R92:99 Stdlib.Sets.Ensembles <> Ensemble def
+R101:101 OUMBS.chapter_1_exercises_2_point_4 <> U:1 var
+binder 86:86 <> A:2
+binder 88:88 <> B:3
+R105:105 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R111:115 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R107:109 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R106:106 OUMBS.chapter_1_exercises_2_point_4 <> A:2 var
+R110:110 OUMBS.chapter_1_exercises_2_point_4 <> B:3 var
+R116:116 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R131:135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R150:150 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R117:126 Stdlib.Sets.Ensembles <> Complement def
+R130:130 OUMBS.chapter_1_exercises_2_point_4 <> A:2 var
+R128:128 OUMBS.chapter_1_exercises_2_point_4 <> U:1 var
+R136:145 Stdlib.Sets.Ensembles <> Complement def
+R149:149 OUMBS.chapter_1_exercises_2_point_4 <> B:3 var
+R147:147 OUMBS.chapter_1_exercises_2_point_4 <> U:1 var

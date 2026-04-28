@@ -1,0 +1,65 @@
+DIGEST eb46491abe12a885633890c18e75894f
+FOUMBS.chapter_1_exercises_2_point_1
+R27:40 Stdlib.Sets.Ensembles <> <> lib
+prf 52:65 <> exercise_2_1_a
+binder 77:77 <> U:1
+R97:104 Stdlib.Sets.Ensembles <> Ensemble def
+R106:106 OUMBS.chapter_1_exercises_2_point_1 <> U:1 var
+binder 88:88 <> A:2
+binder 90:90 <> B:3
+binder 92:92 <> C:4
+binder 94:94 <> D:5
+R124:127 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R110:117 Stdlib.Sets.Ensembles <> Included def
+R121:121 OUMBS.chapter_1_exercises_2_point_1 <> A:2 var
+R123:123 OUMBS.chapter_1_exercises_2_point_1 <> B:3 var
+R119:119 OUMBS.chapter_1_exercises_2_point_1 <> U:1 var
+R142:145 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R128:135 Stdlib.Sets.Ensembles <> Included def
+R139:139 OUMBS.chapter_1_exercises_2_point_1 <> C:4 var
+R141:141 OUMBS.chapter_1_exercises_2_point_1 <> D:5 var
+R137:137 OUMBS.chapter_1_exercises_2_point_1 <> U:1 var
+R146:153 Stdlib.Sets.Ensembles <> Included def
+R158:162 Stdlib.Sets.Ensembles <> Union ind
+R166:166 OUMBS.chapter_1_exercises_2_point_1 <> A:2 var
+R168:168 OUMBS.chapter_1_exercises_2_point_1 <> C:4 var
+R164:164 OUMBS.chapter_1_exercises_2_point_1 <> U:1 var
+R172:176 Stdlib.Sets.Ensembles <> Union ind
+R180:180 OUMBS.chapter_1_exercises_2_point_1 <> B:3 var
+R182:182 OUMBS.chapter_1_exercises_2_point_1 <> D:5 var
+R178:178 OUMBS.chapter_1_exercises_2_point_1 <> U:1 var
+R155:155 OUMBS.chapter_1_exercises_2_point_1 <> U:1 var
+R202:209 Stdlib.Sets.Ensembles <> Included def
+R298:309 Stdlib.Sets.Ensembles <> Union_introl constr
+R298:309 Stdlib.Sets.Ensembles <> Union_introl constr
+R366:377 Stdlib.Sets.Ensembles <> Union_intror constr
+R366:377 Stdlib.Sets.Ensembles <> Union_intror constr
+prf 422:435 <> exercise_2_1_b
+binder 447:447 <> U:6
+R467:474 Stdlib.Sets.Ensembles <> Ensemble def
+R476:476 OUMBS.chapter_1_exercises_2_point_1 <> U:6 var
+binder 458:458 <> A:7
+binder 460:460 <> B:8
+binder 462:462 <> C:9
+binder 464:464 <> D:10
+R494:497 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R480:487 Stdlib.Sets.Ensembles <> Included def
+R491:491 OUMBS.chapter_1_exercises_2_point_1 <> A:7 var
+R493:493 OUMBS.chapter_1_exercises_2_point_1 <> B:8 var
+R489:489 OUMBS.chapter_1_exercises_2_point_1 <> U:6 var
+R512:515 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R498:505 Stdlib.Sets.Ensembles <> Included def
+R509:509 OUMBS.chapter_1_exercises_2_point_1 <> C:9 var
+R511:511 OUMBS.chapter_1_exercises_2_point_1 <> D:10 var
+R507:507 OUMBS.chapter_1_exercises_2_point_1 <> U:6 var
+R516:523 Stdlib.Sets.Ensembles <> Included def
+R528:539 Stdlib.Sets.Ensembles <> Intersection ind
+R543:543 OUMBS.chapter_1_exercises_2_point_1 <> A:7 var
+R545:545 OUMBS.chapter_1_exercises_2_point_1 <> C:9 var
+R541:541 OUMBS.chapter_1_exercises_2_point_1 <> U:6 var
+R549:560 Stdlib.Sets.Ensembles <> Intersection ind
+R564:564 OUMBS.chapter_1_exercises_2_point_1 <> B:8 var
+R566:566 OUMBS.chapter_1_exercises_2_point_1 <> D:10 var
+R562:562 OUMBS.chapter_1_exercises_2_point_1 <> U:6 var
+R525:525 OUMBS.chapter_1_exercises_2_point_1 <> U:6 var
+R586:593 Stdlib.Sets.Ensembles <> Included def
