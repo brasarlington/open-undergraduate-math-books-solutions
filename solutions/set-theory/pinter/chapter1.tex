@@ -13,133 +13,293 @@
 	\subsection*{Exercises 1.1}
 	\begin{enumerate}
 		\item \begin{proof}
-		For all sentences $P,Q$ and $R$, we are going to proof the following statments to be true, using its associated truth table. First of all, notice the truth table for the expression $P \iff Q $ (that is, the abbreviaton of $(P \Rightarrow Q) \land (P \Rightarrow P)$): 
-		
-		\begin{center}
-			\begin{tabular}{|c|c|c|c|c|}
-				\hline
-				$P$ & $Q$ & $P \Rightarrow Q$ & $Q \Rightarrow P$ & $P \iff Q: \tiny (P \Rightarrow Q) \land (P \Rightarrow P)$ \\
-				\hline
-				1 & 1 & 1 & 1 & 1\\
-				1 & 0 & 1 & 0 & 0\\
-				0 & 1 & 0 & 1 & 0\\
-				0 & 0 & 1 & 1 & 1\\
-				\hline
-			\end{tabular}
-		\end{center} 
-		
-		{
-		\begin{enumerate}
-			\item[i.] $P \lor Q \iff Q \lor P$
-			
-		    \begin{center}
-	        	\begin{tabular}{|c|c|c|c|c|}
-				\hline
-				$P$ & $Q$ & $P \lor Q$ & $Q \lor P$ & $P \lor Q \iff Q \lor P $ \\
-				\hline
-				1 & 1 & 1 & 1 & 1\\
-				1 & 0 & 1 & 1 & 1\\
-				0 & 1 & 1 & 1 & 1\\
-				0 & 0 & 0 & 0 & 1\\
-				\hline
-				\end{tabular}
-     		\end{center}
-     		 
-			\item[ii.] $P \lor (Q \lor R) \iff (P \lor Q) \lor R$
+			For all sentences $P,Q$ and $R$, we are going to proof the following statments to be true, using its associated truth table. First of all, notice the truth table for the expression $P \iff Q $ (that is, the abbreviaton of $(P \Rightarrow Q) \land (P \Rightarrow P)$): 
 			
 			\begin{center}
-				\begin{tabular}{|c|c|c|c|c|c|c|c|}
+				\begin{tabular}{|c|c|c|c|c|}
 					\hline
-					$P$ & $Q$ & $R$ & $Q \lor R$ & $P \lor Q$ & $P \lor (Q \lor R)$ & $(P \lor Q) \lor R$ & $P \lor (Q \lor R) \iff (P \lor Q) \lor R$ \\
+					$P$ & $Q$ & $P \Rightarrow Q$ & $Q \Rightarrow P$ & $P \iff Q: \tiny (P \Rightarrow Q) \land (P \Rightarrow P)$ \\
 					\hline
-					1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-					1 & 1 & 0 & 1 & 1 & 1 & 1 & 1 \\
-					1 & 0 & 1 & 1 & 1 & 1 & 1 & 1 \\
-					1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
-					0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-					0 & 1 & 0 & 1 & 1 & 1 & 1 & 1 \\
-					0 & 0 & 1 & 1 & 0 & 1 & 1 & 1 \\
-					0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+					1 & 1 & 1 & 1 & 1\\
+					1 & 0 & 1 & 0 & 0\\
+					0 & 1 & 0 & 1 & 0\\
+					0 & 0 & 1 & 1 & 1\\
 					\hline
 				\end{tabular}
 			\end{center} 
 			
-			\item[iii.]$P \land (Q \lor R) \iff (P \land Q) \lor (P \land R)$.
-			
-			Let $X = P \land (Q \lor R)$ and $Y = (P \land Q) \lor (P \land R)$.
-			
-			\begin{center}
-				\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-					\hline
-					$P$ & $Q$ & $R$ & $Q \lor R$ & $P \lor Q$ & $P \land (Q \lor R)$ & $P \land Q$ & $P \land R$ & $(P \land Q) \lor (P \land R)$ & $X \iff Y$ \\
-					\hline
-					1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-					1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 1& 1 \\
-					1 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 \\
-					1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1\\
-					0 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 &  1 \\
-					0 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1\\
-					0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 1\\
-					0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 &  1\\
-					\hline
-				\end{tabular}
-			\end{center} 
-			
-			\item[iv.] $P \lor P \iff P$ 
-			
-			\begin{center}
-	        	\begin{tabular}{|c|c|c|c|}
-				\hline
-				$P$ & $P$ & $P \lor P$ & $P \lor P \iff P$ \\
-				\hline
-				1 & 1 & 1 & 1 \\
-				O & 0 & 0 & 1 \\
-				\hline
-				\end{tabular}
-     		\end{center}
-		\end{enumerate}
-	    }  
+			{
+				\begin{enumerate}
+					\item[i.] $P \lor Q \iff Q \lor P$
+					
+					\begin{center}
+						\begin{tabular}{|c|c|c|c|c|}
+							\hline
+							$P$ & $Q$ & $P \lor Q$ & $Q \lor P$ & $P \lor Q \iff Q \lor P $ \\
+							\hline
+							1 & 1 & 1 & 1 & 1\\
+							1 & 0 & 1 & 1 & 1\\
+							0 & 1 & 1 & 1 & 1\\
+							0 & 0 & 0 & 0 & 1\\
+							\hline
+						\end{tabular}
+					\end{center}
+					
+					\item[ii.] $P \lor (Q \lor R) \iff (P \lor Q) \lor R$
+					
+					\begin{center}
+						\begin{tabular}{|c|c|c|c|c|c|c|c|}
+							\hline
+							$P$ & $Q$ & $R$ & $Q \lor R$ & $P \lor Q$ & $P \lor (Q \lor R)$ & $(P \lor Q) \lor R$ & $P \lor (Q \lor R) \iff (P \lor Q) \lor R$ \\
+							\hline
+							1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+							1 & 1 & 0 & 1 & 1 & 1 & 1 & 1 \\
+							1 & 0 & 1 & 1 & 1 & 1 & 1 & 1 \\
+							1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
+							0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+							0 & 1 & 0 & 1 & 1 & 1 & 1 & 1 \\
+							0 & 0 & 1 & 1 & 0 & 1 & 1 & 1 \\
+							0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+							\hline
+						\end{tabular}
+					\end{center} 
+					
+					\item[iii.]$P \land (Q \lor R) \iff (P \land Q) \lor (P \land R)$.
+					
+					Let $X = P \land (Q \lor R)$ and $Y = (P \land Q) \lor (P \land R)$.
+					
+					\begin{center}
+						\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+							\hline
+							$P$ & $Q$ & $R$ & $Q \lor R$ & $P \lor Q$ & $P \land (Q \lor R)$ & $P \land Q$ & $P \land R$ & $(P \land Q) \lor (P \land R)$ & $X \iff Y$ \\
+							\hline
+							1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+							1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 1& 1 \\
+							1 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 \\
+							1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1\\
+							0 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 &  1 \\
+							0 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1\\
+							0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 1\\
+							0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 &  1\\
+							\hline
+						\end{tabular}
+					\end{center} 
+					
+					\item[iv.] $P \lor P \iff P$ 
+					
+					\begin{center}
+						\begin{tabular}{|c|c|c|c|}
+							\hline
+							$P$ & $P$ & $P \lor P$ & $P \lor P \iff P$ \\
+							\hline
+							1 & 1 & 1 & 1 \\
+							O & 0 & 0 & 1 \\
+							\hline
+						\end{tabular}
+					\end{center}
+				\end{enumerate}
+			}  
 		\end{proof}
-        \item \begin{proof}
-            Let's proof DeMorgan's laws using its derive truth table:
-
-            \begin{enumerate}
-                \item[a)] $\neg (P  \lor Q) \iff \neg P \land \neg Q$
-
-                \begin{center}
-				\begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\item \begin{proof}
+			Let's proof DeMorgan's laws using its derive truth table:
+			
+			\begin{enumerate}
+				\item[a)] $\neg (P  \lor Q) \iff \neg P \land \neg Q$
+				
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|c|c|c|c|}
+						\hline
+						$P$ & $Q$ & $P \lor Q$ & $\neg P$ & $\neg Q$ & $\neg(P \lor Q)$ & $\neg P \land \neg Q$ & $  \neg(P \lor Q) \iff \neg P \land \neg Q$ \\
+						\hline
+						1 & 1 & 1 & 0 & 0 & 0 & 0 & 1 \\
+						1 & 0 & 1 & 0 & 1 & 0 & 0 & 1 \\
+						0 & 1 & 1 & 1 & 0 & 0 & 0 & 1 \\
+						0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 \\
+						\hline
+					\end{tabular}
+				\end{center}
+				
+				\item[b)] $\neg (P  \land Q) \iff \neg P \lor \neg Q$
+				
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|c|c|c|c|}
+						\hline
+						$P$ & $Q$ & $P \land Q$ & $\neg P$ & $\neg Q$ & $\neg(P \land Q)$ & $\neg P \lor \neg Q$ & $  \neg(P \land Q) \iff \neg P \lor \neg Q$ \\
+						\hline
+						1 & 1 & 1 & 0 & 0 & 0 & 0 & 1 \\
+						1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
+						0 & 1 & 0 & 1 & 0 & 1 & 1 & 1 \\
+						0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 \\
+						\hline
+					\end{tabular}
+				\end{center} 
+			\end{enumerate}
+		\end{proof}
+		
+		\item \begin{proof}
+			\begin{enumerate}
+				\item[a)] $\neg \neg P \Rightarrow P$
+				
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|}
+						\hline
+						$P$ & $\neg P$ & $\neg \neg P$ & $\neg \neg P \Rightarrow P$ \\
+						\hline
+						1 & 0 & 1 & 1 \\
+						O & 1 & 0 & 1 \\
+						\hline
+					\end{tabular}
+					\end{center}
+				\item[b)] $P \Rightarrow \neg \neg P$ 
+				
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|}
+						\hline
+						$P$ & $\neg P$ & $\neg \neg P$ & $ P \Rightarrow \neg \neg P$ \\
+						\hline
+						1 & 0 & 1 & 1 \\
+						O & 1 & 0 & 1 \\
+						\hline
+					\end{tabular}
+				\end{center}
+				
+			\end{enumerate}
+		\end{proof}
+		
+		\item \begin{proof} 
+			
+			\begin{enumerate}
+			\item[a)] $(P \Rightarrow Q) \iff \neg Q \Rightarrow \neg P$
+			
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|c|c|}
 					\hline
-					$P$ & $Q$ & $P \lor Q$ & $\neg P$ & $\neg Q$ & $\neg(P \lor Q)$ & $\neg P \land \neg Q$ & $  \neg(P \lor Q) \iff \neg P \land \neg Q$ \\
+					$P$ & $Q$ & $\neg Q$ & $\neg P$ & $P \Rightarrow Q$ & $\neg Q \Rightarrow \neg P$ & $ (P \Rightarrow Q) \iff \neg (Q \Rightarrow \neg P)$ \\
 					\hline
-					1 & 1 & 1 & 0 & 0 & 0 & 0 & 1 \\
-					1 & 0 & 1 & 0 & 1 & 0 & 0 & 1 \\
-					0 & 1 & 1 & 1 & 0 & 0 & 0 & 1 \\
-					0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 \\
+					1 & 1 & 0 & 0 & 1 & 1 & 1  \\
+					1 & 0 & 1 & 0 & 0 & 0 & 1  \\
+					0 & 1 & 0 & 1 & 1 & 1 & 1  \\
+					0 & 0 & 1 & 1 & 1 & 1 & 1  \\
 					\hline
 				\end{tabular}
 			\end{center}
-
-                \item[b)] $\neg (P  \land Q) \iff \neg P \lor \neg Q$
-
-                \begin{center}
-				\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			
+			\par\bigskip
+			
+			\item[b)] $(P \Rightarrow Q) \iff (\neg P \lor Q)$
+			
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|c|}
 					\hline
-					$P$ & $Q$ & $P \land Q$ & $\neg P$ & $\neg Q$ & $\neg(P \land Q)$ & $\neg P \lor \neg Q$ & $  \neg(P \land Q) \iff \neg P \lor \neg Q$ \\
+					$P$ & $Q$ & $\neg P$ & $P \Rightarrow Q$ & $\neg P \lor Q$ & $ (P \Rightarrow Q) \iff \neg (Q \Rightarrow \neg P)$ \\
 					\hline
-					1 & 1 & 1 & 0 & 0 & 0 & 0 & 1 \\
-					1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
-					0 & 1 & 0 & 1 & 0 & 1 & 1 & 1 \\
-					0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 \\
+					1 & 1 & 0 & 1 & 1 & 1   \\
+					1 & 0 & 0 & 0 & 0 & 1   \\
+					0 & 1 & 1 & 1 & 1 & 1   \\
+					0 & 0 & 1 & 1 & 1 & 1   \\
 					\hline
 				\end{tabular}
-			\end{center} 
-           \end{enumerate}
-           \end{proof}
-            
-        \item \begin{proof}
-            
-        \end{proof}
-        
+			\end{center}
+			
+			\item[c)] $(P \Rightarrow Q) \iff \neg(P \land \neg Q)$
+			
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|c|c|}
+					\hline
+					$P$ & $Q$ & $\neg Q$ & $P \Rightarrow Q$ & $P \land \neg Q$ & $\neg (P \land \neg Q)$& $ (P \Rightarrow Q) \iff \neg (P \land \neg Q)$ \\
+					\hline
+					1 & 1 & 0 & 1 & 0 & 1  & 1 \\
+					1 & 0 & 1 & 0 & 1 & 0  & 1\\
+					0 & 1 & 0 & 1 & 0 & 1  & 1\\
+					0 & 0 & 1 & 1 & 0 & 1  & 1\\
+					\hline
+				\end{tabular}
+			\end{center}
+			
+			\item[d)] $(P \land (P \Rightarrow Q)) \Rightarrow Q$
+			
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					$P$ & $Q$ & $P \Rightarrow Q$ & $P \land (P \Rightarrow Q)$ & $(P \land (P \Rightarrow Q)) \Rightarrow Q$ \\
+					\hline
+					1 & 1 & 1 & 1 & 1  \\
+					1 & 0 & 0 & 0 & 1 \\
+					0 & 1 & 1 & 0 & 1 \\
+					0 & 0 & 1 & 0 & 1 \\
+					\hline
+				\end{tabular}
+			\end{center}
+			
+			\item[e)] $((P \lor Q) \land \neg P) \Rightarrow Q$
+			
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|c|}
+					\hline
+					$P$ & $Q$ & $\neg P$ & $P \lor Q$ & $((P \lor Q) \land \neg P)$ & $((P \lor Q) \land \neg P) \Rightarrow Q$\\
+					\hline
+					1 & 1 & 1 & 1 & 1 & 1\\
+					1 & 0 & 0 & 0 & 0 & 1\\
+					0 & 1 & 1 & 0 & 0 & 1\\
+					0 & 0 & 1 & 0 & 0 & 1\\
+					\hline
+				\end{tabular}
+			\end{center}
+		\end{enumerate}
+		\end{proof}
+		\item \begin{proof}
+			\begin{enumerate}
+				\item[a)] $((P \Rightarrow Q) \land (Q \Rightarrow R)) \Rightarrow (P \Rightarrow R)$
+				
+				Let $X = (P \Rightarrow Q) \land (Q \Rightarrow R)$
+				
+				
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|c|c|c|c|}
+						\hline
+						$P$ & $Q$ & $R$ & $P \Rightarrow Q$ & $Q \Rightarrow R$ & $P \Rightarrow R$ & $(P \Rightarrow Q) \land (Q \Rightarrow R)$ & $X \Rightarrow (P \Rightarrow R)$ \\
+						\hline
+						1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+						1 & 1 & 0 & 1 & 0 & 0 & 0 & 1 \\
+						1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 \\
+						1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 \\
+						0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+						0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 \\
+						0 & 0 & 1 & 1 & 1 & 1 & 0 & 1 \\
+						0 & 0 & 0 & 1 & 1 & 1 & 0 & 1 \\
+						\hline
+					\end{tabular}
+				\end{center}
+				
+				\item[b)] $((P \Rightarrow Q) \land (R \Rightarrow Q)) \iff ((P \lor R) \Rightarrow Q)$
+				
+				Let $X = ((P \Rightarrow Q) \land (R \Rightarrow Q))$
+				
+				
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+						\hline
+						$P$ & $Q$ & $R$ & $P \Rightarrow Q$ & $R \Rightarrow Q$ & $X$ & $P \lor R$ & $((P \lor R) \Rightarrow Q)$ & $X \iff ((P \lor R) \Rightarrow Q)$ \\
+						\hline
+						1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+						1 & 1 & 0 & 1 & 1 & 1 & 1 & 1 & 1\\
+						1 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 1\\
+						1 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 1\\
+						0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+						0 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 1\\
+						0 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1\\
+						0 & 0 & 0 & 1 & 1 & 1 & 0 & 1 & 1\\
+						\hline
+					\end{tabular}
+				\end{center}
+				
+				
+				\item[c)] $((P \Rightarrow Q) \land (P \Rightarrow R)) \iff (P \Rightarrow (Q \land R))$
+				
+				
+				
+			\end{enumerate}
+		\end{proof}
 	\end{enumerate}
 	
 	
