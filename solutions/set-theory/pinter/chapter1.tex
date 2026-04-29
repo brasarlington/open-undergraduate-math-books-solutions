@@ -296,11 +296,108 @@
 				
 				\item[c)] $((P \Rightarrow Q) \land (P \Rightarrow R)) \iff (P \Rightarrow (Q \land R))$
 				
+				Let $X = ((P \Rightarrow Q) \land (P \Rightarrow R)$
 				
-				
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+						\hline
+						$P$ & $Q$ & $R$ & $P \Rightarrow Q$ & $P \Rightarrow R$ & $X$ & $Q \land R$ & $P \Rightarrow (Q \land R)$ & $X \iff (P \Rightarrow (Q \land R))$ \\
+						\hline
+						1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+						1 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 1\\
+						1 & 0 & 1 & 0 & 1 & 0 & 0 & 0 & 1\\
+						1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1\\
+						0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+						0 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 1\\
+						0 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 1\\
+						0 & 0 & 0 & 1 & 1 & 1 & 0 & 1 & 1\\
+						\hline
+					\end{tabular}
+				\end{center}
 			\end{enumerate}
 		\end{proof}
+		\item \begin{proof}
+
+			\begin{enumerate}
+				\item[a)] $P \lor Q \iff P \lor R$
+				
+				Supoose that for all sentences $Q$, $R$ and $P$, $Q \iff R$ is true. Since $Q \iff R$ is the abbreviation of $(Q \Rightarrow R) \land (R \Rightarrow Q)$, we can assume that $R \Rightarrow Q$ is true. Then, let's derive the truth table for $P \lor R \Rightarrow P \lor Q$
+				
+					\begin{center}
+					\begin{tabular}{|c|c|c|c|c|c|}
+						\hline
+						$P$ & $Q$ & $R$ & $P \lor R$ & $P \lor Q$ & $((P \lor R) \Rightarrow (P \lor Q)$\\
+						\hline
+						1 & 1 & 1 & 1 & 1 & 1\\
+						1 & 1 & 0 & 1 & 1 & 1\\
+						1 & 0 & 1 & 1 & 1 & 1\\
+						1 & 0 & 0 & 1 & 1 & 1\\
+						0 & 1 & 1 & 1 & 1 & 1\\
+						0 & 1 & 0 & 0 & 1 & 1\\
+						0 & 0 & 1 & 1 & 0 & 0\\
+						0 & 0 & 0 & 0 & 0 & 1\\
+						\hline
+					\end{tabular}
+				\end{center}
+				
+				In this maner, since $R \Rightarrow Q$ is true, we cannot have simultaneuously, R true and Q false, then we may disregard the seventh line of the table. In all the remaining lines, $P \lor Q \Rightarrow P \lor R$ takes the value 1 (true). Finally, because $Q \Rightarrow R$ is also true, Theorem 1.7 also holds, then $P \lor Q \Rightarrow Q \lor R$ and $P \lor R \Rightarrow Q \lor R$ are true, that is $P \lor Q \iff P \lor R$ is true.
+				
+				\item[b)] Analogous to the above. 
+				\item[c)] $(P \Rightarrow Q) \iff (P \Rightarrow R)$.
+				
+				Suppose $Q \iff R$ is true. Let derive the truth table for $(P \Rightarrow Q) \iff  (P \Rightarrow R)$
+				
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|c|c|}
+						\hline
+						$P$ & $Q$ & $R$ & $P \Rightarrow Q$ & $P \Rightarrow R$ & $(P \Rightarrow R) \iff (P \Rightarrow Q)$\\
+						\hline
+						1 & 1 & 1 & 1 & 1 & 1\\
+						1 & 1 & 0 & 0 & 0 & 0\\
+						1 & 0 & 1 & 0 & 1 & 0\\
+						1 & 0 & 0 & 1 & 0 & 1\\
+						0 & 1 & 1 & 1 & 1 & 1\\
+						0 & 1 & 0 & 1 & 1 & 1\\
+						0 & 0 & 1 & 1 & 1 & 1\\
+						0 & 0 & 0 & 1 & 1 & 1\\
+						\hline
+					\end{tabular}
+				\end{center}
+				Since $Q \Rightarrow R$ and $R \Rightarrow Q$ is true, we cannot have simultaneously $Q$ true and $R$ false, and $P$ true and $R$ false. Then, we may disregard the second and third line of the table. Finally, in all the remaining lines $(P \Rightarrow Q) \iff (P \Rightarrow R)$ takes the value 1 (true).
+			\end{enumerate}
+		\end{proof}
+		
+		\item \begin{proof} Suppose $P \Rightarrow Q$ and $R \Rightarrow S$ are true. 
+			
+			\begin{enumerate}	
+			  \item[a)] $P \lor R \Rightarrow Q \lor S$ is true.
+			  
+			  Since $P \Rightarrow Q$ is true, for Theorem 1.7 we have that 
+			  
+			  \begin{equation*}
+			  	P \lor R \iff R \lor P \Rightarrow R \lor Q \iff Q \lor R
+			  \end{equation*}
+			  
+			  and, since $R \Rightarrow S$ is true, then $Q \lor R \Rightarrow Q \lor S$ is true. Therefore, for exercise 5. (a) we have that 
+			  
+			  \begin{equation*}
+			  	((P \lor R \Rightarrow Q \lor R) \land (Q \lor R \Rightarrow Q \lor S)) \Rightarrow (P \lor R \Rightarrow Q \lor S)
+			  \end{equation*}
+			  
+			  is true for all $P$, $Q$, $R$ and $S$. Then, we cannot have simultaneously $((P \lor R \Rightarrow Q \lor R) \land (Q \lor R \Rightarrow Q \lor S))$ true and $(P \lor R \Rightarrow Q \lor S)$ false. But $((P \lor R \Rightarrow Q \lor R) \land (Q \lor R \Rightarrow Q \lor S))$ is always true, therefore $(P \lor R \Rightarrow Q \lor S)$ has to be true.
+			  
+			  \item[b)] Analogous to the prevoius one, using Theorem 1.7 (ii).
+			\end{enumerate}
+			
+		\end{proof}
+		
+		
+			
 	\end{enumerate}
+	
+	
+	
+\end{document}
 	
 	
 	
