@@ -31,6 +31,7 @@ jobs:
           # 1. Crear carpeta para los PDFs dentro de docs
           mkdir -p docs/pdfs
 
+          libraries_dir = $(find solutions/TeXLibraries -type f -iname "*.sty" | xargs dirname)
           # 2. Buscar todos los archivos .tex
           find solutions -type f -iname "*.tex" | while read source_file; do
             
@@ -52,7 +53,7 @@ jobs:
             # Compilamos (pdflatex). 
             # -output-directory es clave para mandarlo a docs/pdfs/...
             # -interaction=nonstopmode evita que se pare si hay error leve
-            pdflatex -interaction=nonstopmode -output-directory "$pdf_dest_dir" "$source_file"
+            TEXINPUTS="$libraries_dir//:$TEXINPUTS" pdflatex -interaction=nonstopmode -output-directory "$pdf_dest_dir" "$source_file"
             
             # --- B. CREAR LA PÁGINA VISOR (WRAPPER) ---
             # Esta es la página .md que tendrá el menú y mostrará el PDF dentro
