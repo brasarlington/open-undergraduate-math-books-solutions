@@ -31,7 +31,7 @@ jobs:
           # 1. Crear carpeta para los PDFs dentro de docs
           mkdir -p docs/pdfs
 
-          libraries_dir = $(find solutions/TeXLibraries -type f -iname "*.sty" | xargs dirname)
+          libraries_dir=$(find solutions/TeXLibraries -type f -iname "*.sty" | xargs dirname)
           # 2. Buscar todos los archivos .tex
           find solutions -type f -iname "*.tex" | while read source_file; do
             
