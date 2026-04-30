@@ -32,8 +32,8 @@ jobs:
           mkdir -p docs/pdfs
 
           libraries_dir=$(find solutions/TeXLibraries -type f -iname "*.sty" | xargs dirname)
-          # 2. Buscar todos los archivos .tex
-          find solutions -type f -iname "*.tex" | while read source_file; do
+          # 2. Buscar todos los archivos .tex excluding formal_proofs
+          find solutions -type f -iname "*.tex" -not -path "*/formal_proofs/*" | while read source_file; do
             
             echo "---------------------------------------"
             echo "Procesando: $source_file"
@@ -45,6 +45,8 @@ jobs:
             dir_structure=$(dirname "$rel_path")
             filename=$(basename "$source_file" .tex)
 
+            source_dir=$(dirname "$source_file")
+
             # --- A. COMPILAR PDF ---
             # Creamos la carpeta de destino para el PDF
             pdf_dest_dir="docs/pdfs/$dir_structure"
@@ -53,7 +55,7 @@ jobs:
             # Compilamos (pdflatex). 
             # -output-directory es clave para mandarlo a docs/pdfs/...
             # -interaction=nonstopmode evita que se pare si hay error leve
-            TEXINPUTS="$libraries_dir//:$TEXINPUTS" pdflatex -interaction=nonstopmode -output-directory "$pdf_dest_dir" "$source_file"
+            TEXINPUTS="$libraries_dir//:$source_dir//:$TEXINPUTS" pdflatex -interaction=nonstopmode -output-directory "$pdf_dest_dir" "$source_file"
             
             # --- B. CREAR LA PÁGINA VISOR (WRAPPER) ---
             # Esta es la página .md que tendrá el menú y mostrará el PDF dentro
