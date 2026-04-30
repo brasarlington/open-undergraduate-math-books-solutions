@@ -1,0 +1,19 @@
+\coqlibrary{chapter 1 exercises 1 point 3}{Library }{chapter\_1\_exercises\_1\_point\_3}
+
+\begin{coqdoccode}
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{OUMBS} \coqdockw{Require} \coqdockw{Import} \coqdocvar{chapter\_1\_exercises\_1\_point\_2}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{exercise\_1\_3\_a} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P}: \coqdockw{Prop}), \~{}\~{}\coqdocvar{P} \ensuremath{\leftrightarrow} \coqdocvar{P}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}. \coqdoctac{split}.\coqdoceol
+\coqdocnoindent
+\coqdoctac{unfold} \coqdocvar{not}.\coqdoceol
+\coqdocnoindent
+\ensuremath{\times} \coqdoctac{intros} \coqdocvar{H}. \coqdoctac{destruct} (\coqdocvar{invalid\_middle} \coqdocvar{P}) \coqdockw{as} [\coqdocvar{HP} \ensuremath{|} \coqdocvar{HNP}]. \coqdoctac{apply} \coqdocvar{HP}. \coqdoctac{apply} \coqdocvar{H} \coqdoctac{in} \coqdocvar{HNP}. \coqdoctac{destruct} \coqdocvar{HNP}.\coqdoceol
+\coqdocnoindent
+\ensuremath{\times} \coqdoctac{intros} \coqdocvar{HP}. \coqdoctac{unfold} \coqdocvar{not}. \coqdoctac{intros} \coqdocvar{HNP}. \coqdoctac{apply} \coqdocvar{HNP} \coqdoctac{in} \coqdocvar{HP}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\end{coqdoccode}

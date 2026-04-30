@@ -1,3 +1,4 @@
+(** printing  *token* $...LATEX math...$ #...html...# *)
 Theorem exercise_1_7_a : forall (P Q R S : Prop), (P -> Q) -> (R -> S) -> (P \/ R -> Q \/ S).
 Proof.
   intros P Q R S HPQ HRS [HP | HR].

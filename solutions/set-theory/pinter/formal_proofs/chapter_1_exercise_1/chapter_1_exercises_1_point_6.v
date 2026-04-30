@@ -1,3 +1,4 @@
+(** printing  *token* $...LATEX math...$ #...html...# *)
 Theorem exercise_1_6_a : forall (P Q R : Prop), (Q <-> R) -> (P \/ Q <-> P \/ R).
 Proof.
   intros P Q R HQR. split.

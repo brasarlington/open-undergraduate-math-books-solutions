@@ -1,3 +1,4 @@
+(** printing  *token* $...LATEX math...$ #...html...# *)
 From OUMBS Require Import chapter_1_exercises_1_point_2.
 
 Theorem exercise_1_4_a : forall (P Q: Prop), (P -> Q) <-> (~Q -> ~P).

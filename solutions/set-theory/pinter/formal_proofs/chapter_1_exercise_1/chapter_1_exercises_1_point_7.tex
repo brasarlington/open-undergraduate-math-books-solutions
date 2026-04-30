@@ -1,0 +1,29 @@
+\coqlibrary{chapter 1 exercises 1 point 7}{Library }{chapter\_1\_exercises\_1\_point\_7}
+
+\begin{coqdoccode}
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{exercise\_1\_7\_a} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} \coqdocvar{S} : \coqdockw{Prop}), (\coqdocvar{P} \ensuremath{\rightarrow} \coqdocvar{Q}) \ensuremath{\rightarrow} (\coqdocvar{R} \ensuremath{\rightarrow} \coqdocvar{S}) \ensuremath{\rightarrow} (\coqdocvar{P} \ensuremath{\lor} \coqdocvar{R} \ensuremath{\rightarrow} \coqdocvar{Q} \ensuremath{\lor} \coqdocvar{S}).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} \coqdocvar{S} \coqdocvar{HPQ} \coqdocvar{HRS} [\coqdocvar{HP} \ensuremath{|} \coqdocvar{HR}].\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{apply} \coqdocvar{HPQ} \coqdoctac{in} \coqdocvar{HP}. \coqdoctac{left}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{apply} \coqdocvar{HRS} \coqdoctac{in} \coqdocvar{HR}. \coqdoctac{right}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{exercise\_1\_7\_b} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} \coqdocvar{S} : \coqdockw{Prop}), (\coqdocvar{P} \ensuremath{\rightarrow} \coqdocvar{Q}) \ensuremath{\rightarrow} (\coqdocvar{R} \ensuremath{\rightarrow} \coqdocvar{S}) \ensuremath{\rightarrow} (\coqdocvar{P} \ensuremath{\land} \coqdocvar{R} \ensuremath{\rightarrow} \coqdocvar{Q} \ensuremath{\land} \coqdocvar{S}).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} \coqdocvar{S} \coqdocvar{HPQ} \coqdocvar{HRS} [\coqdocvar{HP} \coqdocvar{HR}]. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{apply} \coqdocvar{HPQ}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{apply} \coqdocvar{HRS}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\end{coqdoccode}

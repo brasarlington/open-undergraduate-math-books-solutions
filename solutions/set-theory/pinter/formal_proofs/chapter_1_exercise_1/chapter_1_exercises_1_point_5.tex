@@ -1,0 +1,55 @@
+\coqlibrary{chapter 1 exercises 1 point 5}{Library }{chapter\_1\_exercises\_1\_point\_5}
+
+\begin{coqdoccode}
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{OUMBS} \coqdockw{Require} \coqdockw{Import} \coqdocvar{chapter\_1\_exercises\_1\_point\_1}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{exercise\_1\_5\_a} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} : \coqdockw{Prop}), ((\coqdocvar{P} \ensuremath{\rightarrow} \coqdocvar{Q}) \ensuremath{\land}  (\coqdocvar{Q} \ensuremath{\rightarrow} \coqdocvar{R})) \ensuremath{\rightarrow} (\coqdocvar{P} \ensuremath{\rightarrow} \coqdocvar{R}).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} [\coqdocvar{HPQ} \coqdocvar{HQR}] \coqdocvar{H}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{apply} \coqdocvar{HPQ} \coqdoctac{in} \coqdocvar{H}. \coqdoctac{apply} \coqdocvar{HQR} \coqdoctac{in} \coqdocvar{H}. \coqdoctac{apply} \coqdocvar{H}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{exercise\_1\_5\_b} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} : \coqdockw{Prop}), ((\coqdocvar{P} \ensuremath{\rightarrow} \coqdocvar{Q}) \ensuremath{\land}  (\coqdocvar{R} \ensuremath{\rightarrow} \coqdocvar{Q})) \ensuremath{\leftrightarrow} ((\coqdocvar{P} \ensuremath{\lor} \coqdocvar{R}) \ensuremath{\rightarrow} \coqdocvar{Q}).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q} \coqdocvar{R}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HPQ} \coqdocvar{HQR}] [\coqdocvar{HP} \ensuremath{|} \coqdocvar{HR}].\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{apply} \coqdocvar{HPQ} \coqdoctac{in} \coqdocvar{HP}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{apply} \coqdocvar{HQR} \coqdoctac{in} \coqdocvar{HR}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} \coqdocvar{HPRQ}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{intros} \coqdocvar{HP}. \coqdoctac{apply} \coqdocvar{or\_introl} \coqdockw{with} (\coqdocvar{B} := \coqdocvar{R}) \coqdoctac{in} \coqdocvar{HP}. \coqdoctac{apply} \coqdocvar{HPRQ}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{intros} \coqdocvar{HR}. \coqdoctac{apply} \coqdocvar{or\_introl} \coqdockw{with} (\coqdocvar{B} := \coqdocvar{P}) \coqdoctac{in} \coqdocvar{HR}. \coqdoctac{apply} \coqdocvar{theorem\_1\_8\_i} \coqdoctac{in} \coqdocvar{HR}. \coqdoctac{apply} \coqdocvar{HPRQ}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{exercise\_1\_5\_c} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} : \coqdockw{Prop}), ((\coqdocvar{P} \ensuremath{\rightarrow} \coqdocvar{Q}) \ensuremath{\land}  (\coqdocvar{P} \ensuremath{\rightarrow} \coqdocvar{R})) \ensuremath{\leftrightarrow} (\coqdocvar{P} \ensuremath{\rightarrow} (\coqdocvar{Q} \ensuremath{\land} \coqdocvar{R})).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q} \coqdocvar{R}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HPQ} \coqdocvar{HPR}] \coqdocvar{HP}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{apply} \coqdocvar{HPQ}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{apply} \coqdocvar{HPR}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} \coqdocvar{HPQR}. \coqdoctac{split}; \coqdoctac{intros} \coqdocvar{HP}; \coqdoctac{apply} \coqdocvar{HPQR}; \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\end{coqdoccode}

@@ -1,0 +1,186 @@
+\coqlibrary{chapter 1 exercises 1 point 1}{Library }{chapter\_1\_exercises\_1\_point\_1}
+
+\begin{coqdoccode}
+\end{coqdoccode}
+This is basically checking for every possibility. It simply splits the directions and the options and then applies them one by one.
+
+\begin{coqdoccode}
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{theorem\_1\_8\_i} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q}: \coqdockw{Prop}), \coqdocvar{P} \ensuremath{\lor} \coqdocvar{Q} \ensuremath{\leftrightarrow} \coqdocvar{Q} \ensuremath{\lor} \coqdocvar{P}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q}. \coqdoctac{split}; \coqdoctac{intros} [\coqdocvar{H1} \ensuremath{|} \coqdocvar{H2}].\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{right}. \coqdoctac{apply} \coqdocvar{H1}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{left}. \coqdoctac{apply} \coqdocvar{H2}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{right}. \coqdoctac{apply} \coqdocvar{H1}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{left}. \coqdoctac{apply} \coqdocvar{H2}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\end{coqdoccode}
+Similar to the last point, it splits the possibilities and applies them as needed.
+
+\begin{coqdoccode}
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{theorem\_1\_8\_ii} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} : \coqdockw{Prop}),\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{P} \ensuremath{\lor}  (\coqdocvar{Q} \ensuremath{\lor} \coqdocvar{R}) \ensuremath{\leftrightarrow} (\coqdocvar{P} \ensuremath{\lor} \coqdocvar{Q}) \ensuremath{\lor} \coqdocvar{R}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q} \coqdocvar{R}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HP} \ensuremath{|} [\coqdocvar{HQ} \ensuremath{|} \coqdocvar{HR}]].\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{left}. \coqdoctac{left}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{left}. \coqdoctac{right}. \coqdoctac{apply} \coqdocvar{HQ}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{right}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [[\coqdocvar{HP} \ensuremath{|} \coqdocvar{HQ}] \ensuremath{|} \coqdocvar{HR}].\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{left}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{right}. \coqdoctac{left}. \coqdoctac{apply} \coqdocvar{HQ}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{right}. \coqdoctac{right}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\end{coqdoccode}
+You will become accustomed to the way it works. Simply splitting the possibilities and applying them is basically what is done here.
+
+\begin{coqdoccode}
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{theorem\_1\_8\_iii} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} : \coqdockw{Prop}), \coqdocvar{P} \ensuremath{\land}  (\coqdocvar{Q} \ensuremath{\lor} \coqdocvar{R}) \ensuremath{\leftrightarrow} (\coqdocvar{P} \ensuremath{\land} \coqdocvar{Q}) \ensuremath{\lor} (\coqdocvar{P} \ensuremath{\land} \coqdocvar{R}).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q} \coqdocvar{R}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HP} [\coqdocvar{HQ} \ensuremath{|} \coqdocvar{HR}]].\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{left}. \coqdoctac{split}. \coqdoctac{apply} \coqdocvar{HP}. \coqdoctac{apply} \coqdocvar{HQ}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{right}. \coqdoctac{split}. \coqdoctac{apply} \coqdocvar{HP}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros}[[\coqdocvar{HP} \coqdocvar{HQ}] \ensuremath{|} [\coqdocvar{HP} \coqdocvar{HR}]].\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{split}. \coqdoctac{apply} \coqdocvar{HP}. \coqdoctac{left}. \coqdoctac{apply} \coqdocvar{HQ}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{split}. \coqdoctac{apply} \coqdocvar{HP}. \coqdoctac{right}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\end{coqdoccode}
+One important note in this exercise (one that I strongly recommend looking into) is the use of ; in this proof. When you use it after opening different branches, it applies the command in both branches (really cool for solving many problems at the same time).
+
+\begin{coqdoccode}
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{theorem\_1\_8\_iv} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} : \coqdockw{Prop}), \coqdocvar{P} \ensuremath{\lor} \coqdocvar{P} \ensuremath{\leftrightarrow} \coqdocvar{P}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HP} \ensuremath{|} \coqdocvar{HP}]; \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} \coqdocvar{HP}; \coqdoctac{left}; \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\end{coqdoccode}
+As before, it is simply applying every option. Note that it is simply reversing the order of application.
+
+\begin{coqdoccode}
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{theorem\_1\_8\_i'} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q}: \coqdockw{Prop}), \coqdocvar{P} \ensuremath{\land} \coqdocvar{Q} \ensuremath{\leftrightarrow} \coqdocvar{Q} \ensuremath{\land} \coqdocvar{P}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HP} \coqdocvar{HQ}]. \coqdoctac{split}. \coqdoctac{apply} \coqdocvar{HQ}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HQ} \coqdocvar{HP}]. \coqdoctac{split}. \coqdoctac{apply} \coqdocvar{HP}. \coqdoctac{apply} \coqdocvar{HQ}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\end{coqdoccode}
+You can (and I actually did) try to simplify this proof with ; and try, however it is uglier and more convoluted that way.
+
+\begin{coqdoccode}
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{theorem\_1\_8\_ii'} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} : \coqdockw{Prop}), \coqdocvar{P} \ensuremath{\land}  (\coqdocvar{Q} \ensuremath{\land} \coqdocvar{R}) \ensuremath{\leftrightarrow} (\coqdocvar{P} \ensuremath{\land} \coqdocvar{Q}) \ensuremath{\land} \coqdocvar{R}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q} \coqdocvar{R}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HP} [\coqdocvar{HQ} \coqdocvar{HR}]]. \coqdoctac{split}. \coqdoctac{split}. \coqdoctac{apply} \coqdocvar{HP}. \coqdoctac{apply} \coqdocvar{HQ}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [[\coqdocvar{HP} \coqdocvar{HQ}] \coqdocvar{HR}]. \coqdoctac{split}. \coqdoctac{apply} \coqdocvar{HP}. \coqdoctac{split}. \coqdoctac{apply} \coqdocvar{HQ}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\end{coqdoccode}
+It is in the same direction as every other proof in this first exercise. Simply working every possibility.
+
+\begin{coqdoccode}
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{theorem\_1\_8\_iii'} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} : \coqdockw{Prop}), \coqdocvar{P} \ensuremath{\lor}  (\coqdocvar{Q} \ensuremath{\land} \coqdocvar{R}) \ensuremath{\leftrightarrow} (\coqdocvar{P} \ensuremath{\lor} \coqdocvar{Q}) \ensuremath{\land} (\coqdocvar{P} \ensuremath{\lor} \coqdocvar{R}).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q} \coqdocvar{R}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HP} \ensuremath{|} [\coqdocvar{HQ} \coqdocvar{HR}]].\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{split}; \coqdoctac{left}; \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{split}; \coqdoctac{right}. \coqdoctac{apply} \coqdocvar{HQ}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [[\coqdocvar{HP1} \ensuremath{|} \coqdocvar{HQ}] [\coqdocvar{HP2} \ensuremath{|} \coqdocvar{HR}]].\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{left}. \coqdoctac{apply} \coqdocvar{HP1}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{left}. \coqdoctac{apply} \coqdocvar{HP1}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{left}. \coqdoctac{apply} \coqdocvar{HP2}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{right}. \coqdoctac{split}. \coqdoctac{apply} \coqdocvar{HQ}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\end{coqdoccode}
+We are ignoring one of the hypotheses because it doesn't add anything to have two hypotheses which both simply state that P is true.
+
+\begin{coqdoccode}
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{theorem\_1\_8\_iv'} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} : \coqdockw{Prop}), \coqdocvar{P} \ensuremath{\land} \coqdocvar{P} \ensuremath{\leftrightarrow} \coqdocvar{P}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HP} \coqdocvar{\_}].\coqdoceol
+\coqdocindent{2.00em}
+\coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} \coqdocvar{HP}. \coqdoctac{split}; \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\end{coqdoccode}

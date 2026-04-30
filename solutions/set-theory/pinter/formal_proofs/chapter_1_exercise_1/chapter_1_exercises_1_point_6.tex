@@ -1,0 +1,58 @@
+\coqlibrary{chapter 1 exercises 1 point 6}{Library }{chapter\_1\_exercises\_1\_point\_6}
+
+\begin{coqdoccode}
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{exercise\_1\_6\_a} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} : \coqdockw{Prop}), (\coqdocvar{Q} \ensuremath{\leftrightarrow} \coqdocvar{R}) \ensuremath{\rightarrow} (\coqdocvar{P} \ensuremath{\lor} \coqdocvar{Q} \ensuremath{\leftrightarrow} \coqdocvar{P} \ensuremath{\lor} \coqdocvar{R}).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} \coqdocvar{HQR}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HP} \ensuremath{|} \coqdocvar{HQ}].\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{left}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{right}. \coqdoctac{apply} \coqdocvar{HQR}. \coqdoctac{apply} \coqdocvar{HQ}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HP} \ensuremath{|} \coqdocvar{HR}].\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{left}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{right}. \coqdoctac{apply} \coqdocvar{HQR}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{exercise\_1\_6\_b} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} : \coqdockw{Prop}), (\coqdocvar{Q} \ensuremath{\leftrightarrow} \coqdocvar{R}) \ensuremath{\rightarrow} (\coqdocvar{P} \ensuremath{\land} \coqdocvar{Q} \ensuremath{\leftrightarrow} \coqdocvar{P} \ensuremath{\land} \coqdocvar{R}).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} \coqdocvar{HQR}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HP} \coqdocvar{HQ}]. \coqdoctac{split}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{apply} \coqdocvar{HQR}. \coqdoctac{apply} \coqdocvar{HQ}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} [\coqdocvar{HP} \coqdocvar{HR}]. \coqdoctac{split}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{2.00em}
+** \coqdoctac{apply} \coqdocvar{HQR}. \coqdoctac{apply} \coqdocvar{HR}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{exercise\_1\_6\_c} : \coqdockw{\ensuremath{\forall}} (\coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} : \coqdockw{Prop}), (\coqdocvar{Q} \ensuremath{\leftrightarrow} \coqdocvar{R}) \ensuremath{\rightarrow} ((\coqdocvar{P} \ensuremath{\rightarrow} \coqdocvar{Q}) \ensuremath{\leftrightarrow} (\coqdocvar{P} \ensuremath{\rightarrow} \coqdocvar{R})).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{P} \coqdocvar{Q} \coqdocvar{R} \coqdocvar{HQR}. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} \coqdocvar{HPQ} \coqdocvar{HP}. \coqdoctac{apply} \coqdocvar{HQR}. \coqdoctac{apply} \coqdocvar{HPQ}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\times} \coqdoctac{intros} \coqdocvar{HPR} \coqdocvar{HP}. \coqdoctac{apply} \coqdocvar{HQR}. \coqdoctac{apply} \coqdocvar{HPR}. \coqdoctac{apply} \coqdocvar{HP}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\end{coqdoccode}
