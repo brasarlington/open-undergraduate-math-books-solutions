@@ -1,7 +1,7 @@
 # OPEN SOLUTIONS MANUAL TO SOME MATHEMATICS TEXTBOOKS  
 
 This repository contains **open, community-driven solutions** to selected
-undergraduate-level mathematics textbooks. We aim people to use the solution manuals as a point of reference to compare with its own solutions and we hope you all contribute to make undergaduate knowledge more accesible!
+undergraduate-level mathematics textbooks. We aim people to use the solution manuals as a point of reference to compare with its own solutions and we hope you all contribute to make undergraduate knowledge more accesible!
 
 🔗 **[WebPage](https://brasarlington.github.io/open-undergraduate-math-books-solutions/)**
 
