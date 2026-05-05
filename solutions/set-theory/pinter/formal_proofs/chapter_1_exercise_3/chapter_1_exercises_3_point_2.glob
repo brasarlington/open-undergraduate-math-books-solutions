@@ -1,0 +1,45 @@
+DIGEST 4d09c7d5a2005c1ab1d5d3e68a382708
+FOUMBS.chapter_1_exercises_3_point_2
+R27:40 Stdlib.Sets.Ensembles <> <> lib
+R70:84 Stdlib.Logic.Classical <> <> lib
+prf 340:351 <> exercise_3_2
+binder 363:363 <> U:1
+R380:387 Stdlib.Sets.Ensembles <> Ensemble def
+R389:389 OUMBS.chapter_1_exercises_3_point_2 <> U:1 var
+binder 374:374 <> A:2
+binder 376:376 <> B:3
+R428:430 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R395:404 Stdlib.Sets.Ensembles <> Complement def
+R409:420 Stdlib.Sets.Ensembles <> Intersection ind
+R424:424 OUMBS.chapter_1_exercises_3_point_2 <> A:2 var
+R426:426 OUMBS.chapter_1_exercises_3_point_2 <> B:3 var
+R422:422 OUMBS.chapter_1_exercises_3_point_2 <> U:1 var
+R406:406 OUMBS.chapter_1_exercises_3_point_2 <> U:1 var
+R431:435 Stdlib.Sets.Ensembles <> Union ind
+R440:449 Stdlib.Sets.Ensembles <> Complement def
+R453:453 OUMBS.chapter_1_exercises_3_point_2 <> A:2 var
+R451:451 OUMBS.chapter_1_exercises_3_point_2 <> U:1 var
+R457:466 Stdlib.Sets.Ensembles <> Complement def
+R470:470 OUMBS.chapter_1_exercises_3_point_2 <> B:3 var
+R468:468 OUMBS.chapter_1_exercises_3_point_2 <> U:1 var
+R437:437 OUMBS.chapter_1_exercises_3_point_2 <> U:1 var
+R505:528 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R505:528 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R540:547 Stdlib.Sets.Ensembles <> Same_set def
+R550:557 Stdlib.Sets.Ensembles <> Included def
+R580:581 Stdlib.Sets.Ensembles <> In def
+R584:593 Stdlib.Sets.Ensembles <> Complement def
+R618:624 Stdlib.Logic.Classical_Prop <> classic prfax
+R627:628 Stdlib.Sets.Ensembles <> In def
+R618:624 Stdlib.Logic.Classical_Prop <> classic prfax
+R627:628 Stdlib.Sets.Ensembles <> In def
+R656:662 Stdlib.Logic.Classical_Prop <> classic prfax
+R665:666 Stdlib.Sets.Ensembles <> In def
+R656:662 Stdlib.Logic.Classical_Prop <> classic prfax
+R665:666 Stdlib.Sets.Ensembles <> In def
+R756:767 Stdlib.Sets.Ensembles <> Union_intror constr
+R756:767 Stdlib.Sets.Ensembles <> Union_intror constr
+R793:804 Stdlib.Sets.Ensembles <> Union_introl constr
+R793:804 Stdlib.Sets.Ensembles <> Union_introl constr
+R828:829 Stdlib.Sets.Ensembles <> In def
+R832:841 Stdlib.Sets.Ensembles <> Complement def

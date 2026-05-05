@@ -1,0 +1,84 @@
+DIGEST 8aa3e8028bc2a50d9f64d79384ad9b33
+FOUMBS.chapter_1_exercises_3_point_5
+R27:40 Stdlib.Sets.Ensembles <> <> lib
+R70:84 Stdlib.Logic.Classical <> <> lib
+prf 96:107 <> exercise_5_a
+binder 119:119 <> U:1
+R138:145 Stdlib.Sets.Ensembles <> Ensemble def
+R147:147 OUMBS.chapter_1_exercises_3_point_5 <> U:1 var
+binder 130:130 <> A:2
+binder 132:132 <> B:3
+binder 134:134 <> C:4
+R183:185 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R153:157 Stdlib.Sets.Ensembles <> Union ind
+R162:173 Stdlib.Sets.Ensembles <> Intersection ind
+R177:177 OUMBS.chapter_1_exercises_3_point_5 <> A:2 var
+R179:179 OUMBS.chapter_1_exercises_3_point_5 <> B:3 var
+R175:175 OUMBS.chapter_1_exercises_3_point_5 <> U:1 var
+R182:182 OUMBS.chapter_1_exercises_3_point_5 <> C:4 var
+R159:159 OUMBS.chapter_1_exercises_3_point_5 <> U:1 var
+R186:197 Stdlib.Sets.Ensembles <> Intersection ind
+R202:206 Stdlib.Sets.Ensembles <> Union ind
+R210:210 OUMBS.chapter_1_exercises_3_point_5 <> A:2 var
+R212:212 OUMBS.chapter_1_exercises_3_point_5 <> C:4 var
+R208:208 OUMBS.chapter_1_exercises_3_point_5 <> U:1 var
+R216:220 Stdlib.Sets.Ensembles <> Union ind
+R224:224 OUMBS.chapter_1_exercises_3_point_5 <> B:3 var
+R226:226 OUMBS.chapter_1_exercises_3_point_5 <> C:4 var
+R222:222 OUMBS.chapter_1_exercises_3_point_5 <> U:1 var
+R199:199 OUMBS.chapter_1_exercises_3_point_5 <> U:1 var
+R263:286 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R263:286 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R298:305 Stdlib.Sets.Ensembles <> Same_set def
+R308:315 Stdlib.Sets.Ensembles <> Included def
+R404:415 Stdlib.Sets.Ensembles <> Union_introl constr
+R404:415 Stdlib.Sets.Ensembles <> Union_introl constr
+R456:467 Stdlib.Sets.Ensembles <> Union_introl constr
+R456:467 Stdlib.Sets.Ensembles <> Union_introl constr
+R517:528 Stdlib.Sets.Ensembles <> Union_intror constr
+R517:528 Stdlib.Sets.Ensembles <> Union_intror constr
+R557:568 Stdlib.Sets.Ensembles <> Union_intror constr
+R557:568 Stdlib.Sets.Ensembles <> Union_intror constr
+R646:657 Stdlib.Sets.Ensembles <> Union_introl constr
+R646:657 Stdlib.Sets.Ensembles <> Union_introl constr
+R727:738 Stdlib.Sets.Ensembles <> Union_intror constr
+R727:738 Stdlib.Sets.Ensembles <> Union_intror constr
+R764:775 Stdlib.Sets.Ensembles <> Union_intror constr
+R764:775 Stdlib.Sets.Ensembles <> Union_intror constr
+prf 802:813 <> exercise_5_b
+binder 825:825 <> U:5
+R844:851 Stdlib.Sets.Ensembles <> Ensemble def
+R853:853 OUMBS.chapter_1_exercises_3_point_5 <> U:5 var
+binder 836:836 <> A:6
+binder 838:838 <> B:7
+binder 840:840 <> C:8
+R889:891 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R859:870 Stdlib.Sets.Ensembles <> Intersection ind
+R875:879 Stdlib.Sets.Ensembles <> Union ind
+R883:883 OUMBS.chapter_1_exercises_3_point_5 <> A:6 var
+R885:885 OUMBS.chapter_1_exercises_3_point_5 <> B:7 var
+R881:881 OUMBS.chapter_1_exercises_3_point_5 <> U:5 var
+R888:888 OUMBS.chapter_1_exercises_3_point_5 <> C:8 var
+R872:872 OUMBS.chapter_1_exercises_3_point_5 <> U:5 var
+R892:896 Stdlib.Sets.Ensembles <> Union ind
+R901:912 Stdlib.Sets.Ensembles <> Intersection ind
+R916:916 OUMBS.chapter_1_exercises_3_point_5 <> A:6 var
+R918:918 OUMBS.chapter_1_exercises_3_point_5 <> C:8 var
+R914:914 OUMBS.chapter_1_exercises_3_point_5 <> U:5 var
+R922:933 Stdlib.Sets.Ensembles <> Intersection ind
+R937:937 OUMBS.chapter_1_exercises_3_point_5 <> B:7 var
+R939:939 OUMBS.chapter_1_exercises_3_point_5 <> C:8 var
+R935:935 OUMBS.chapter_1_exercises_3_point_5 <> U:5 var
+R898:898 OUMBS.chapter_1_exercises_3_point_5 <> U:5 var
+R976:999 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R976:999 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1011:1018 Stdlib.Sets.Ensembles <> Same_set def
+R1021:1028 Stdlib.Sets.Ensembles <> Included def
+R1093:1104 Stdlib.Sets.Ensembles <> Union_introl constr
+R1093:1104 Stdlib.Sets.Ensembles <> Union_introl constr
+R1174:1185 Stdlib.Sets.Ensembles <> Union_intror constr
+R1174:1185 Stdlib.Sets.Ensembles <> Union_intror constr
+R1319:1330 Stdlib.Sets.Ensembles <> Union_introl constr
+R1319:1330 Stdlib.Sets.Ensembles <> Union_introl constr
+R1412:1423 Stdlib.Sets.Ensembles <> Union_intror constr
+R1412:1423 Stdlib.Sets.Ensembles <> Union_intror constr

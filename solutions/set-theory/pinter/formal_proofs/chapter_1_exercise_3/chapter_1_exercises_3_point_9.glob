@@ -1,0 +1,141 @@
+DIGEST d39f203ec65dc2ede0dff084cbd0fb81
+FOUMBS.chapter_1_exercises_3_point_9
+R27:40 Stdlib.Sets.Ensembles <> <> lib
+R70:84 Stdlib.Logic.Classical <> <> lib
+R113:141 OUMBS.chapter_1_exercises_3_point_8 <> <> lib
+def 156:162 <> Setplus
+binder 165:165 <> U:1
+R181:188 Stdlib.Sets.Ensembles <> Ensemble def
+R190:190 OUMBS.chapter_1_exercises_3_point_9 <> U:1 var
+binder 175:175 <> A:2
+binder 177:177 <> B:3
+R195:202 Stdlib.Sets.Ensembles <> Ensemble def
+R204:204 OUMBS.chapter_1_exercises_3_point_9 <> U:1 var
+R211:215 Stdlib.Sets.Ensembles <> Union ind
+R220:227 Stdlib.Sets.Ensembles <> Setminus def
+R231:231 OUMBS.chapter_1_exercises_3_point_9 <> A:2 var
+R233:233 OUMBS.chapter_1_exercises_3_point_9 <> B:3 var
+R229:229 OUMBS.chapter_1_exercises_3_point_9 <> U:1 var
+R237:244 Stdlib.Sets.Ensembles <> Setminus def
+R248:248 OUMBS.chapter_1_exercises_3_point_9 <> B:3 var
+R250:250 OUMBS.chapter_1_exercises_3_point_9 <> A:2 var
+R246:246 OUMBS.chapter_1_exercises_3_point_9 <> U:1 var
+R217:217 OUMBS.chapter_1_exercises_3_point_9 <> U:1 var
+prf 263:274 <> exercise_9_a
+binder 286:286 <> U:4
+R303:310 Stdlib.Sets.Ensembles <> Ensemble def
+R312:312 OUMBS.chapter_1_exercises_3_point_9 <> U:4 var
+binder 297:297 <> A:5
+binder 299:299 <> B:6
+R343:346 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R329:331 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R318:322 Stdlib.Sets.Ensembles <> Union ind
+R326:326 OUMBS.chapter_1_exercises_3_point_9 <> A:5 var
+R328:328 OUMBS.chapter_1_exercises_3_point_9 <> B:6 var
+R324:324 OUMBS.chapter_1_exercises_3_point_9 <> U:4 var
+R332:340 Stdlib.Sets.Ensembles <> Empty_set ind
+R342:342 OUMBS.chapter_1_exercises_3_point_9 <> U:4 var
+R362:365 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R348:350 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R347:347 OUMBS.chapter_1_exercises_3_point_9 <> A:5 var
+R351:359 Stdlib.Sets.Ensembles <> Empty_set ind
+R361:361 OUMBS.chapter_1_exercises_3_point_9 <> U:4 var
+R367:369 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R366:366 OUMBS.chapter_1_exercises_3_point_9 <> B:6 var
+R370:378 Stdlib.Sets.Ensembles <> Empty_set ind
+R380:380 OUMBS.chapter_1_exercises_3_point_9 <> U:4 var
+R415:438 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R450:457 Stdlib.Sets.Ensembles <> Same_set def
+R460:467 Stdlib.Sets.Ensembles <> Included def
+R415:438 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R415:438 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R495:506 Stdlib.Sets.Ensembles <> Union_introl constr
+R495:506 Stdlib.Sets.Ensembles <> Union_introl constr
+R602:613 Stdlib.Sets.Ensembles <> Union_intror constr
+R602:613 Stdlib.Sets.Ensembles <> Union_intror constr
+prf 705:716 <> exercise_9_b
+binder 728:728 <> U:7
+R745:752 Stdlib.Sets.Ensembles <> Ensemble def
+R754:754 OUMBS.chapter_1_exercises_3_point_9 <> U:7 var
+binder 739:739 <> A:8
+binder 741:741 <> B:9
+R807:811 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R793:795 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R760:771 Stdlib.Sets.Ensembles <> Intersection ind
+R775:775 OUMBS.chapter_1_exercises_3_point_9 <> A:8 var
+R778:787 Stdlib.Sets.Ensembles <> Complement def
+R791:791 OUMBS.chapter_1_exercises_3_point_9 <> B:9 var
+R789:789 OUMBS.chapter_1_exercises_3_point_9 <> U:7 var
+R773:773 OUMBS.chapter_1_exercises_3_point_9 <> U:7 var
+R796:804 Stdlib.Sets.Ensembles <> Empty_set ind
+R806:806 OUMBS.chapter_1_exercises_3_point_9 <> U:7 var
+R812:819 Stdlib.Sets.Ensembles <> Included def
+R823:823 OUMBS.chapter_1_exercises_3_point_9 <> A:8 var
+R825:825 OUMBS.chapter_1_exercises_3_point_9 <> B:9 var
+R821:821 OUMBS.chapter_1_exercises_3_point_9 <> U:7 var
+R871:878 Stdlib.Sets.Ensembles <> Included def
+R899:905 Stdlib.Logic.Classical_Prop <> classic prfax
+R908:909 Stdlib.Sets.Ensembles <> In def
+R899:905 Stdlib.Logic.Classical_Prop <> classic prfax
+R908:909 Stdlib.Sets.Ensembles <> In def
+R959:960 Stdlib.Sets.Ensembles <> In def
+R965:976 Stdlib.Sets.Ensembles <> Intersection ind
+R983:992 Stdlib.Sets.Ensembles <> Complement def
+R959:960 Stdlib.Sets.Ensembles <> In def
+R965:976 Stdlib.Sets.Ensembles <> Intersection ind
+R983:992 Stdlib.Sets.Ensembles <> Complement def
+R1104:1127 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1104:1127 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1139:1146 Stdlib.Sets.Ensembles <> Same_set def
+R1149:1156 Stdlib.Sets.Ensembles <> Included def
+R1201:1208 Stdlib.Sets.Ensembles <> Included def
+prf 1302:1313 <> exercise_9_c
+binder 1325:1325 <> U:10
+R1342:1349 Stdlib.Sets.Ensembles <> Ensemble def
+R1351:1351 OUMBS.chapter_1_exercises_3_point_9 <> U:10 var
+binder 1336:1336 <> A:11
+binder 1338:1338 <> B:12
+R1382:1386 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R1368:1370 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1357:1363 OUMBS.chapter_1_exercises_3_point_9 <> Setplus def
+R1367:1367 OUMBS.chapter_1_exercises_3_point_9 <> B:12 var
+R1365:1365 OUMBS.chapter_1_exercises_3_point_9 <> A:11 var
+R1371:1379 Stdlib.Sets.Ensembles <> Empty_set ind
+R1381:1381 OUMBS.chapter_1_exercises_3_point_9 <> U:10 var
+R1388:1390 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1387:1387 OUMBS.chapter_1_exercises_3_point_9 <> A:11 var
+R1391:1391 OUMBS.chapter_1_exercises_3_point_9 <> B:12 var
+R1434:1457 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1469:1476 Stdlib.Sets.Ensembles <> Same_set def
+R1479:1486 Stdlib.Sets.Ensembles <> Included def
+R1434:1457 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1434:1457 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1518:1524 Stdlib.Logic.Classical_Prop <> classic prfax
+R1527:1528 Stdlib.Sets.Ensembles <> In def
+R1518:1524 Stdlib.Logic.Classical_Prop <> classic prfax
+R1527:1528 Stdlib.Sets.Ensembles <> In def
+R1577:1578 Stdlib.Sets.Ensembles <> In def
+R1583:1590 Stdlib.Sets.Ensembles <> Setminus def
+R1577:1578 Stdlib.Sets.Ensembles <> In def
+R1583:1590 Stdlib.Sets.Ensembles <> Setminus def
+R1679:1686 Stdlib.Sets.Ensembles <> Setminus def
+R1655:1666 Stdlib.Sets.Ensembles <> Union_introl constr
+R1679:1686 Stdlib.Sets.Ensembles <> Setminus def
+R1655:1666 Stdlib.Sets.Ensembles <> Union_introl constr
+R1711:1717 OUMBS.chapter_1_exercises_3_point_9 <> Setplus def
+R1785:1791 Stdlib.Logic.Classical_Prop <> classic prfax
+R1794:1795 Stdlib.Sets.Ensembles <> In def
+R1785:1791 Stdlib.Logic.Classical_Prop <> classic prfax
+R1794:1795 Stdlib.Sets.Ensembles <> In def
+R1844:1845 Stdlib.Sets.Ensembles <> In def
+R1850:1857 Stdlib.Sets.Ensembles <> Setminus def
+R1844:1845 Stdlib.Sets.Ensembles <> In def
+R1850:1857 Stdlib.Sets.Ensembles <> Setminus def
+R1946:1953 Stdlib.Sets.Ensembles <> Setminus def
+R1922:1933 Stdlib.Sets.Ensembles <> Union_intror constr
+R1946:1953 Stdlib.Sets.Ensembles <> Setminus def
+R1922:1933 Stdlib.Sets.Ensembles <> Union_intror constr
+R1978:1984 OUMBS.chapter_1_exercises_3_point_9 <> Setplus def
+R2067:2078 OUMBS.chapter_1_exercises_3_point_8 <> exercise_8_d thm
+R2067:2078 OUMBS.chapter_1_exercises_3_point_8 <> exercise_8_d thm
+R2067:2078 OUMBS.chapter_1_exercises_3_point_8 <> exercise_8_d thm

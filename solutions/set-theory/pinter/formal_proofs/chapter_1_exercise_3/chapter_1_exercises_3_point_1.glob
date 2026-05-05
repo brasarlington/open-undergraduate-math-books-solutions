@@ -1,0 +1,27 @@
+DIGEST ed4ae4702164df45abcecc83f0f2be1a
+FOUMBS.chapter_1_exercises_3_point_1
+R27:40 Stdlib.Sets.Ensembles <> <> lib
+prf 52:63 <> exercise_3_1
+binder 75:75 <> U:1
+R92:99 Stdlib.Sets.Ensembles <> Ensemble def
+R101:101 OUMBS.chapter_1_exercises_3_point_1 <> U:1 var
+binder 86:86 <> A:2
+binder 88:88 <> B:3
+R121:125 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R107:114 Stdlib.Sets.Ensembles <> Included def
+R118:118 OUMBS.chapter_1_exercises_3_point_1 <> A:2 var
+R120:120 OUMBS.chapter_1_exercises_3_point_1 <> B:3 var
+R116:116 OUMBS.chapter_1_exercises_3_point_1 <> U:1 var
+R144:146 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R126:137 Stdlib.Sets.Ensembles <> Intersection ind
+R141:141 OUMBS.chapter_1_exercises_3_point_1 <> A:2 var
+R143:143 OUMBS.chapter_1_exercises_3_point_1 <> B:3 var
+R139:139 OUMBS.chapter_1_exercises_3_point_1 <> U:1 var
+R147:147 OUMBS.chapter_1_exercises_3_point_1 <> A:2 var
+R191:198 Stdlib.Sets.Ensembles <> Included def
+R221:244 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R221:244 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R254:261 Stdlib.Sets.Ensembles <> Same_set def
+R285:292 Stdlib.Sets.Ensembles <> Included def
+R345:352 Stdlib.Sets.Ensembles <> Included def
+R461:468 Stdlib.Sets.Ensembles <> Included def
