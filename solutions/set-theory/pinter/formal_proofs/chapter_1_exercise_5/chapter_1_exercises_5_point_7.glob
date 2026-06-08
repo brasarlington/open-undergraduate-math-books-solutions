@@ -1,0 +1,174 @@
+DIGEST a1a087f2c83885de65ee7897f8b7fd18
+FOUMBS.chapter_1_exercises_5_point_7
+R27:40 Stdlib.Sets.Ensembles <> <> lib
+R70:84 Stdlib.Logic.Classical <> <> lib
+R113:118 OUMBS.Graphs <> <> lib
+prf 130:141 <> exercise_7_a
+binder 153:153 <> U:1
+R170:177 Stdlib.Sets.Ensembles <> Ensemble def
+R179:179 OUMBS.chapter_1_exercises_5_point_7 <> U:1 var
+binder 164:164 <> A:2
+binder 166:166 <> B:3
+R203:205 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R185:191 OUMBS.Graphs <> Inverse def
+R194:197 OUMBS.Graphs <> prod def
+R201:201 OUMBS.chapter_1_exercises_5_point_7 <> B:3 var
+R199:199 OUMBS.chapter_1_exercises_5_point_7 <> A:2 var
+R206:209 OUMBS.Graphs <> prod def
+R213:213 OUMBS.chapter_1_exercises_5_point_7 <> A:2 var
+R211:211 OUMBS.chapter_1_exercises_5_point_7 <> B:3 var
+R241:264 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R276:283 Stdlib.Sets.Ensembles <> Same_set def
+R286:293 Stdlib.Sets.Ensembles <> Included def
+R296:297 Stdlib.Sets.Ensembles <> In def
+R300:303 OUMBS.Graphs <> prod def
+R306:312 OUMBS.Graphs <> Inverse def
+R315:316 Stdlib.Sets.Ensembles <> In def
+prf 477:485 <> aux_lemma
+binder 497:497 <> U:4
+R512:519 Stdlib.Sets.Ensembles <> Ensemble def
+R521:521 OUMBS.chapter_1_exercises_5_point_7 <> U:4 var
+binder 508:508 <> A:5
+R549:553 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R527:529 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R548:548 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R530:536 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R538:539 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 537:537 <> x:6
+R540:541 Stdlib.Sets.Ensembles <> In def
+R545:545 OUMBS.chapter_1_exercises_5_point_7 <> A:5 var
+R547:547 OUMBS.chapter_1_exercises_5_point_7 <> x:6 var
+R543:543 OUMBS.chapter_1_exercises_5_point_7 <> U:4 var
+R555:557 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R554:554 OUMBS.chapter_1_exercises_5_point_7 <> A:5 var
+R558:566 Stdlib.Sets.Ensembles <> Empty_set ind
+R568:568 OUMBS.chapter_1_exercises_5_point_7 <> U:4 var
+R615:638 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R650:657 Stdlib.Sets.Ensembles <> Same_set def
+R660:667 Stdlib.Sets.Ensembles <> Included def
+R670:671 Stdlib.Sets.Ensembles <> In def
+R714:720 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R722:723 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 721:721 <> x:7
+R726:726 OUMBS.chapter_1_exercises_5_point_7 <> x:7 var
+binder 721:721 <> x:8
+R726:726 OUMBS.chapter_1_exercises_5_point_7 <> x:8 var
+prf 866:923 <> non_empty_intersection_implies_existence_of_mutual_element
+binder 937:937 <> U:9
+R952:959 Stdlib.Sets.Ensembles <> Ensemble def
+R961:961 OUMBS.chapter_1_exercises_5_point_7 <> U:9 var
+binder 948:948 <> A:10
+R983:987 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R968:971 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R967:967 OUMBS.chapter_1_exercises_5_point_7 <> A:10 var
+R972:980 Stdlib.Sets.Ensembles <> Empty_set ind
+R982:982 OUMBS.chapter_1_exercises_5_point_7 <> U:9 var
+R988:994 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R996:997 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 995:995 <> x:11
+R998:998 OUMBS.chapter_1_exercises_5_point_7 <> A:10 var
+R1000:1000 OUMBS.chapter_1_exercises_5_point_7 <> x:11 var
+R1049:1055 Stdlib.Logic.Classical_Prop <> classic prfax
+R1058:1064 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1066:1067 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1065:1065 <> x:12
+R1068:1069 Stdlib.Sets.Ensembles <> In def
+R1075:1075 OUMBS.chapter_1_exercises_5_point_7 <> x:12 var
+binder 1065:1065 <> x:13
+R1075:1075 OUMBS.chapter_1_exercises_5_point_7 <> x:13 var
+R1110:1118 OUMBS.chapter_1_exercises_5_point_7 <> aux_lemma thm
+prf 1207:1218 <> exercise_7_b
+binder 1230:1230 <> U:14
+R1247:1254 Stdlib.Sets.Ensembles <> Ensemble def
+R1256:1256 OUMBS.chapter_1_exercises_5_point_7 <> U:14 var
+binder 1241:1241 <> A:15
+binder 1243:1243 <> B:16
+R1295:1300 Corelib.Init.Notations <> ::type_scope:x_'->'_x not
+R1280:1283 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R1262:1273 Stdlib.Sets.Ensembles <> Intersection ind
+R1277:1277 OUMBS.chapter_1_exercises_5_point_7 <> A:15 var
+R1279:1279 OUMBS.chapter_1_exercises_5_point_7 <> B:16 var
+R1275:1275 OUMBS.chapter_1_exercises_5_point_7 <> U:14 var
+R1284:1292 Stdlib.Sets.Ensembles <> Empty_set ind
+R1294:1294 OUMBS.chapter_1_exercises_5_point_7 <> U:14 var
+R1330:1332 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1301:1307 OUMBS.Graphs <> Compose def
+R1321:1324 OUMBS.Graphs <> prod def
+R1328:1328 OUMBS.chapter_1_exercises_5_point_7 <> B:16 var
+R1326:1326 OUMBS.chapter_1_exercises_5_point_7 <> A:15 var
+R1310:1313 OUMBS.Graphs <> prod def
+R1317:1317 OUMBS.chapter_1_exercises_5_point_7 <> B:16 var
+R1315:1315 OUMBS.chapter_1_exercises_5_point_7 <> A:15 var
+R1333:1336 OUMBS.Graphs <> prod def
+R1340:1340 OUMBS.chapter_1_exercises_5_point_7 <> B:16 var
+R1338:1338 OUMBS.chapter_1_exercises_5_point_7 <> A:15 var
+R1368:1391 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1403:1410 Stdlib.Sets.Ensembles <> Same_set def
+R1413:1420 Stdlib.Sets.Ensembles <> Included def
+R1423:1424 Stdlib.Sets.Ensembles <> In def
+R1427:1430 OUMBS.Graphs <> prod def
+R1433:1439 OUMBS.Graphs <> Compose def
+R1442:1443 Stdlib.Sets.Ensembles <> In def
+R1602:1659 OUMBS.chapter_1_exercises_5_point_7 <> non_empty_intersection_implies_existence_of_mutual_element thm
+prf 1798:1809 <> exercise_7_c
+binder 1821:1821 <> U:17
+R1838:1845 Stdlib.Sets.Ensembles <> Ensemble def
+R1847:1847 OUMBS.chapter_1_exercises_5_point_7 <> U:17 var
+binder 1832:1832 <> A:18
+binder 1834:1834 <> B:19
+R1867:1872 Corelib.Init.Notations <> ::type_scope:x_'->'_x not
+R1853:1860 Stdlib.Sets.Ensembles <> Disjoint ind
+R1864:1864 OUMBS.chapter_1_exercises_5_point_7 <> A:18 var
+R1866:1866 OUMBS.chapter_1_exercises_5_point_7 <> B:19 var
+R1862:1862 OUMBS.chapter_1_exercises_5_point_7 <> U:17 var
+R1902:1904 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1873:1879 OUMBS.Graphs <> Compose def
+R1893:1896 OUMBS.Graphs <> prod def
+R1900:1900 OUMBS.chapter_1_exercises_5_point_7 <> B:19 var
+R1898:1898 OUMBS.chapter_1_exercises_5_point_7 <> A:18 var
+R1882:1885 OUMBS.Graphs <> prod def
+R1889:1889 OUMBS.chapter_1_exercises_5_point_7 <> B:19 var
+R1887:1887 OUMBS.chapter_1_exercises_5_point_7 <> A:18 var
+R1905:1913 Stdlib.Sets.Ensembles <> Empty_set ind
+R1917:1919 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1916:1916 OUMBS.chapter_1_exercises_5_point_7 <> U:17 var
+R1920:1920 OUMBS.chapter_1_exercises_5_point_7 <> U:17 var
+R1949:1972 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1998:2005 Stdlib.Sets.Ensembles <> Same_set def
+R2008:2015 Stdlib.Sets.Ensembles <> Included def
+R2018:2019 Stdlib.Sets.Ensembles <> In def
+R2022:2025 OUMBS.Graphs <> prod def
+R2028:2034 OUMBS.Graphs <> Compose def
+R2037:2038 Stdlib.Sets.Ensembles <> In def
+R2132:2143 Stdlib.Sets.Ensembles <> Intersection ind
+prf 2275:2286 <> exercise_7_d
+binder 2298:2298 <> U:20
+R2316:2323 Stdlib.Sets.Ensembles <> Ensemble def
+R2325:2325 OUMBS.chapter_1_exercises_5_point_7 <> U:20 var
+binder 2309:2309 <> A:21
+binder 2311:2311 <> B:22
+binder 2313:2313 <> C:23
+R2347:2352 Corelib.Init.Notations <> ::type_scope:x_'->'_x not
+R2332:2335 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2331:2331 OUMBS.chapter_1_exercises_5_point_7 <> B:22 var
+R2336:2344 Stdlib.Sets.Ensembles <> Empty_set ind
+R2346:2346 OUMBS.chapter_1_exercises_5_point_7 <> U:20 var
+R2382:2384 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2353:2359 OUMBS.Graphs <> Compose def
+R2373:2376 OUMBS.Graphs <> prod def
+R2380:2380 OUMBS.chapter_1_exercises_5_point_7 <> B:22 var
+R2378:2378 OUMBS.chapter_1_exercises_5_point_7 <> A:21 var
+R2362:2365 OUMBS.Graphs <> prod def
+R2369:2369 OUMBS.chapter_1_exercises_5_point_7 <> C:23 var
+R2367:2367 OUMBS.chapter_1_exercises_5_point_7 <> B:22 var
+R2385:2388 OUMBS.Graphs <> prod def
+R2392:2392 OUMBS.chapter_1_exercises_5_point_7 <> C:23 var
+R2390:2390 OUMBS.chapter_1_exercises_5_point_7 <> A:21 var
+R2420:2443 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2455:2462 Stdlib.Sets.Ensembles <> Same_set def
+R2465:2472 Stdlib.Sets.Ensembles <> Included def
+R2475:2476 Stdlib.Sets.Ensembles <> In def
+R2479:2482 OUMBS.Graphs <> prod def
+R2485:2491 OUMBS.Graphs <> Compose def
+R2494:2495 Stdlib.Sets.Ensembles <> In def
+R2644:2701 OUMBS.chapter_1_exercises_5_point_7 <> non_empty_intersection_implies_existence_of_mutual_element thm

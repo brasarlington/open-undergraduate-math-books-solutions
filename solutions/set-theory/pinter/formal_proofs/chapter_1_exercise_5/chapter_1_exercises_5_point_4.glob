@@ -1,0 +1,188 @@
+DIGEST bd6dac6ae07b9485d416a4b201570a3b
+FOUMBS.chapter_1_exercises_5_point_4
+R27:40 Stdlib.Sets.Ensembles <> <> lib
+R69:74 OUMBS.Graphs <> <> lib
+prf 86:97 <> exercise_4_a
+binder 109:109 <> U:1
+binder 111:111 <> V:2
+binder 113:113 <> W:3
+R130:134 OUMBS.Graphs <> Graph def
+R136:136 OUMBS.chapter_1_exercises_5_point_4 <> U:1 var
+R138:138 OUMBS.chapter_1_exercises_5_point_4 <> V:2 var
+binder 124:124 <> H:4
+binder 126:126 <> J:5
+R146:150 OUMBS.Graphs <> Graph def
+R152:152 OUMBS.chapter_1_exercises_5_point_4 <> W:3 var
+R154:154 OUMBS.chapter_1_exercises_5_point_4 <> U:1 var
+binder 142:142 <> G:6
+R189:191 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R160:166 OUMBS.Graphs <> Compose def
+R188:188 OUMBS.chapter_1_exercises_5_point_4 <> G:6 var
+R169:173 Stdlib.Sets.Ensembles <> Union ind
+R183:183 OUMBS.chapter_1_exercises_5_point_4 <> H:4 var
+R185:185 OUMBS.chapter_1_exercises_5_point_4 <> J:5 var
+R177:179 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R176:176 OUMBS.chapter_1_exercises_5_point_4 <> U:1 var
+R180:180 OUMBS.chapter_1_exercises_5_point_4 <> V:2 var
+R192:196 Stdlib.Sets.Ensembles <> Union ind
+R207:213 OUMBS.Graphs <> Compose def
+R217:217 OUMBS.chapter_1_exercises_5_point_4 <> G:6 var
+R215:215 OUMBS.chapter_1_exercises_5_point_4 <> H:4 var
+R221:227 OUMBS.Graphs <> Compose def
+R231:231 OUMBS.chapter_1_exercises_5_point_4 <> G:6 var
+R229:229 OUMBS.chapter_1_exercises_5_point_4 <> J:5 var
+R200:202 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R199:199 OUMBS.chapter_1_exercises_5_point_4 <> W:3 var
+R203:203 OUMBS.chapter_1_exercises_5_point_4 <> V:2 var
+R260:283 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R295:302 Stdlib.Sets.Ensembles <> Same_set def
+R305:312 Stdlib.Sets.Ensembles <> Included def
+R315:316 Stdlib.Sets.Ensembles <> In def
+R319:321 OUMBS.Graphs <> dom def
+R324:326 OUMBS.Graphs <> ran def
+R329:335 OUMBS.Graphs <> Compose def
+R338:339 Stdlib.Sets.Ensembles <> In def
+R393:393 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R395:396 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R398:398 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R439:450 Stdlib.Sets.Ensembles <> Union_introl constr
+R460:461 Stdlib.Sets.Ensembles <> In def
+R519:530 Stdlib.Sets.Ensembles <> Union_intror constr
+R540:541 Stdlib.Sets.Ensembles <> In def
+R616:616 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R618:619 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R621:621 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R663:664 Stdlib.Sets.Ensembles <> In def
+R733:744 Stdlib.Sets.Ensembles <> Union_introl constr
+R771:772 Stdlib.Sets.Ensembles <> In def
+R841:852 Stdlib.Sets.Ensembles <> Union_intror constr
+prf 880:891 <> exercise_4_b
+binder 903:903 <> U:7
+binder 905:905 <> V:8
+R922:926 OUMBS.Graphs <> Graph def
+R928:928 OUMBS.chapter_1_exercises_5_point_4 <> U:7 var
+R930:930 OUMBS.chapter_1_exercises_5_point_4 <> V:8 var
+binder 916:916 <> H:9
+binder 918:918 <> G:10
+R966:968 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R936:942 OUMBS.Graphs <> Inverse def
+R945:952 Stdlib.Sets.Ensembles <> Setminus def
+R962:962 OUMBS.chapter_1_exercises_5_point_4 <> G:10 var
+R964:964 OUMBS.chapter_1_exercises_5_point_4 <> H:9 var
+R956:958 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R955:955 OUMBS.chapter_1_exercises_5_point_4 <> U:7 var
+R959:959 OUMBS.chapter_1_exercises_5_point_4 <> V:8 var
+R969:976 Stdlib.Sets.Ensembles <> Setminus def
+R987:993 OUMBS.Graphs <> Inverse def
+R995:995 OUMBS.chapter_1_exercises_5_point_4 <> G:10 var
+R999:1005 OUMBS.Graphs <> Inverse def
+R1007:1007 OUMBS.chapter_1_exercises_5_point_4 <> H:9 var
+R980:982 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R979:979 OUMBS.chapter_1_exercises_5_point_4 <> V:8 var
+R983:983 OUMBS.chapter_1_exercises_5_point_4 <> U:7 var
+R1036:1059 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1071:1078 Stdlib.Sets.Ensembles <> Same_set def
+R1081:1088 Stdlib.Sets.Ensembles <> Included def
+R1091:1092 Stdlib.Sets.Ensembles <> In def
+R1095:1102 Stdlib.Sets.Ensembles <> Setminus def
+R1105:1111 OUMBS.Graphs <> Inverse def
+R1114:1115 Stdlib.Sets.Ensembles <> In def
+R1169:1170 Stdlib.Sets.Ensembles <> In def
+prf 1237:1248 <> exercise_4_c
+binder 1260:1260 <> U:11
+binder 1262:1262 <> V:12
+binder 1264:1264 <> W:13
+R1281:1285 OUMBS.Graphs <> Graph def
+R1287:1287 OUMBS.chapter_1_exercises_5_point_4 <> U:11 var
+R1289:1289 OUMBS.chapter_1_exercises_5_point_4 <> V:12 var
+binder 1277:1277 <> G:14
+R1302:1306 OUMBS.Graphs <> Graph def
+R1308:1308 OUMBS.chapter_1_exercises_5_point_4 <> W:13 var
+R1310:1310 OUMBS.chapter_1_exercises_5_point_4 <> U:11 var
+binder 1296:1296 <> H:15
+binder 1298:1298 <> J:16
+R1317:1324 Stdlib.Sets.Ensembles <> Included def
+R1337:1343 OUMBS.Graphs <> Compose def
+R1348:1359 Stdlib.Sets.Ensembles <> Intersection ind
+R1369:1369 OUMBS.chapter_1_exercises_5_point_4 <> H:15 var
+R1371:1371 OUMBS.chapter_1_exercises_5_point_4 <> J:16 var
+R1363:1365 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1362:1362 OUMBS.chapter_1_exercises_5_point_4 <> W:13 var
+R1366:1366 OUMBS.chapter_1_exercises_5_point_4 <> U:11 var
+R1345:1345 OUMBS.chapter_1_exercises_5_point_4 <> G:14 var
+R1378:1389 Stdlib.Sets.Ensembles <> Intersection ind
+R1400:1406 OUMBS.Graphs <> Compose def
+R1410:1410 OUMBS.chapter_1_exercises_5_point_4 <> H:15 var
+R1408:1408 OUMBS.chapter_1_exercises_5_point_4 <> G:14 var
+R1414:1420 OUMBS.Graphs <> Compose def
+R1424:1424 OUMBS.chapter_1_exercises_5_point_4 <> J:16 var
+R1422:1422 OUMBS.chapter_1_exercises_5_point_4 <> G:14 var
+R1393:1395 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1392:1392 OUMBS.chapter_1_exercises_5_point_4 <> W:13 var
+R1396:1396 OUMBS.chapter_1_exercises_5_point_4 <> V:12 var
+R1328:1330 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1327:1327 OUMBS.chapter_1_exercises_5_point_4 <> W:13 var
+R1331:1331 OUMBS.chapter_1_exercises_5_point_4 <> V:12 var
+R1455:1462 Stdlib.Sets.Ensembles <> Included def
+R1465:1471 OUMBS.Graphs <> Compose def
+R1474:1475 Stdlib.Sets.Ensembles <> In def
+R1534:1534 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1536:1537 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1539:1539 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1585:1586 Stdlib.Sets.Ensembles <> In def
+R1637:1638 Stdlib.Sets.Ensembles <> In def
+prf 1692:1703 <> exercise_4_d
+binder 1715:1715 <> U:17
+binder 1717:1717 <> V:18
+binder 1719:1719 <> W:19
+R1736:1740 OUMBS.Graphs <> Graph def
+R1742:1742 OUMBS.chapter_1_exercises_5_point_4 <> U:17 var
+R1744:1744 OUMBS.chapter_1_exercises_5_point_4 <> V:18 var
+binder 1732:1732 <> G:20
+R1757:1761 OUMBS.Graphs <> Graph def
+R1763:1763 OUMBS.chapter_1_exercises_5_point_4 <> W:19 var
+R1765:1765 OUMBS.chapter_1_exercises_5_point_4 <> U:17 var
+binder 1751:1751 <> H:21
+binder 1753:1753 <> J:22
+R1772:1779 Stdlib.Sets.Ensembles <> Included def
+R1792:1799 Stdlib.Sets.Ensembles <> Setminus def
+R1810:1816 OUMBS.Graphs <> Compose def
+R1820:1820 OUMBS.chapter_1_exercises_5_point_4 <> H:21 var
+R1818:1818 OUMBS.chapter_1_exercises_5_point_4 <> G:20 var
+R1824:1830 OUMBS.Graphs <> Compose def
+R1834:1834 OUMBS.chapter_1_exercises_5_point_4 <> J:22 var
+R1832:1832 OUMBS.chapter_1_exercises_5_point_4 <> G:20 var
+R1803:1805 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1802:1802 OUMBS.chapter_1_exercises_5_point_4 <> W:19 var
+R1806:1806 OUMBS.chapter_1_exercises_5_point_4 <> V:18 var
+R1841:1847 OUMBS.Graphs <> Compose def
+R1852:1859 Stdlib.Sets.Ensembles <> Setminus def
+R1869:1869 OUMBS.chapter_1_exercises_5_point_4 <> H:21 var
+R1871:1871 OUMBS.chapter_1_exercises_5_point_4 <> J:22 var
+R1863:1865 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1862:1862 OUMBS.chapter_1_exercises_5_point_4 <> W:19 var
+R1866:1866 OUMBS.chapter_1_exercises_5_point_4 <> U:17 var
+R1849:1849 OUMBS.chapter_1_exercises_5_point_4 <> G:20 var
+R1783:1785 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1782:1782 OUMBS.chapter_1_exercises_5_point_4 <> W:19 var
+R1786:1786 OUMBS.chapter_1_exercises_5_point_4 <> V:18 var
+R1902:1909 Stdlib.Sets.Ensembles <> Included def
+R1912:1918 OUMBS.Graphs <> Compose def
+R1921:1922 Stdlib.Sets.Ensembles <> In def
+R1925:1932 Stdlib.Sets.Ensembles <> Setminus def
+R1935:1936 Stdlib.Sets.Ensembles <> In def
+R2084:2090 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2096:2097 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2091:2091 <> y:23
+R2106:2109 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2100:2100 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2102:2103 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2105:2105 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2104:2104 OUMBS.chapter_1_exercises_5_point_4 <> y:23 var
+R2112:2112 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2114:2115 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2117:2117 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2113:2113 OUMBS.chapter_1_exercises_5_point_4 <> y:23 var
+binder 2091:2091 <> y:24
+R2104:2104 OUMBS.chapter_1_exercises_5_point_4 <> y:24 var
+R2113:2113 OUMBS.chapter_1_exercises_5_point_4 <> y:24 var

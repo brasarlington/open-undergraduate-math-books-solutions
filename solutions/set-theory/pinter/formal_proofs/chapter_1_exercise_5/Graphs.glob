@@ -1,0 +1,199 @@
+DIGEST 813aeb99b37f9c632113bc6e8030cce3
+FOUMBS.Graphs
+R27:40 Stdlib.Sets.Ensembles <> <> lib
+def 55:59 <> Graph
+binder 62:62 <> U:1
+binder 64:64 <> V:2
+R84:91 Stdlib.Sets.Ensembles <> Ensemble def
+R95:97 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R94:94 OUMBS.Graphs <> U:1 var
+R98:98 OUMBS.Graphs <> V:2 var
+def 114:120 <> Inverse
+binder 123:123 <> U:3
+binder 125:125 <> V:4
+R140:147 Stdlib.Sets.Ensembles <> Ensemble def
+R151:153 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R150:150 OUMBS.Graphs <> U:3 var
+R154:154 OUMBS.Graphs <> V:4 var
+binder 136:136 <> G:5
+R160:164 OUMBS.Graphs <> Graph def
+R166:166 OUMBS.Graphs <> V:4 var
+R168:168 OUMBS.Graphs <> U:3 var
+binder 179:179 <> p:6
+R184:184 OUMBS.Graphs <> G:5 var
+R186:186 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R192:193 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R199:199 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R187:189 Corelib.Init.Datatypes <> snd def
+R191:191 OUMBS.Graphs <> p:6 var
+R194:196 Corelib.Init.Datatypes <> fst def
+R198:198 OUMBS.Graphs <> p:6 var
+def 214:220 <> Compose
+binder 223:223 <> U:7
+binder 225:225 <> V:8
+binder 227:227 <> W:9
+R242:249 Stdlib.Sets.Ensembles <> Ensemble def
+R253:255 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R252:252 OUMBS.Graphs <> U:7 var
+R256:256 OUMBS.Graphs <> V:8 var
+binder 238:238 <> R:10
+R265:272 Stdlib.Sets.Ensembles <> Ensemble def
+R276:278 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R275:275 OUMBS.Graphs <> W:9 var
+R279:279 OUMBS.Graphs <> U:7 var
+binder 261:261 <> S:11
+R285:289 OUMBS.Graphs <> Graph def
+R291:291 OUMBS.Graphs <> W:9 var
+R293:293 OUMBS.Graphs <> V:8 var
+binder 304:304 <> p:12
+R315:315 OUMBS.Graphs <> p:12 var
+R322:322 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R324:325 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R327:327 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R332:339 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R345:348 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R344:344 OUMBS.Graphs <> U:7 var
+binder 340:340 <> y:14
+R357:360 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R349:349 OUMBS.Graphs <> S:11 var
+R351:351 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R353:354 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R356:356 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R355:355 OUMBS.Graphs <> y:14 var
+R361:361 OUMBS.Graphs <> R:10 var
+R363:363 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R365:366 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R368:368 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R364:364 OUMBS.Graphs <> y:14 var
+def 387:389 <> dom
+binder 392:392 <> U:15
+binder 394:394 <> V:16
+R409:413 OUMBS.Graphs <> Graph def
+R415:415 OUMBS.Graphs <> U:15 var
+R417:417 OUMBS.Graphs <> V:16 var
+binder 405:405 <> G:17
+R423:430 Stdlib.Sets.Ensembles <> Ensemble def
+R432:432 OUMBS.Graphs <> U:15 var
+R448:448 OUMBS.Graphs <> U:15 var
+binder 444:444 <> p:18
+R460:460 OUMBS.Graphs <> p:18 var
+R472:479 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R485:487 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R484:484 OUMBS.Graphs <> V:16 var
+binder 480:480 <> y:20
+R488:489 Stdlib.Sets.Ensembles <> In def
+R499:499 OUMBS.Graphs <> G:17 var
+R501:501 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R503:504 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R506:506 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R505:505 OUMBS.Graphs <> y:20 var
+R493:495 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R492:492 OUMBS.Graphs <> U:15 var
+R496:496 OUMBS.Graphs <> V:16 var
+def 525:527 <> ran
+binder 530:530 <> U:21
+binder 532:532 <> V:22
+R547:551 OUMBS.Graphs <> Graph def
+R553:553 OUMBS.Graphs <> U:21 var
+R555:555 OUMBS.Graphs <> V:22 var
+binder 543:543 <> G:23
+R561:568 Stdlib.Sets.Ensembles <> Ensemble def
+R570:570 OUMBS.Graphs <> V:22 var
+R586:586 OUMBS.Graphs <> V:22 var
+binder 582:582 <> p:24
+R598:598 OUMBS.Graphs <> p:24 var
+R610:617 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R623:625 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R622:622 OUMBS.Graphs <> U:21 var
+binder 618:618 <> x:26
+R626:627 Stdlib.Sets.Ensembles <> In def
+R637:637 OUMBS.Graphs <> G:23 var
+R639:639 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R641:642 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R644:644 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R640:640 OUMBS.Graphs <> x:26 var
+R631:633 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R630:630 OUMBS.Graphs <> U:21 var
+R634:634 OUMBS.Graphs <> V:22 var
+def 663:666 <> prod
+binder 669:670 <> T1:27
+binder 672:673 <> T2:28
+R689:696 Stdlib.Sets.Ensembles <> Ensemble def
+R698:699 OUMBS.Graphs <> T1:27 var
+binder 685:685 <> X:29
+R707:714 Stdlib.Sets.Ensembles <> Ensemble def
+R716:717 OUMBS.Graphs <> T2:28 var
+binder 703:703 <> Y:30
+R722:729 Stdlib.Sets.Ensembles <> Ensemble def
+R734:736 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R732:733 OUMBS.Graphs <> T1:27 var
+R737:738 OUMBS.Graphs <> T2:28 var
+binder 750:750 <> p:31
+R770:773 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R755:756 Stdlib.Sets.Ensembles <> In def
+R761:761 OUMBS.Graphs <> X:29 var
+R764:766 Corelib.Init.Datatypes <> fst def
+R768:768 OUMBS.Graphs <> p:31 var
+R758:759 OUMBS.Graphs <> T1:27 var
+R774:775 Stdlib.Sets.Ensembles <> In def
+R780:780 OUMBS.Graphs <> Y:30 var
+R783:785 Corelib.Init.Datatypes <> snd def
+R787:787 OUMBS.Graphs <> p:31 var
+R777:778 OUMBS.Graphs <> T2:28 var
+def 803:813 <> Restriction
+binder 816:816 <> U:32
+binder 818:818 <> V:33
+R833:837 OUMBS.Graphs <> Graph def
+R839:839 OUMBS.Graphs <> U:32 var
+R841:841 OUMBS.Graphs <> V:33 var
+binder 829:829 <> G:34
+R849:856 Stdlib.Sets.Ensembles <> Ensemble def
+R858:858 OUMBS.Graphs <> U:32 var
+binder 845:845 <> B:35
+binder 870:870 <> p:36
+R881:881 OUMBS.Graphs <> p:36 var
+R888:888 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R890:891 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R893:893 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R917:920 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R898:899 Stdlib.Sets.Ensembles <> In def
+R909:909 OUMBS.Graphs <> G:34 var
+R911:911 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R913:914 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R916:916 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R903:905 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R902:902 OUMBS.Graphs <> U:32 var
+R906:906 OUMBS.Graphs <> V:33 var
+R921:922 Stdlib.Sets.Ensembles <> In def
+R926:926 OUMBS.Graphs <> B:35 var
+R924:924 OUMBS.Graphs <> U:32 var
+def 947:961 <> Restriction_ran
+binder 964:964 <> U:38
+binder 966:966 <> V:39
+R981:985 OUMBS.Graphs <> Graph def
+R987:987 OUMBS.Graphs <> U:38 var
+R989:989 OUMBS.Graphs <> V:39 var
+binder 977:977 <> G:40
+R997:1004 Stdlib.Sets.Ensembles <> Ensemble def
+R1006:1006 OUMBS.Graphs <> U:38 var
+binder 993:993 <> B:41
+binder 1018:1018 <> p:42
+R1029:1029 OUMBS.Graphs <> p:42 var
+R1041:1047 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1053:1054 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1052:1052 OUMBS.Graphs <> U:38 var
+binder 1048:1048 <> x:44
+R1074:1077 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1055:1056 Stdlib.Sets.Ensembles <> In def
+R1066:1066 OUMBS.Graphs <> G:40 var
+R1068:1068 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1070:1071 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1073:1073 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1069:1069 OUMBS.Graphs <> x:44 var
+R1060:1062 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1059:1059 OUMBS.Graphs <> U:38 var
+R1063:1063 OUMBS.Graphs <> V:39 var
+R1078:1079 Stdlib.Sets.Ensembles <> In def
+R1083:1083 OUMBS.Graphs <> B:41 var
+R1085:1085 OUMBS.Graphs <> x:44 var
+R1081:1081 OUMBS.Graphs <> U:38 var

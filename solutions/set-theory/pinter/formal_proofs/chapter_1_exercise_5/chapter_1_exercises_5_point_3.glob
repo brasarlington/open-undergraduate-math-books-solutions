@@ -1,0 +1,47 @@
+DIGEST ab754fd000d46ff53e1aef8783f0a829
+FOUMBS.chapter_1_exercises_5_point_3
+R27:40 Stdlib.Sets.Ensembles <> <> lib
+R69:74 OUMBS.Graphs <> <> lib
+prf 86:97 <> exercise_3_1
+binder 109:109 <> U:1
+binder 111:111 <> V:2
+binder 113:113 <> W:3
+R127:131 OUMBS.Graphs <> Graph def
+R133:133 OUMBS.chapter_1_exercises_5_point_3 <> U:1 var
+R135:135 OUMBS.chapter_1_exercises_5_point_3 <> V:2 var
+binder 123:123 <> G:4
+R143:147 OUMBS.Graphs <> Graph def
+R149:149 OUMBS.chapter_1_exercises_5_point_3 <> W:3 var
+R151:151 OUMBS.chapter_1_exercises_5_point_3 <> U:1 var
+binder 139:139 <> H:5
+R183:188 Corelib.Init.Notations <> ::type_scope:x_'->'_x not
+R157:164 Stdlib.Sets.Ensembles <> Included def
+R169:171 OUMBS.Graphs <> ran def
+R173:173 OUMBS.chapter_1_exercises_5_point_3 <> H:5 var
+R177:179 OUMBS.Graphs <> dom def
+R181:181 OUMBS.chapter_1_exercises_5_point_3 <> G:4 var
+R166:166 OUMBS.chapter_1_exercises_5_point_3 <> U:1 var
+R206:208 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R189:191 OUMBS.Graphs <> dom def
+R194:200 OUMBS.Graphs <> Compose def
+R204:204 OUMBS.chapter_1_exercises_5_point_3 <> H:5 var
+R202:202 OUMBS.chapter_1_exercises_5_point_3 <> G:4 var
+R209:211 OUMBS.Graphs <> dom def
+R213:213 OUMBS.chapter_1_exercises_5_point_3 <> H:5 var
+R241:264 Stdlib.Sets.Ensembles <> Extensionality_Ensembles prfax
+R276:283 Stdlib.Sets.Ensembles <> Same_set def
+R286:293 Stdlib.Sets.Ensembles <> Included def
+R296:297 Stdlib.Sets.Ensembles <> In def
+R300:302 OUMBS.Graphs <> dom def
+R305:307 OUMBS.Graphs <> ran def
+R310:316 OUMBS.Graphs <> Compose def
+R319:320 Stdlib.Sets.Ensembles <> In def
+R453:459 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R466:467 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 460:461 <> x0:6
+R469:469 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R472:473 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R475:475 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R470:471 OUMBS.chapter_1_exercises_5_point_3 <> x0:6 var
+binder 460:461 <> x0:7
+R470:471 OUMBS.chapter_1_exercises_5_point_3 <> x0:7 var

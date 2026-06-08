@@ -1,0 +1,94 @@
+DIGEST d616837e9ac6a79df85571995c1522e3
+FOUMBS.chapter_1_exercises_5_point_8
+R27:40 Stdlib.Sets.Ensembles <> <> lib
+R69:74 OUMBS.Graphs <> <> lib
+prf 86:97 <> exercise_8_a
+binder 109:109 <> U:1
+binder 111:111 <> V:2
+R128:132 OUMBS.Graphs <> Graph def
+R134:134 OUMBS.chapter_1_exercises_5_point_8 <> U:1 var
+R136:136 OUMBS.chapter_1_exercises_5_point_8 <> V:2 var
+binder 124:124 <> G:3
+R144:151 Stdlib.Sets.Ensembles <> Ensemble def
+R153:153 OUMBS.chapter_1_exercises_5_point_8 <> U:1 var
+binder 140:140 <> A:4
+R161:168 Stdlib.Sets.Ensembles <> Ensemble def
+R170:170 OUMBS.chapter_1_exercises_5_point_8 <> V:2 var
+binder 157:157 <> B:5
+R205:210 Corelib.Init.Notations <> ::type_scope:x_'->'_x not
+R176:183 Stdlib.Sets.Ensembles <> Included def
+R193:193 OUMBS.chapter_1_exercises_5_point_8 <> G:3 var
+R196:199 OUMBS.Graphs <> prod def
+R203:203 OUMBS.chapter_1_exercises_5_point_8 <> B:5 var
+R201:201 OUMBS.chapter_1_exercises_5_point_8 <> A:4 var
+R187:189 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R186:186 OUMBS.chapter_1_exercises_5_point_8 <> U:1 var
+R190:190 OUMBS.chapter_1_exercises_5_point_8 <> V:2 var
+R211:218 Stdlib.Sets.Ensembles <> Included def
+R229:235 OUMBS.Graphs <> Inverse def
+R237:237 OUMBS.chapter_1_exercises_5_point_8 <> G:3 var
+R241:244 OUMBS.Graphs <> prod def
+R248:248 OUMBS.chapter_1_exercises_5_point_8 <> A:4 var
+R246:246 OUMBS.chapter_1_exercises_5_point_8 <> B:5 var
+R222:224 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R221:221 OUMBS.chapter_1_exercises_5_point_8 <> V:2 var
+R225:225 OUMBS.chapter_1_exercises_5_point_8 <> U:1 var
+R278:285 Stdlib.Sets.Ensembles <> Included def
+R288:289 Stdlib.Sets.Ensembles <> In def
+R292:298 OUMBS.Graphs <> Inverse def
+R301:307 OUMBS.Graphs <> Compose def
+R310:311 Stdlib.Sets.Ensembles <> In def
+prf 435:446 <> exercise_8_b
+binder 458:458 <> U:6
+binder 460:460 <> V:7
+binder 462:462 <> W:8
+R478:482 OUMBS.Graphs <> Graph def
+R484:484 OUMBS.chapter_1_exercises_5_point_8 <> V:7 var
+R486:486 OUMBS.chapter_1_exercises_5_point_8 <> U:6 var
+binder 474:474 <> G:9
+R494:501 Stdlib.Sets.Ensembles <> Ensemble def
+R503:503 OUMBS.chapter_1_exercises_5_point_8 <> V:7 var
+binder 490:490 <> A:10
+R511:518 Stdlib.Sets.Ensembles <> Ensemble def
+R520:520 OUMBS.chapter_1_exercises_5_point_8 <> U:6 var
+binder 507:507 <> B:11
+R530:534 OUMBS.Graphs <> Graph def
+R536:536 OUMBS.chapter_1_exercises_5_point_8 <> U:6 var
+R538:538 OUMBS.chapter_1_exercises_5_point_8 <> W:8 var
+binder 526:526 <> H:12
+R546:553 Stdlib.Sets.Ensembles <> Ensemble def
+R555:555 OUMBS.chapter_1_exercises_5_point_8 <> W:8 var
+binder 542:542 <> C:13
+R590:595 Corelib.Init.Notations <> ::type_scope:x_'->'_x not
+R561:568 Stdlib.Sets.Ensembles <> Included def
+R578:578 OUMBS.chapter_1_exercises_5_point_8 <> G:9 var
+R581:584 OUMBS.Graphs <> prod def
+R588:588 OUMBS.chapter_1_exercises_5_point_8 <> B:11 var
+R586:586 OUMBS.chapter_1_exercises_5_point_8 <> A:10 var
+R572:574 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R571:571 OUMBS.chapter_1_exercises_5_point_8 <> V:7 var
+R575:575 OUMBS.chapter_1_exercises_5_point_8 <> U:6 var
+R625:630 Corelib.Init.Notations <> ::type_scope:x_'->'_x not
+R596:603 Stdlib.Sets.Ensembles <> Included def
+R613:613 OUMBS.chapter_1_exercises_5_point_8 <> H:12 var
+R616:619 OUMBS.Graphs <> prod def
+R623:623 OUMBS.chapter_1_exercises_5_point_8 <> C:13 var
+R621:621 OUMBS.chapter_1_exercises_5_point_8 <> B:11 var
+R607:609 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R606:606 OUMBS.chapter_1_exercises_5_point_8 <> U:6 var
+R610:610 OUMBS.chapter_1_exercises_5_point_8 <> W:8 var
+R631:638 Stdlib.Sets.Ensembles <> Included def
+R649:655 OUMBS.Graphs <> Compose def
+R659:659 OUMBS.chapter_1_exercises_5_point_8 <> G:9 var
+R657:657 OUMBS.chapter_1_exercises_5_point_8 <> H:12 var
+R663:666 OUMBS.Graphs <> prod def
+R670:670 OUMBS.chapter_1_exercises_5_point_8 <> C:13 var
+R668:668 OUMBS.chapter_1_exercises_5_point_8 <> A:10 var
+R642:644 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R641:641 OUMBS.chapter_1_exercises_5_point_8 <> V:7 var
+R645:645 OUMBS.chapter_1_exercises_5_point_8 <> W:8 var
+R700:707 Stdlib.Sets.Ensembles <> Included def
+R710:711 Stdlib.Sets.Ensembles <> In def
+R714:720 OUMBS.Graphs <> Compose def
+R723:726 OUMBS.Graphs <> prod def
+R729:730 Stdlib.Sets.Ensembles <> In def
