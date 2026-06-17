@@ -1,0 +1,50 @@
+DIGEST b1a0a35ed5ad7470bec8821542b218fa
+FOUMBS.chapter_1_exercises_7_point_1
+R26:36 OUMBS.Definitions <> <> lib
+prf 48:59 <> exercise_1_a
+R77:81 OUMBS.Definitions <> Class defax
+binder 71:71 <> A:1
+binder 73:73 <> B:2
+R95:100 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R87:92 OUMBS.Definitions <> is_set def
+R94:94 OUMBS.chapter_1_exercises_7_point_1 <> A:1 var
+R109:115 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R101:106 OUMBS.Definitions <> is_set def
+R108:108 OUMBS.chapter_1_exercises_7_point_1 <> B:2 var
+R116:121 OUMBS.Definitions <> is_set def
+R124:127 OUMBS.Definitions <> Diff defax
+R129:129 OUMBS.chapter_1_exercises_7_point_1 <> A:1 var
+R131:131 OUMBS.chapter_1_exercises_7_point_1 <> B:2 var
+R168:175 OUMBS.Definitions <> subclass def
+R178:181 OUMBS.Definitions <> Diff defax
+R168:175 OUMBS.Definitions <> subclass def
+R178:181 OUMBS.Definitions <> Diff defax
+R205:212 OUMBS.Definitions <> subclass def
+R229:236 OUMBS.Definitions <> diff_def prfax
+R229:236 OUMBS.Definitions <> diff_def prfax
+R295:309 OUMBS.Definitions <> A3_subclass_set prfax
+R295:309 OUMBS.Definitions <> A3_subclass_set prfax
+prf 369:380 <> exercise_1_b
+R398:402 OUMBS.Definitions <> Class defax
+binder 392:392 <> A:3
+binder 394:394 <> B:4
+R416:421 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R408:413 OUMBS.Definitions <> is_set def
+R415:415 OUMBS.chapter_1_exercises_7_point_1 <> A:3 var
+R430:436 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R422:427 OUMBS.Definitions <> is_set def
+R429:429 OUMBS.chapter_1_exercises_7_point_1 <> B:4 var
+R437:442 OUMBS.Definitions <> is_set def
+R445:448 OUMBS.Definitions <> Plus defax
+R450:450 OUMBS.chapter_1_exercises_7_point_1 <> A:3 var
+R452:452 OUMBS.chapter_1_exercises_7_point_1 <> B:4 var
+R482:496 OUMBS.Definitions <> A3_subclass_set prfax
+R499:503 OUMBS.Definitions <> Union defax
+R511:514 OUMBS.Definitions <> Plus defax
+R482:496 OUMBS.Definitions <> A3_subclass_set prfax
+R499:503 OUMBS.Definitions <> Union defax
+R511:514 OUMBS.Definitions <> Plus defax
+R533:544 OUMBS.Definitions <> union_is_set thm
+R533:544 OUMBS.Definitions <> union_is_set thm
+R576:594 OUMBS.Definitions <> Plus_subclass_union thm
+R576:594 OUMBS.Definitions <> Plus_subclass_union thm

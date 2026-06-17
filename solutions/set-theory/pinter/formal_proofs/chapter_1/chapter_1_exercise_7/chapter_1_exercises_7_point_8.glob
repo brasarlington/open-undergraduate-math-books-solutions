@@ -1,0 +1,194 @@
+DIGEST a63d7ab9a75732f3b73be0908d67a791
+FOUMBS.chapter_1_exercises_7_point_8
+R26:36 OUMBS.Definitions <> <> lib
+prf 48:59 <> exercise_8_a
+R77:81 OUMBS.Definitions <> Class defax
+binder 71:71 <> A:1
+binder 73:73 <> B:2
+R99:103 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R87:94 OUMBS.Definitions <> subclass def
+R96:96 OUMBS.chapter_1_exercises_7_point_8 <> A:1 var
+R98:98 OUMBS.chapter_1_exercises_7_point_8 <> B:2 var
+R104:111 OUMBS.Definitions <> subclass def
+R114:121 OUMBS.Definitions <> PowerSet defax
+R123:123 OUMBS.chapter_1_exercises_7_point_8 <> A:1 var
+R127:134 OUMBS.Definitions <> PowerSet defax
+R136:136 OUMBS.chapter_1_exercises_7_point_8 <> B:2 var
+R164:171 OUMBS.Definitions <> subclass def
+R199:207 OUMBS.Definitions <> power_def prfax
+R199:207 OUMBS.Definitions <> power_def prfax
+R226:234 OUMBS.Definitions <> power_def prfax
+R226:234 OUMBS.Definitions <> power_def prfax
+R257:264 OUMBS.Definitions <> subclass def
+R346:372 OUMBS.Definitions <> element_means_pair_in_power thm
+R346:372 OUMBS.Definitions <> element_means_pair_in_power thm
+R403:406 OUMBS.Definitions <> Pair defax
+R403:406 OUMBS.Definitions <> Pair defax
+R429:437 OUMBS.Definitions <> pair_in_m thm
+R429:437 OUMBS.Definitions <> pair_in_m thm
+R480:490 OUMBS.Definitions <> A5_pair_set prfax
+R480:490 OUMBS.Definitions <> A5_pair_set prfax
+prf 517:528 <> exercise_8_b
+R546:550 OUMBS.Definitions <> Class defax
+binder 540:540 <> A:3
+binder 542:542 <> B:4
+R561:565 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R557:559 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R556:556 OUMBS.chapter_1_exercises_7_point_8 <> A:3 var
+R560:560 OUMBS.chapter_1_exercises_7_point_8 <> B:4 var
+R576:578 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R566:573 OUMBS.Definitions <> PowerSet defax
+R575:575 OUMBS.chapter_1_exercises_7_point_8 <> A:3 var
+R579:586 OUMBS.Definitions <> PowerSet defax
+R588:588 OUMBS.chapter_1_exercises_7_point_8 <> B:4 var
+R669:677 OUMBS.Definitions <> A1_extent prfax
+R669:677 OUMBS.Definitions <> A1_extent prfax
+R716:742 OUMBS.Definitions <> element_means_pair_in_power thm
+R716:742 OUMBS.Definitions <> element_means_pair_in_power thm
+R774:782 OUMBS.Definitions <> pair_in_m thm
+R774:782 OUMBS.Definitions <> pair_in_m thm
+R832:858 OUMBS.Definitions <> element_means_pair_in_power thm
+R832:858 OUMBS.Definitions <> element_means_pair_in_power thm
+R893:901 OUMBS.Definitions <> pair_in_m thm
+R893:901 OUMBS.Definitions <> pair_in_m thm
+prf 944:955 <> exercise_8_c
+R973:977 OUMBS.Definitions <> Class defax
+binder 967:967 <> A:5
+binder 969:969 <> B:6
+R1021:1023 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R983:994 OUMBS.Definitions <> Intersection defax
+R997:1004 OUMBS.Definitions <> PowerSet defax
+R1006:1006 OUMBS.chapter_1_exercises_7_point_8 <> A:5 var
+R1010:1017 OUMBS.Definitions <> PowerSet defax
+R1019:1019 OUMBS.chapter_1_exercises_7_point_8 <> B:6 var
+R1024:1031 OUMBS.Definitions <> PowerSet defax
+R1034:1045 OUMBS.Definitions <> Intersection defax
+R1047:1047 OUMBS.chapter_1_exercises_7_point_8 <> A:5 var
+R1049:1049 OUMBS.chapter_1_exercises_7_point_8 <> B:6 var
+R1076:1084 OUMBS.Definitions <> A1_extent prfax
+R1076:1084 OUMBS.Definitions <> A1_extent prfax
+R1120:1128 OUMBS.Definitions <> inter_def prfax
+R1120:1128 OUMBS.Definitions <> inter_def prfax
+R1163:1171 OUMBS.Definitions <> power_def prfax
+R1163:1171 OUMBS.Definitions <> power_def prfax
+R1190:1197 OUMBS.Definitions <> subclass def
+R1221:1229 OUMBS.Definitions <> power_def prfax
+R1221:1229 OUMBS.Definitions <> power_def prfax
+R1221:1229 OUMBS.Definitions <> power_def prfax
+R1303:1311 OUMBS.Definitions <> inter_def prfax
+R1303:1311 OUMBS.Definitions <> inter_def prfax
+R1430:1438 OUMBS.Definitions <> power_def prfax
+R1430:1438 OUMBS.Definitions <> power_def prfax
+R1460:1468 OUMBS.Definitions <> inter_def prfax
+R1460:1468 OUMBS.Definitions <> inter_def prfax
+R1504:1512 OUMBS.Definitions <> power_def prfax
+R1504:1512 OUMBS.Definitions <> power_def prfax
+R1531:1538 OUMBS.Definitions <> subclass def
+R1577:1585 OUMBS.Definitions <> inter_def prfax
+R1577:1585 OUMBS.Definitions <> inter_def prfax
+R1641:1649 OUMBS.Definitions <> power_def prfax
+R1641:1649 OUMBS.Definitions <> power_def prfax
+R1668:1675 OUMBS.Definitions <> subclass def
+R1714:1722 OUMBS.Definitions <> inter_def prfax
+R1714:1722 OUMBS.Definitions <> inter_def prfax
+prf 1791:1802 <> exercise_8_d
+R1820:1824 OUMBS.Definitions <> Class defax
+binder 1814:1814 <> A:7
+binder 1816:1816 <> B:8
+R1830:1837 OUMBS.Definitions <> subclass def
+R1840:1844 OUMBS.Definitions <> Union defax
+R1847:1854 OUMBS.Definitions <> PowerSet defax
+R1856:1856 OUMBS.chapter_1_exercises_7_point_8 <> A:7 var
+R1860:1867 OUMBS.Definitions <> PowerSet defax
+R1869:1869 OUMBS.chapter_1_exercises_7_point_8 <> B:8 var
+R1874:1881 OUMBS.Definitions <> PowerSet defax
+R1884:1888 OUMBS.Definitions <> Union defax
+R1890:1890 OUMBS.chapter_1_exercises_7_point_8 <> A:7 var
+R1892:1892 OUMBS.chapter_1_exercises_7_point_8 <> B:8 var
+R1913:1920 OUMBS.Definitions <> subclass def
+R1937:1945 OUMBS.Definitions <> union_def prfax
+R1937:1945 OUMBS.Definitions <> union_def prfax
+R1979:1987 OUMBS.Definitions <> power_def prfax
+R1979:1987 OUMBS.Definitions <> power_def prfax
+R2012:2020 OUMBS.Definitions <> power_def prfax
+R2012:2020 OUMBS.Definitions <> power_def prfax
+R2039:2046 OUMBS.Definitions <> subclass def
+R2094:2102 OUMBS.Definitions <> union_def prfax
+R2094:2102 OUMBS.Definitions <> union_def prfax
+R2187:2195 OUMBS.Definitions <> power_def prfax
+R2187:2195 OUMBS.Definitions <> power_def prfax
+R2213:2221 OUMBS.Definitions <> power_def prfax
+R2213:2221 OUMBS.Definitions <> power_def prfax
+R2247:2254 OUMBS.Definitions <> subclass def
+R2271:2279 OUMBS.Definitions <> union_def prfax
+R2271:2279 OUMBS.Definitions <> union_def prfax
+prf 2411:2424 <> PowerSet_Empty
+R2442:2444 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2428:2435 OUMBS.Definitions <> PowerSet defax
+R2437:2441 OUMBS.Definitions <> Empty defax
+R2445:2448 OUMBS.Definitions <> Pair defax
+R2450:2454 OUMBS.Definitions <> Empty defax
+R2456:2460 OUMBS.Definitions <> Empty defax
+R2478:2486 OUMBS.Definitions <> A1_extent prfax
+R2478:2486 OUMBS.Definitions <> A1_extent prfax
+R2522:2538 OUMBS.Definitions <> PowerSet_Empty_eq thm
+R2522:2538 OUMBS.Definitions <> PowerSet_Empty_eq thm
+R2569:2576 OUMBS.Definitions <> pair_def prfax
+R2569:2576 OUMBS.Definitions <> pair_def prfax
+R2585:2596 OUMBS.Definitions <> A4_empty_set prfax
+R2585:2596 OUMBS.Definitions <> A4_empty_set prfax
+R2649:2656 OUMBS.Definitions <> pair_def prfax
+R2649:2656 OUMBS.Definitions <> pair_def prfax
+R2696:2709 OUMBS.Definitions <> Empty_in_Power thm
+R2696:2709 OUMBS.Definitions <> Empty_in_Power thm
+R2720:2733 OUMBS.Definitions <> Empty_in_Power thm
+R2720:2733 OUMBS.Definitions <> Empty_in_Power thm
+prf 2759:2770 <> exercise_8_e
+R2788:2792 OUMBS.Definitions <> Class defax
+binder 2782:2782 <> A:9
+binder 2784:2784 <> B:10
+R2822:2826 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R2814:2816 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2798:2809 OUMBS.Definitions <> Intersection defax
+R2811:2811 OUMBS.chapter_1_exercises_7_point_8 <> A:9 var
+R2813:2813 OUMBS.chapter_1_exercises_7_point_8 <> B:10 var
+R2817:2821 OUMBS.Definitions <> Empty defax
+R2865:2868 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2885:2885 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2827:2838 OUMBS.Definitions <> Intersection defax
+R2841:2848 OUMBS.Definitions <> PowerSet defax
+R2850:2850 OUMBS.chapter_1_exercises_7_point_8 <> A:9 var
+R2854:2861 OUMBS.Definitions <> PowerSet defax
+R2863:2863 OUMBS.chapter_1_exercises_7_point_8 <> B:10 var
+R2869:2872 OUMBS.Definitions <> Pair defax
+R2874:2878 OUMBS.Definitions <> Empty defax
+R2880:2884 OUMBS.Definitions <> Empty defax
+R2930:2938 OUMBS.Definitions <> A1_extent prfax
+R2930:2938 OUMBS.Definitions <> A1_extent prfax
+R2979:2990 OUMBS.chapter_1_exercises_7_point_8 <> exercise_8_c thm
+R2979:2990 OUMBS.chapter_1_exercises_7_point_8 <> exercise_8_c thm
+R2979:2990 OUMBS.chapter_1_exercises_7_point_8 <> exercise_8_c thm
+R3029:3045 OUMBS.Definitions <> PowerSet_Empty_eq thm
+R3029:3045 OUMBS.Definitions <> PowerSet_Empty_eq thm
+R3060:3067 OUMBS.Definitions <> pair_def prfax
+R3060:3067 OUMBS.Definitions <> pair_def prfax
+R3134:3141 OUMBS.Definitions <> pair_def prfax
+R3134:3141 OUMBS.Definitions <> pair_def prfax
+R3180:3188 OUMBS.Definitions <> inter_def prfax
+R3180:3188 OUMBS.Definitions <> inter_def prfax
+R3226:3239 OUMBS.Definitions <> Empty_in_Power thm
+R3226:3239 OUMBS.Definitions <> Empty_in_Power thm
+R3226:3239 OUMBS.Definitions <> Empty_in_Power thm
+R3259:3267 OUMBS.Definitions <> inter_def prfax
+R3259:3267 OUMBS.Definitions <> inter_def prfax
+R3305:3318 OUMBS.Definitions <> Empty_in_Power thm
+R3305:3318 OUMBS.Definitions <> Empty_in_Power thm
+R3305:3318 OUMBS.Definitions <> Empty_in_Power thm
+R3362:3373 OUMBS.chapter_1_exercises_7_point_8 <> exercise_8_c thm
+R3362:3373 OUMBS.chapter_1_exercises_7_point_8 <> exercise_8_c thm
+R3362:3373 OUMBS.chapter_1_exercises_7_point_8 <> exercise_8_c thm
+R3392:3405 OUMBS.chapter_1_exercises_7_point_8 <> PowerSet_Empty thm
+R3392:3405 OUMBS.chapter_1_exercises_7_point_8 <> PowerSet_Empty thm
+R3392:3405 OUMBS.chapter_1_exercises_7_point_8 <> PowerSet_Empty thm
+R3419:3430 OUMBS.chapter_1_exercises_7_point_8 <> exercise_8_b thm
+R3419:3430 OUMBS.chapter_1_exercises_7_point_8 <> exercise_8_b thm

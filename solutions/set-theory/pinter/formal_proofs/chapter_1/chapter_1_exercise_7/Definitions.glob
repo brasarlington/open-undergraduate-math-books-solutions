@@ -1,0 +1,902 @@
+DIGEST fdb6e083855c9315fa658a2a18534e2f
+FOUMBS.Definitions
+ax 10:14 <> Class
+ax 35:36 <> In
+R45:48 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R40:44 OUMBS.Definitions <> Class defax
+R54:57 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R49:53 OUMBS.Definitions <> Class defax
+def 76:81 <> is_set
+R88:92 OUMBS.Definitions <> Class defax
+binder 84:84 <> X:5
+R105:111 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R121:122 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R116:120 OUMBS.Definitions <> Class defax
+binder 112:112 <> Y:6
+R123:124 OUMBS.Definitions <> In defax
+R126:126 OUMBS.Definitions <> X:5 var
+R128:128 OUMBS.Definitions <> Y:6 var
+def 143:154 <> proper_class
+R161:165 OUMBS.Definitions <> Class defax
+binder 157:157 <> X:7
+R178:179 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R180:185 OUMBS.Definitions <> is_set def
+R187:187 OUMBS.Definitions <> X:7 var
+def 202:209 <> subclass
+R218:222 OUMBS.Definitions <> Class defax
+binder 212:212 <> A:8
+binder 214:214 <> B:9
+binder 242:242 <> x:10
+R253:256 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R245:250 OUMBS.Definitions <> is_set def
+R252:252 OUMBS.Definitions <> x:10 var
+R263:266 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R257:258 OUMBS.Definitions <> In defax
+R260:260 OUMBS.Definitions <> x:10 var
+R262:262 OUMBS.Definitions <> A:8 var
+R267:268 OUMBS.Definitions <> In defax
+R270:270 OUMBS.Definitions <> x:10 var
+R272:272 OUMBS.Definitions <> B:9 var
+ax 282:290 <> A1_extent
+binder 301:301 <> A:11
+binder 303:303 <> B:12
+R309:309 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R351:355 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 317:317 <> x:13
+R328:332 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R350:350 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R320:325 OUMBS.Definitions <> is_set def
+R327:327 OUMBS.Definitions <> x:13 var
+R339:343 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R333:334 OUMBS.Definitions <> In defax
+R336:336 OUMBS.Definitions <> x:13 var
+R338:338 OUMBS.Definitions <> A:11 var
+R344:345 OUMBS.Definitions <> In defax
+R347:347 OUMBS.Definitions <> x:13 var
+R349:349 OUMBS.Definitions <> B:12 var
+R357:359 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R356:356 OUMBS.Definitions <> A:11 var
+R360:360 OUMBS.Definitions <> B:12 var
+ax 374:385 <> Intersection
+R393:396 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R388:392 OUMBS.Definitions <> Class defax
+R402:405 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R397:401 OUMBS.Definitions <> Class defax
+R406:410 OUMBS.Definitions <> Class defax
+ax 419:427 <> inter_def
+binder 438:438 <> A:18
+binder 440:440 <> B:19
+binder 442:442 <> x:20
+R453:457 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R502:502 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R445:450 OUMBS.Definitions <> is_set def
+R452:452 OUMBS.Definitions <> x:20 var
+R481:485 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R458:459 OUMBS.Definitions <> In defax
+R461:461 OUMBS.Definitions <> x:20 var
+R464:475 OUMBS.Definitions <> Intersection defax
+R477:477 OUMBS.Definitions <> A:18 var
+R479:479 OUMBS.Definitions <> B:19 var
+R492:495 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R486:487 OUMBS.Definitions <> In defax
+R489:489 OUMBS.Definitions <> x:20 var
+R491:491 OUMBS.Definitions <> A:18 var
+R496:497 OUMBS.Definitions <> In defax
+R499:499 OUMBS.Definitions <> x:20 var
+R501:501 OUMBS.Definitions <> B:19 var
+ax 516:520 <> Union
+R528:531 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R523:527 OUMBS.Definitions <> Class defax
+R537:540 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R532:536 OUMBS.Definitions <> Class defax
+R541:545 OUMBS.Definitions <> Class defax
+ax 554:562 <> union_def
+binder 573:573 <> A:25
+binder 575:575 <> B:26
+binder 577:577 <> x:27
+R588:592 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R630:630 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R580:585 OUMBS.Definitions <> is_set def
+R587:587 OUMBS.Definitions <> x:27 var
+R609:613 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R593:594 OUMBS.Definitions <> In defax
+R596:596 OUMBS.Definitions <> x:27 var
+R599:603 OUMBS.Definitions <> Union defax
+R605:605 OUMBS.Definitions <> A:25 var
+R607:607 OUMBS.Definitions <> B:26 var
+R620:623 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R614:615 OUMBS.Definitions <> In defax
+R617:617 OUMBS.Definitions <> x:27 var
+R619:619 OUMBS.Definitions <> A:25 var
+R624:625 OUMBS.Definitions <> In defax
+R627:627 OUMBS.Definitions <> x:27 var
+R629:629 OUMBS.Definitions <> B:26 var
+ax 644:647 <> Diff
+R655:658 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R650:654 OUMBS.Definitions <> Class defax
+R664:667 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R659:663 OUMBS.Definitions <> Class defax
+R668:672 OUMBS.Definitions <> Class defax
+ax 681:688 <> diff_def
+binder 699:699 <> A:32
+binder 701:701 <> B:33
+binder 703:703 <> x:34
+R714:718 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R758:758 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R706:711 OUMBS.Definitions <> is_set def
+R713:713 OUMBS.Definitions <> x:34 var
+R734:738 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R719:720 OUMBS.Definitions <> In defax
+R722:722 OUMBS.Definitions <> x:34 var
+R725:728 OUMBS.Definitions <> Diff defax
+R730:730 OUMBS.Definitions <> A:32 var
+R732:732 OUMBS.Definitions <> B:33 var
+R745:748 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R739:740 OUMBS.Definitions <> In defax
+R742:742 OUMBS.Definitions <> x:34 var
+R744:744 OUMBS.Definitions <> A:32 var
+R749:750 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R757:757 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R751:752 OUMBS.Definitions <> In defax
+R754:754 OUMBS.Definitions <> x:34 var
+R756:756 OUMBS.Definitions <> B:33 var
+ax 768:782 <> A3_subclass_set
+binder 793:793 <> A:37
+binder 795:795 <> B:38
+R806:809 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R798:803 OUMBS.Definitions <> is_set def
+R805:805 OUMBS.Definitions <> A:37 var
+R822:825 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R810:817 OUMBS.Definitions <> subclass def
+R819:819 OUMBS.Definitions <> B:38 var
+R821:821 OUMBS.Definitions <> A:37 var
+R826:831 OUMBS.Definitions <> is_set def
+R833:833 OUMBS.Definitions <> B:38 var
+ax 846:849 <> Plus
+R857:860 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R852:856 OUMBS.Definitions <> Class defax
+R866:869 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R861:865 OUMBS.Definitions <> Class defax
+R870:874 OUMBS.Definitions <> Class defax
+ax 883:890 <> plus_def
+binder 901:901 <> A:43
+binder 903:903 <> B:44
+binder 905:905 <> x:45
+R916:923 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R978:978 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R908:913 OUMBS.Definitions <> is_set def
+R915:915 OUMBS.Definitions <> x:45 var
+R939:943 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R924:925 OUMBS.Definitions <> In defax
+R927:927 OUMBS.Definitions <> x:45 var
+R930:933 OUMBS.Definitions <> Plus defax
+R935:935 OUMBS.Definitions <> A:43 var
+R937:937 OUMBS.Definitions <> B:44 var
+R944:945 OUMBS.Definitions <> In defax
+R947:947 OUMBS.Definitions <> x:45 var
+R950:954 OUMBS.Definitions <> Union defax
+R957:960 OUMBS.Definitions <> Diff defax
+R962:962 OUMBS.Definitions <> A:43 var
+R964:964 OUMBS.Definitions <> B:44 var
+R968:971 OUMBS.Definitions <> Diff defax
+R973:973 OUMBS.Definitions <> B:44 var
+R975:975 OUMBS.Definitions <> A:43 var
+ax 992:996 <> Empty
+R1000:1004 OUMBS.Definitions <> Class defax
+ax 1013:1021 <> empty_def
+binder 1032:1032 <> x:50
+R1043:1046 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1035:1040 OUMBS.Definitions <> is_set def
+R1042:1042 OUMBS.Definitions <> x:50 var
+R1047:1048 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1059:1059 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1049:1050 OUMBS.Definitions <> In defax
+R1052:1052 OUMBS.Definitions <> x:50 var
+R1054:1058 OUMBS.Definitions <> Empty defax
+ax 1068:1079 <> A4_empty_set
+R1083:1088 OUMBS.Definitions <> is_set def
+R1090:1094 OUMBS.Definitions <> Empty defax
+ax 1108:1116 <> Singleton
+R1125:1128 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1120:1124 OUMBS.Definitions <> Class defax
+R1129:1133 OUMBS.Definitions <> Class defax
+ax 1142:1154 <> singleton_def
+binder 1165:1165 <> a:57
+binder 1167:1167 <> x:58
+R1178:1181 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1170:1175 OUMBS.Definitions <> is_set def
+R1177:1177 OUMBS.Definitions <> x:58 var
+R1200:1204 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R1182:1183 OUMBS.Definitions <> In defax
+R1185:1185 OUMBS.Definitions <> x:58 var
+R1188:1196 OUMBS.Definitions <> Singleton defax
+R1198:1198 OUMBS.Definitions <> a:57 var
+R1206:1208 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1205:1205 OUMBS.Definitions <> x:58 var
+R1209:1209 OUMBS.Definitions <> a:57 var
+ax 1223:1226 <> Pair
+R1235:1238 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1230:1234 OUMBS.Definitions <> Class defax
+R1244:1247 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1239:1243 OUMBS.Definitions <> Class defax
+R1248:1252 OUMBS.Definitions <> Class defax
+ax 1261:1268 <> pair_def
+binder 1279:1279 <> a:63
+binder 1281:1281 <> b:64
+binder 1283:1283 <> x:65
+R1294:1298 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1333:1333 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1286:1291 OUMBS.Definitions <> is_set def
+R1293:1293 OUMBS.Definitions <> x:65 var
+R1314:1318 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R1299:1300 OUMBS.Definitions <> In defax
+R1302:1302 OUMBS.Definitions <> x:65 var
+R1305:1308 OUMBS.Definitions <> Pair defax
+R1310:1310 OUMBS.Definitions <> a:63 var
+R1312:1312 OUMBS.Definitions <> b:64 var
+R1324:1327 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1320:1322 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1319:1319 OUMBS.Definitions <> x:65 var
+R1323:1323 OUMBS.Definitions <> a:63 var
+R1329:1331 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1328:1328 OUMBS.Definitions <> x:65 var
+R1332:1332 OUMBS.Definitions <> b:64 var
+ax 1342:1352 <> A5_pair_set
+binder 1363:1363 <> a:68
+binder 1365:1365 <> b:69
+R1376:1379 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1368:1373 OUMBS.Definitions <> is_set def
+R1375:1375 OUMBS.Definitions <> a:68 var
+R1388:1391 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1380:1385 OUMBS.Definitions <> is_set def
+R1387:1387 OUMBS.Definitions <> b:69 var
+R1392:1397 OUMBS.Definitions <> is_set def
+R1400:1403 OUMBS.Definitions <> Pair defax
+R1405:1405 OUMBS.Definitions <> a:68 var
+R1407:1407 OUMBS.Definitions <> b:69 var
+ax 1422:1429 <> GenUnion
+R1438:1441 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1433:1437 OUMBS.Definitions <> Class defax
+R1442:1446 OUMBS.Definitions <> Class defax
+ax 1455:1467 <> gen_union_def
+binder 1478:1478 <> A:74
+binder 1480:1480 <> x:75
+R1491:1498 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1559:1559 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1483:1488 OUMBS.Definitions <> is_set def
+R1490:1490 OUMBS.Definitions <> x:75 var
+R1516:1520 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R1499:1500 OUMBS.Definitions <> In defax
+R1502:1502 OUMBS.Definitions <> x:75 var
+R1505:1512 OUMBS.Definitions <> GenUnion defax
+R1514:1514 OUMBS.Definitions <> A:74 var
+R1521:1527 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1529:1530 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1528:1528 <> Y:76
+R1539:1542 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1531:1536 OUMBS.Definitions <> is_set def
+R1538:1538 OUMBS.Definitions <> Y:76 var
+R1549:1552 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1543:1544 OUMBS.Definitions <> In defax
+R1546:1546 OUMBS.Definitions <> Y:76 var
+R1548:1548 OUMBS.Definitions <> A:74 var
+R1553:1554 OUMBS.Definitions <> In defax
+R1556:1556 OUMBS.Definitions <> x:75 var
+R1558:1558 OUMBS.Definitions <> Y:76 var
+ax 1568:1583 <> A6_gen_union_set
+binder 1594:1594 <> A:79
+R1605:1608 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1597:1602 OUMBS.Definitions <> is_set def
+R1604:1604 OUMBS.Definitions <> A:79 var
+R1609:1614 OUMBS.Definitions <> is_set def
+R1617:1624 OUMBS.Definitions <> GenUnion defax
+R1626:1626 OUMBS.Definitions <> A:79 var
+ax 1641:1648 <> GenInter
+R1657:1660 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1652:1656 OUMBS.Definitions <> Class defax
+R1661:1665 OUMBS.Definitions <> Class defax
+ax 1674:1686 <> gen_inter_def
+binder 1697:1697 <> A:84
+binder 1699:1699 <> x:85
+R1710:1716 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1779:1779 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1702:1707 OUMBS.Definitions <> is_set def
+R1709:1709 OUMBS.Definitions <> x:85 var
+R1734:1739 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R1778:1778 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R1717:1718 OUMBS.Definitions <> In defax
+R1720:1720 OUMBS.Definitions <> x:85 var
+R1723:1730 OUMBS.Definitions <> GenInter defax
+R1732:1732 OUMBS.Definitions <> A:84 var
+binder 1747:1747 <> Y:86
+R1758:1761 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1750:1755 OUMBS.Definitions <> is_set def
+R1757:1757 OUMBS.Definitions <> Y:86 var
+R1768:1771 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1762:1763 OUMBS.Definitions <> In defax
+R1765:1765 OUMBS.Definitions <> Y:86 var
+R1767:1767 OUMBS.Definitions <> A:84 var
+R1772:1773 OUMBS.Definitions <> In defax
+R1775:1775 OUMBS.Definitions <> x:85 var
+R1777:1777 OUMBS.Definitions <> Y:86 var
+ax 1793:1800 <> PowerSet
+R1809:1812 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1804:1808 OUMBS.Definitions <> Class defax
+R1813:1817 OUMBS.Definitions <> Class defax
+ax 1826:1834 <> power_def
+binder 1845:1845 <> A:91
+binder 1847:1847 <> x:92
+R1858:1862 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1897:1897 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1850:1855 OUMBS.Definitions <> is_set def
+R1857:1857 OUMBS.Definitions <> x:92 var
+R1880:1884 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R1863:1864 OUMBS.Definitions <> In defax
+R1866:1866 OUMBS.Definitions <> x:92 var
+R1869:1876 OUMBS.Definitions <> PowerSet defax
+R1878:1878 OUMBS.Definitions <> A:91 var
+R1885:1892 OUMBS.Definitions <> subclass def
+R1894:1894 OUMBS.Definitions <> x:92 var
+R1896:1896 OUMBS.Definitions <> A:91 var
+ax 1906:1917 <> A7_power_set
+binder 1928:1928 <> A:95
+R1939:1942 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1931:1936 OUMBS.Definitions <> is_set def
+R1938:1938 OUMBS.Definitions <> A:95 var
+R1943:1948 OUMBS.Definitions <> is_set def
+R1951:1958 OUMBS.Definitions <> PowerSet defax
+R1960:1960 OUMBS.Definitions <> A:95 var
+ax 1971:1983 <> A8_foundation
+binder 1994:1994 <> A:98
+R2005:2008 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1997:2002 OUMBS.Definitions <> is_set def
+R2004:2004 OUMBS.Definitions <> A:98 var
+R2019:2025 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2010:2013 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2009:2009 OUMBS.Definitions <> A:98 var
+R2014:2018 OUMBS.Definitions <> Empty defax
+R2026:2032 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2034:2035 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2033:2033 <> a:99
+R2042:2046 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2071:2071 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2036:2037 OUMBS.Definitions <> In defax
+R2039:2039 OUMBS.Definitions <> a:99 var
+R2041:2041 OUMBS.Definitions <> A:98 var
+R2063:2065 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2047:2058 OUMBS.Definitions <> Intersection defax
+R2060:2060 OUMBS.Definitions <> a:99 var
+R2062:2062 OUMBS.Definitions <> A:98 var
+R2066:2070 OUMBS.Definitions <> Empty defax
+ax 2085:2093 <> Universal
+R2097:2101 OUMBS.Definitions <> Class defax
+ax 2110:2122 <> universal_def
+binder 2133:2133 <> x:104
+R2144:2148 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2172:2172 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2136:2141 OUMBS.Definitions <> is_set def
+R2143:2143 OUMBS.Definitions <> x:104 var
+R2163:2167 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R2149:2150 OUMBS.Definitions <> In defax
+R2152:2152 OUMBS.Definitions <> x:104 var
+R2154:2162 OUMBS.Definitions <> Universal defax
+R2168:2171 Corelib.Init.Logic <> True ind
+ax 2186:2192 <> Russell
+R2196:2200 OUMBS.Definitions <> Class defax
+ax 2209:2219 <> russell_def
+binder 2230:2230 <> x:109
+R2241:2245 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2272:2272 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2233:2238 OUMBS.Definitions <> is_set def
+R2240:2240 OUMBS.Definitions <> x:109 var
+R2258:2262 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R2246:2247 OUMBS.Definitions <> In defax
+R2249:2249 OUMBS.Definitions <> x:109 var
+R2251:2257 OUMBS.Definitions <> Russell defax
+R2263:2264 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R2271:2271 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R2265:2266 OUMBS.Definitions <> In defax
+R2268:2268 OUMBS.Definitions <> x:109 var
+R2270:2270 OUMBS.Definitions <> x:109 var
+def 2287:2291 <> OPair
+R2300:2304 OUMBS.Definitions <> Class defax
+binder 2294:2294 <> a:112
+binder 2296:2296 <> b:113
+R2309:2313 OUMBS.Definitions <> Class defax
+R2318:2321 OUMBS.Definitions <> Pair defax
+R2324:2327 OUMBS.Definitions <> Pair defax
+R2329:2329 OUMBS.Definitions <> a:112 var
+R2331:2331 OUMBS.Definitions <> a:112 var
+R2335:2338 OUMBS.Definitions <> Pair defax
+R2340:2340 OUMBS.Definitions <> a:112 var
+R2342:2342 OUMBS.Definitions <> b:113 var
+ax 2357:2359 <> Inv
+R2368:2371 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2363:2367 OUMBS.Definitions <> Class defax
+R2372:2376 OUMBS.Definitions <> Class defax
+ax 2385:2391 <> inv_def
+binder 2402:2402 <> G:116
+binder 2404:2404 <> w:117
+R2415:2421 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2536:2536 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2407:2412 OUMBS.Definitions <> is_set def
+R2414:2414 OUMBS.Definitions <> w:117 var
+R2434:2438 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R2422:2423 OUMBS.Definitions <> In defax
+R2425:2425 OUMBS.Definitions <> w:117 var
+R2428:2430 OUMBS.Definitions <> Inv defax
+R2432:2432 OUMBS.Definitions <> G:116 var
+R2439:2445 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2449:2457 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2446:2446 <> x:118
+binder 2448:2448 <> y:119
+R2466:2476 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2458:2463 OUMBS.Definitions <> is_set def
+R2465:2465 OUMBS.Definitions <> x:118 var
+R2485:2495 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2477:2482 OUMBS.Definitions <> is_set def
+R2484:2484 OUMBS.Definitions <> y:119 var
+R2509:2519 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2497:2499 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2496:2496 OUMBS.Definitions <> w:117 var
+R2500:2504 OUMBS.Definitions <> OPair def
+R2506:2506 OUMBS.Definitions <> y:119 var
+R2508:2508 OUMBS.Definitions <> x:118 var
+R2520:2521 OUMBS.Definitions <> In defax
+R2524:2528 OUMBS.Definitions <> OPair def
+R2530:2530 OUMBS.Definitions <> x:118 var
+R2532:2532 OUMBS.Definitions <> y:119 var
+R2535:2535 OUMBS.Definitions <> G:116 var
+ax 2550:2553 <> Comp
+R2562:2565 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2557:2561 OUMBS.Definitions <> Class defax
+R2571:2574 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2566:2570 OUMBS.Definitions <> Class defax
+R2575:2579 OUMBS.Definitions <> Class defax
+ax 2588:2595 <> comp_def
+binder 2606:2606 <> G:124
+binder 2608:2608 <> H:125
+binder 2610:2610 <> w:126
+R2621:2627 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2793:2793 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2613:2618 OUMBS.Definitions <> is_set def
+R2620:2620 OUMBS.Definitions <> w:126 var
+R2643:2647 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R2628:2629 OUMBS.Definitions <> In defax
+R2631:2631 OUMBS.Definitions <> w:126 var
+R2634:2637 OUMBS.Definitions <> Comp defax
+R2639:2639 OUMBS.Definitions <> G:124 var
+R2641:2641 OUMBS.Definitions <> H:125 var
+R2648:2654 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2660:2668 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2655:2655 <> x:127
+binder 2657:2657 <> y:128
+binder 2659:2659 <> z:129
+R2677:2687 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2669:2674 OUMBS.Definitions <> is_set def
+R2676:2676 OUMBS.Definitions <> x:127 var
+R2696:2706 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2688:2693 OUMBS.Definitions <> is_set def
+R2695:2695 OUMBS.Definitions <> y:128 var
+R2715:2725 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2707:2712 OUMBS.Definitions <> is_set def
+R2714:2714 OUMBS.Definitions <> z:129 var
+R2739:2749 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2727:2729 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2726:2726 OUMBS.Definitions <> w:126 var
+R2730:2734 OUMBS.Definitions <> OPair def
+R2736:2736 OUMBS.Definitions <> x:127 var
+R2738:2738 OUMBS.Definitions <> z:129 var
+R2766:2776 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2750:2751 OUMBS.Definitions <> In defax
+R2754:2758 OUMBS.Definitions <> OPair def
+R2760:2760 OUMBS.Definitions <> x:127 var
+R2762:2762 OUMBS.Definitions <> y:128 var
+R2765:2765 OUMBS.Definitions <> H:125 var
+R2777:2778 OUMBS.Definitions <> In defax
+R2781:2785 OUMBS.Definitions <> OPair def
+R2787:2787 OUMBS.Definitions <> y:128 var
+R2789:2789 OUMBS.Definitions <> z:129 var
+R2792:2792 OUMBS.Definitions <> G:124 var
+ax 2807:2809 <> Dom
+R2818:2821 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2813:2817 OUMBS.Definitions <> Class defax
+R2822:2826 OUMBS.Definitions <> Class defax
+ax 2835:2841 <> dom_def
+binder 2852:2852 <> R:134
+binder 2854:2854 <> x:135
+R2865:2871 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2927:2927 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2857:2862 OUMBS.Definitions <> is_set def
+R2864:2864 OUMBS.Definitions <> x:135 var
+R2884:2888 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R2872:2873 OUMBS.Definitions <> In defax
+R2875:2875 OUMBS.Definitions <> x:135 var
+R2878:2880 OUMBS.Definitions <> Dom defax
+R2882:2882 OUMBS.Definitions <> R:134 var
+R2889:2895 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2897:2898 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2896:2896 <> y:136
+R2907:2910 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2899:2904 OUMBS.Definitions <> is_set def
+R2906:2906 OUMBS.Definitions <> y:136 var
+R2911:2912 OUMBS.Definitions <> In defax
+R2915:2919 OUMBS.Definitions <> OPair def
+R2921:2921 OUMBS.Definitions <> x:135 var
+R2923:2923 OUMBS.Definitions <> y:136 var
+R2926:2926 OUMBS.Definitions <> R:134 var
+ax 2941:2943 <> Ran
+R2952:2955 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2947:2951 OUMBS.Definitions <> Class defax
+R2956:2960 OUMBS.Definitions <> Class defax
+ax 2969:2975 <> ran_def
+binder 2986:2986 <> R:141
+binder 2988:2988 <> y:142
+R2999:3005 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3061:3061 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2991:2996 OUMBS.Definitions <> is_set def
+R2998:2998 OUMBS.Definitions <> y:142 var
+R3018:3022 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R3006:3007 OUMBS.Definitions <> In defax
+R3009:3009 OUMBS.Definitions <> y:142 var
+R3012:3014 OUMBS.Definitions <> Ran defax
+R3016:3016 OUMBS.Definitions <> R:141 var
+R3023:3029 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3031:3032 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3030:3030 <> x:143
+R3041:3044 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3033:3038 OUMBS.Definitions <> is_set def
+R3040:3040 OUMBS.Definitions <> x:143 var
+R3045:3046 OUMBS.Definitions <> In defax
+R3049:3053 OUMBS.Definitions <> OPair def
+R3055:3055 OUMBS.Definitions <> x:143 var
+R3057:3057 OUMBS.Definitions <> y:142 var
+R3060:3060 OUMBS.Definitions <> R:141 var
+ax 3075:3082 <> CartProd
+R3091:3094 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3086:3090 OUMBS.Definitions <> Class defax
+R3100:3103 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3095:3099 OUMBS.Definitions <> Class defax
+R3104:3108 OUMBS.Definitions <> Class defax
+ax 3117:3129 <> cart_prod_def
+binder 3140:3140 <> A:148
+binder 3142:3142 <> B:149
+binder 3144:3144 <> w:150
+R3155:3161 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3290:3290 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3147:3152 OUMBS.Definitions <> is_set def
+R3154:3154 OUMBS.Definitions <> w:150 var
+R3181:3185 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R3162:3163 OUMBS.Definitions <> In defax
+R3165:3165 OUMBS.Definitions <> w:150 var
+R3168:3175 OUMBS.Definitions <> CartProd defax
+R3177:3177 OUMBS.Definitions <> A:148 var
+R3179:3179 OUMBS.Definitions <> B:149 var
+R3186:3192 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3196:3204 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3193:3193 <> x:151
+binder 3195:3195 <> y:152
+R3213:3223 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3205:3210 OUMBS.Definitions <> is_set def
+R3212:3212 OUMBS.Definitions <> x:151 var
+R3232:3242 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3224:3229 OUMBS.Definitions <> is_set def
+R3231:3231 OUMBS.Definitions <> y:152 var
+R3256:3266 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3244:3246 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3243:3243 OUMBS.Definitions <> w:150 var
+R3247:3251 OUMBS.Definitions <> OPair def
+R3253:3253 OUMBS.Definitions <> x:151 var
+R3255:3255 OUMBS.Definitions <> y:152 var
+R3273:3283 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3267:3268 OUMBS.Definitions <> In defax
+R3270:3270 OUMBS.Definitions <> x:151 var
+R3272:3272 OUMBS.Definitions <> A:148 var
+R3284:3285 OUMBS.Definitions <> In defax
+R3287:3287 OUMBS.Definitions <> y:152 var
+R3289:3289 OUMBS.Definitions <> B:149 var
+prf 3325:3340 <> diff_is_subclass
+R3358:3362 OUMBS.Definitions <> Class defax
+binder 3352:3352 <> A:155
+binder 3354:3354 <> B:156
+R3366:3373 OUMBS.Definitions <> subclass def
+R3376:3379 OUMBS.Definitions <> Diff defax
+R3381:3381 OUMBS.Definitions <> A:155 var
+R3383:3383 OUMBS.Definitions <> B:156 var
+R3386:3386 OUMBS.Definitions <> A:155 var
+R3405:3412 OUMBS.Definitions <> subclass def
+R3429:3436 OUMBS.Definitions <> diff_def prfax
+R3429:3436 OUMBS.Definitions <> diff_def prfax
+prf 3488:3510 <> union_subclass_genunion
+R3528:3532 OUMBS.Definitions <> Class defax
+binder 3522:3522 <> A:157
+binder 3524:3524 <> B:158
+R3546:3551 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3538:3543 OUMBS.Definitions <> is_set def
+R3545:3545 OUMBS.Definitions <> A:157 var
+R3560:3565 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3552:3557 OUMBS.Definitions <> is_set def
+R3559:3559 OUMBS.Definitions <> B:158 var
+R3566:3573 OUMBS.Definitions <> subclass def
+R3576:3580 OUMBS.Definitions <> Union defax
+R3582:3582 OUMBS.Definitions <> A:157 var
+R3584:3584 OUMBS.Definitions <> B:158 var
+R3588:3595 OUMBS.Definitions <> GenUnion defax
+R3598:3601 OUMBS.Definitions <> Pair defax
+R3603:3603 OUMBS.Definitions <> A:157 var
+R3605:3605 OUMBS.Definitions <> B:158 var
+R3626:3633 OUMBS.Definitions <> subclass def
+R3650:3658 OUMBS.Definitions <> union_def prfax
+R3650:3658 OUMBS.Definitions <> union_def prfax
+R3677:3689 OUMBS.Definitions <> gen_union_def prfax
+R3677:3689 OUMBS.Definitions <> gen_union_def prfax
+R3815:3822 OUMBS.Definitions <> pair_def prfax
+R3815:3822 OUMBS.Definitions <> pair_def prfax
+R3966:3973 OUMBS.Definitions <> pair_def prfax
+R3966:3973 OUMBS.Definitions <> pair_def prfax
+prf 4060:4078 <> Plus_subclass_union
+R4096:4100 OUMBS.Definitions <> Class defax
+binder 4090:4090 <> A:159
+binder 4092:4092 <> B:160
+R4106:4113 OUMBS.Definitions <> subclass def
+R4116:4119 OUMBS.Definitions <> Plus defax
+R4121:4121 OUMBS.Definitions <> A:159 var
+R4123:4123 OUMBS.Definitions <> B:160 var
+R4127:4131 OUMBS.Definitions <> Union defax
+R4133:4133 OUMBS.Definitions <> A:159 var
+R4135:4135 OUMBS.Definitions <> B:160 var
+R4155:4162 OUMBS.Definitions <> subclass def
+R4181:4188 OUMBS.Definitions <> plus_def prfax
+R4181:4188 OUMBS.Definitions <> plus_def prfax
+R4207:4215 OUMBS.Definitions <> union_def prfax
+R4207:4215 OUMBS.Definitions <> union_def prfax
+R4237:4245 OUMBS.Definitions <> union_def prfax
+R4237:4245 OUMBS.Definitions <> union_def prfax
+R4287:4294 OUMBS.Definitions <> diff_def prfax
+R4287:4294 OUMBS.Definitions <> diff_def prfax
+R4345:4352 OUMBS.Definitions <> diff_def prfax
+R4345:4352 OUMBS.Definitions <> diff_def prfax
+prf 4430:4441 <> union_is_set
+R4459:4463 OUMBS.Definitions <> Class defax
+binder 4453:4453 <> A:161
+binder 4455:4455 <> B:162
+R4477:4482 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4469:4474 OUMBS.Definitions <> is_set def
+R4476:4476 OUMBS.Definitions <> A:161 var
+R4491:4496 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4483:4488 OUMBS.Definitions <> is_set def
+R4490:4490 OUMBS.Definitions <> B:162 var
+R4497:4502 OUMBS.Definitions <> is_set def
+R4505:4509 OUMBS.Definitions <> Union defax
+R4511:4511 OUMBS.Definitions <> A:161 var
+R4513:4513 OUMBS.Definitions <> B:162 var
+R4543:4557 OUMBS.Definitions <> A3_subclass_set prfax
+R4560:4567 OUMBS.Definitions <> GenUnion defax
+R4570:4573 OUMBS.Definitions <> Pair defax
+R4582:4586 OUMBS.Definitions <> Union defax
+R4543:4557 OUMBS.Definitions <> A3_subclass_set prfax
+R4560:4567 OUMBS.Definitions <> GenUnion defax
+R4570:4573 OUMBS.Definitions <> Pair defax
+R4582:4586 OUMBS.Definitions <> Union defax
+R4606:4621 OUMBS.Definitions <> A6_gen_union_set prfax
+R4606:4621 OUMBS.Definitions <> A6_gen_union_set prfax
+R4635:4645 OUMBS.Definitions <> A5_pair_set prfax
+R4635:4645 OUMBS.Definitions <> A5_pair_set prfax
+R4678:4700 OUMBS.Definitions <> union_subclass_genunion thm
+R4678:4700 OUMBS.Definitions <> union_subclass_genunion thm
+prf 4736:4747 <> opair_is_set
+R4765:4769 OUMBS.Definitions <> Class defax
+binder 4759:4759 <> A:163
+binder 4761:4761 <> B:164
+R4783:4788 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4775:4780 OUMBS.Definitions <> is_set def
+R4782:4782 OUMBS.Definitions <> A:163 var
+R4797:4802 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4789:4794 OUMBS.Definitions <> is_set def
+R4796:4796 OUMBS.Definitions <> B:164 var
+R4803:4808 OUMBS.Definitions <> is_set def
+R4811:4815 OUMBS.Definitions <> OPair def
+R4817:4817 OUMBS.Definitions <> A:163 var
+R4819:4819 OUMBS.Definitions <> B:164 var
+R4847:4851 OUMBS.Definitions <> OPair def
+R4862:4872 OUMBS.Definitions <> A5_pair_set prfax
+R4862:4872 OUMBS.Definitions <> A5_pair_set prfax
+R4885:4895 OUMBS.Definitions <> A5_pair_set prfax
+R4885:4895 OUMBS.Definitions <> A5_pair_set prfax
+R4917:4927 OUMBS.Definitions <> A5_pair_set prfax
+R4917:4927 OUMBS.Definitions <> A5_pair_set prfax
+prf 4963:4991 <> subclass_cartprod_power_power
+R5009:5013 OUMBS.Definitions <> Class defax
+binder 5003:5003 <> A:165
+binder 5005:5005 <> B:166
+R5019:5026 OUMBS.Definitions <> subclass def
+R5029:5036 OUMBS.Definitions <> CartProd defax
+R5038:5038 OUMBS.Definitions <> A:165 var
+R5040:5040 OUMBS.Definitions <> B:166 var
+R5044:5051 OUMBS.Definitions <> PowerSet defax
+R5054:5061 OUMBS.Definitions <> PowerSet defax
+R5064:5068 OUMBS.Definitions <> Union defax
+R5070:5070 OUMBS.Definitions <> A:165 var
+R5072:5072 OUMBS.Definitions <> B:166 var
+R5104:5111 OUMBS.Definitions <> subclass def
+R5128:5140 OUMBS.Definitions <> cart_prod_def prfax
+R5128:5140 OUMBS.Definitions <> cart_prod_def prfax
+R5225:5229 OUMBS.Definitions <> OPair def
+R5238:5246 OUMBS.Definitions <> power_def prfax
+R5238:5246 OUMBS.Definitions <> power_def prfax
+R5262:5272 OUMBS.Definitions <> A5_pair_set prfax
+R5281:5291 OUMBS.Definitions <> A5_pair_set prfax
+R5262:5272 OUMBS.Definitions <> A5_pair_set prfax
+R5281:5291 OUMBS.Definitions <> A5_pair_set prfax
+R5281:5291 OUMBS.Definitions <> A5_pair_set prfax
+R5333:5340 OUMBS.Definitions <> subclass def
+R5357:5364 OUMBS.Definitions <> pair_def prfax
+R5357:5364 OUMBS.Definitions <> pair_def prfax
+R5428:5436 OUMBS.Definitions <> power_def prfax
+R5428:5436 OUMBS.Definitions <> power_def prfax
+R5468:5475 OUMBS.Definitions <> subclass def
+R5504:5511 OUMBS.Definitions <> pair_def prfax
+R5504:5511 OUMBS.Definitions <> pair_def prfax
+R5526:5534 OUMBS.Definitions <> union_def prfax
+R5526:5534 OUMBS.Definitions <> union_def prfax
+R5657:5665 OUMBS.Definitions <> power_def prfax
+R5657:5665 OUMBS.Definitions <> power_def prfax
+R5685:5692 OUMBS.Definitions <> subclass def
+R5727:5734 OUMBS.Definitions <> pair_def prfax
+R5727:5734 OUMBS.Definitions <> pair_def prfax
+R5780:5788 OUMBS.Definitions <> union_def prfax
+R5780:5788 OUMBS.Definitions <> union_def prfax
+R5853:5861 OUMBS.Definitions <> union_def prfax
+R5853:5861 OUMBS.Definitions <> union_def prfax
+prf 5978:5993 <> cart_prod_is_set
+R6011:6015 OUMBS.Definitions <> Class defax
+binder 6005:6005 <> A:167
+binder 6007:6007 <> B:168
+R6029:6034 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6021:6026 OUMBS.Definitions <> is_set def
+R6028:6028 OUMBS.Definitions <> A:167 var
+R6043:6048 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6035:6040 OUMBS.Definitions <> is_set def
+R6042:6042 OUMBS.Definitions <> B:168 var
+R6049:6054 OUMBS.Definitions <> is_set def
+R6057:6064 OUMBS.Definitions <> CartProd defax
+R6066:6066 OUMBS.Definitions <> A:167 var
+R6068:6068 OUMBS.Definitions <> B:168 var
+R6098:6112 OUMBS.Definitions <> A3_subclass_set prfax
+R6115:6122 OUMBS.Definitions <> PowerSet defax
+R6125:6132 OUMBS.Definitions <> PowerSet defax
+R6135:6139 OUMBS.Definitions <> Union defax
+R6149:6156 OUMBS.Definitions <> CartProd defax
+R6098:6112 OUMBS.Definitions <> A3_subclass_set prfax
+R6115:6122 OUMBS.Definitions <> PowerSet defax
+R6125:6132 OUMBS.Definitions <> PowerSet defax
+R6135:6139 OUMBS.Definitions <> Union defax
+R6149:6156 OUMBS.Definitions <> CartProd defax
+R6175:6186 OUMBS.Definitions <> A7_power_set prfax
+R6175:6186 OUMBS.Definitions <> A7_power_set prfax
+R6195:6206 OUMBS.Definitions <> A7_power_set prfax
+R6195:6206 OUMBS.Definitions <> A7_power_set prfax
+R6219:6230 OUMBS.Definitions <> union_is_set thm
+R6219:6230 OUMBS.Definitions <> union_is_set thm
+R6262:6290 OUMBS.Definitions <> subclass_cartprod_power_power thm
+R6262:6290 OUMBS.Definitions <> subclass_cartprod_power_power thm
+prf 6305:6331 <> element_means_pair_in_power
+R6349:6353 OUMBS.Definitions <> Class defax
+binder 6343:6343 <> x:169
+binder 6345:6345 <> A:170
+R6365:6370 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6359:6360 OUMBS.Definitions <> In defax
+R6362:6362 OUMBS.Definitions <> x:169 var
+R6364:6364 OUMBS.Definitions <> A:170 var
+R6371:6372 OUMBS.Definitions <> In defax
+R6375:6378 OUMBS.Definitions <> Pair defax
+R6380:6380 OUMBS.Definitions <> x:169 var
+R6382:6382 OUMBS.Definitions <> x:169 var
+R6386:6393 OUMBS.Definitions <> PowerSet defax
+R6395:6395 OUMBS.Definitions <> A:170 var
+R6430:6435 OUMBS.Definitions <> is_set def
+R6430:6435 OUMBS.Definitions <> is_set def
+R6472:6480 OUMBS.Definitions <> power_def prfax
+R6472:6480 OUMBS.Definitions <> power_def prfax
+R6491:6501 OUMBS.Definitions <> A5_pair_set prfax
+R6491:6501 OUMBS.Definitions <> A5_pair_set prfax
+R6523:6530 OUMBS.Definitions <> subclass def
+R6547:6554 OUMBS.Definitions <> pair_def prfax
+R6547:6554 OUMBS.Definitions <> pair_def prfax
+prf 6623:6631 <> pair_in_m
+R6649:6653 OUMBS.Definitions <> Class defax
+binder 6643:6643 <> x:171
+binder 6645:6645 <> A:172
+R6667:6672 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6659:6664 OUMBS.Definitions <> is_set def
+R6666:6666 OUMBS.Definitions <> x:171 var
+R6699:6704 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6673:6674 OUMBS.Definitions <> In defax
+R6677:6680 OUMBS.Definitions <> Pair defax
+R6682:6682 OUMBS.Definitions <> x:171 var
+R6684:6684 OUMBS.Definitions <> x:171 var
+R6688:6695 OUMBS.Definitions <> PowerSet defax
+R6697:6697 OUMBS.Definitions <> A:172 var
+R6705:6706 OUMBS.Definitions <> In defax
+R6708:6708 OUMBS.Definitions <> x:171 var
+R6710:6710 OUMBS.Definitions <> A:172 var
+R6736:6744 OUMBS.Definitions <> power_def prfax
+R6736:6744 OUMBS.Definitions <> power_def prfax
+R6760:6767 OUMBS.Definitions <> subclass def
+R6792:6793 OUMBS.Definitions <> In defax
+R6798:6801 OUMBS.Definitions <> Pair defax
+R6792:6793 OUMBS.Definitions <> In defax
+R6798:6801 OUMBS.Definitions <> Pair defax
+R6822:6829 OUMBS.Definitions <> pair_def prfax
+R6822:6829 OUMBS.Definitions <> pair_def prfax
+R6895:6905 OUMBS.Definitions <> A5_pair_set prfax
+R6895:6905 OUMBS.Definitions <> A5_pair_set prfax
+prf 6931:6943 <> pair_in_power
+R6961:6965 OUMBS.Definitions <> Class defax
+binder 6955:6955 <> x:173
+binder 6957:6957 <> A:174
+R6979:6984 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6971:6976 OUMBS.Definitions <> is_set def
+R6978:6978 OUMBS.Definitions <> x:173 var
+R7000:7005 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6985:6986 OUMBS.Definitions <> In defax
+R6988:6988 OUMBS.Definitions <> x:173 var
+R6991:6994 OUMBS.Definitions <> Pair defax
+R6996:6996 OUMBS.Definitions <> A:174 var
+R6998:6998 OUMBS.Definitions <> A:174 var
+R7006:7007 OUMBS.Definitions <> In defax
+R7009:7009 OUMBS.Definitions <> x:173 var
+R7012:7019 OUMBS.Definitions <> PowerSet defax
+R7021:7021 OUMBS.Definitions <> A:174 var
+R7048:7055 OUMBS.Definitions <> pair_def prfax
+R7048:7055 OUMBS.Definitions <> pair_def prfax
+R7087:7095 OUMBS.Definitions <> power_def prfax
+R7087:7095 OUMBS.Definitions <> power_def prfax
+R7126:7133 OUMBS.Definitions <> subclass def
+R7164:7172 OUMBS.Definitions <> power_def prfax
+R7164:7172 OUMBS.Definitions <> power_def prfax
+R7203:7210 OUMBS.Definitions <> subclass def
+prf 7256:7272 <> PowerSet_Empty_eq
+binder 7283:7283 <> x:175
+R7294:7297 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7286:7291 OUMBS.Definitions <> is_set def
+R7293:7293 OUMBS.Definitions <> x:175 var
+R7319:7322 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7298:7299 OUMBS.Definitions <> In defax
+R7301:7301 OUMBS.Definitions <> x:175 var
+R7304:7311 OUMBS.Definitions <> PowerSet defax
+R7313:7317 OUMBS.Definitions <> Empty defax
+R7324:7326 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7323:7323 OUMBS.Definitions <> x:175 var
+R7327:7331 OUMBS.Definitions <> Empty defax
+R7359:7367 OUMBS.Definitions <> A1_extent prfax
+R7359:7367 OUMBS.Definitions <> A1_extent prfax
+R7403:7411 OUMBS.Definitions <> power_def prfax
+R7403:7411 OUMBS.Definitions <> power_def prfax
+R7483:7491 OUMBS.Definitions <> empty_def prfax
+R7483:7491 OUMBS.Definitions <> empty_def prfax
+prf 7527:7540 <> Empty_in_Power
+binder 7551:7551 <> A:176
+R7554:7555 OUMBS.Definitions <> In defax
+R7557:7561 OUMBS.Definitions <> Empty defax
+R7564:7571 OUMBS.Definitions <> PowerSet defax
+R7573:7573 OUMBS.Definitions <> A:176 var
+R7600:7608 OUMBS.Definitions <> power_def prfax
+R7600:7608 OUMBS.Definitions <> power_def prfax
+R7617:7628 OUMBS.Definitions <> A4_empty_set prfax
+R7617:7628 OUMBS.Definitions <> A4_empty_set prfax
+R7638:7645 OUMBS.Definitions <> subclass def
+R7664:7672 OUMBS.Definitions <> empty_def prfax
+R7664:7672 OUMBS.Definitions <> empty_def prfax
+prf 7707:7718 <> all_in_power
+binder 7729:7729 <> A:177
+R7740:7743 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7732:7737 OUMBS.Definitions <> is_set def
+R7739:7739 OUMBS.Definitions <> A:177 var
+R7744:7745 OUMBS.Definitions <> In defax
+R7747:7747 OUMBS.Definitions <> A:177 var
+R7750:7757 OUMBS.Definitions <> PowerSet defax
+R7759:7759 OUMBS.Definitions <> A:177 var
+R7786:7794 OUMBS.Definitions <> power_def prfax
+R7786:7794 OUMBS.Definitions <> power_def prfax
+R7813:7820 OUMBS.Definitions <> subclass def

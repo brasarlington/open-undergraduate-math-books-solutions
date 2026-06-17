@@ -1,0 +1,77 @@
+DIGEST 61f6c4be27147e504fe966ca542023de
+FOUMBS.chapter_1_exercises_7_point_6
+R26:36 OUMBS.Definitions <> <> lib
+R65:93 OUMBS.chapter_1_exercises_7_point_5 <> <> lib
+prf 105:114 <> inv_is_set
+R130:134 OUMBS.Definitions <> Class defax
+binder 126:126 <> G:1
+R148:151 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R140:145 OUMBS.Definitions <> is_set def
+R147:147 OUMBS.chapter_1_exercises_7_point_6 <> G:1 var
+R152:157 OUMBS.Definitions <> is_set def
+R160:162 OUMBS.Definitions <> Inv defax
+R164:164 OUMBS.chapter_1_exercises_7_point_6 <> G:1 var
+R194:208 OUMBS.Definitions <> A3_subclass_set prfax
+R211:218 OUMBS.Definitions <> CartProd defax
+R221:223 OUMBS.Definitions <> Ran defax
+R229:231 OUMBS.Definitions <> Dom defax
+R238:240 OUMBS.Definitions <> Inv defax
+R194:208 OUMBS.Definitions <> A3_subclass_set prfax
+R211:218 OUMBS.Definitions <> CartProd defax
+R221:223 OUMBS.Definitions <> Ran defax
+R229:231 OUMBS.Definitions <> Dom defax
+R238:240 OUMBS.Definitions <> Inv defax
+R257:272 OUMBS.Definitions <> cart_prod_is_set thm
+R257:272 OUMBS.Definitions <> cart_prod_is_set thm
+R281:292 OUMBS.chapter_1_exercises_7_point_5 <> exercise_5_b thm
+R281:292 OUMBS.chapter_1_exercises_7_point_5 <> exercise_5_b thm
+R314:325 OUMBS.chapter_1_exercises_7_point_5 <> exercise_5_a thm
+R314:325 OUMBS.chapter_1_exercises_7_point_5 <> exercise_5_a thm
+R348:355 OUMBS.Definitions <> subclass def
+R372:378 OUMBS.Definitions <> inv_def prfax
+R372:378 OUMBS.Definitions <> inv_def prfax
+R448:460 OUMBS.Definitions <> cart_prod_def prfax
+R448:460 OUMBS.Definitions <> cart_prod_def prfax
+R570:576 OUMBS.Definitions <> ran_def prfax
+R570:576 OUMBS.Definitions <> ran_def prfax
+R643:649 OUMBS.Definitions <> dom_def prfax
+R643:649 OUMBS.Definitions <> dom_def prfax
+prf 732:742 <> comp_is_set
+R760:764 OUMBS.Definitions <> Class defax
+binder 754:754 <> G:2
+binder 756:756 <> H:3
+R778:781 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R770:775 OUMBS.Definitions <> is_set def
+R777:777 OUMBS.chapter_1_exercises_7_point_6 <> G:2 var
+R790:793 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R782:787 OUMBS.Definitions <> is_set def
+R789:789 OUMBS.chapter_1_exercises_7_point_6 <> H:3 var
+R794:799 OUMBS.Definitions <> is_set def
+R802:805 OUMBS.Definitions <> Comp defax
+R807:807 OUMBS.chapter_1_exercises_7_point_6 <> G:2 var
+R809:809 OUMBS.chapter_1_exercises_7_point_6 <> H:3 var
+R839:853 OUMBS.Definitions <> A3_subclass_set prfax
+R856:863 OUMBS.Definitions <> CartProd defax
+R866:868 OUMBS.Definitions <> Dom defax
+R874:876 OUMBS.Definitions <> Ran defax
+R883:886 OUMBS.Definitions <> Comp defax
+R839:853 OUMBS.Definitions <> A3_subclass_set prfax
+R856:863 OUMBS.Definitions <> CartProd defax
+R866:868 OUMBS.Definitions <> Dom defax
+R874:876 OUMBS.Definitions <> Ran defax
+R883:886 OUMBS.Definitions <> Comp defax
+R905:920 OUMBS.Definitions <> cart_prod_is_set thm
+R905:920 OUMBS.Definitions <> cart_prod_is_set thm
+R929:940 OUMBS.chapter_1_exercises_7_point_5 <> exercise_5_a thm
+R929:940 OUMBS.chapter_1_exercises_7_point_5 <> exercise_5_a thm
+R963:974 OUMBS.chapter_1_exercises_7_point_5 <> exercise_5_b thm
+R963:974 OUMBS.chapter_1_exercises_7_point_5 <> exercise_5_b thm
+R998:1005 OUMBS.Definitions <> subclass def
+R1022:1029 OUMBS.Definitions <> comp_def prfax
+R1022:1029 OUMBS.Definitions <> comp_def prfax
+R1116:1128 OUMBS.Definitions <> cart_prod_def prfax
+R1116:1128 OUMBS.Definitions <> cart_prod_def prfax
+R1236:1242 OUMBS.Definitions <> dom_def prfax
+R1236:1242 OUMBS.Definitions <> dom_def prfax
+R1309:1315 OUMBS.Definitions <> ran_def prfax
+R1309:1315 OUMBS.Definitions <> ran_def prfax

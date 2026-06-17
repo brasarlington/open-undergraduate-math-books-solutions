@@ -1,0 +1,39 @@
+DIGEST 9bb76be4c713ecee2383776edbfc82ba
+FOUMBS.chapter_1_exercises_7_point_7
+R26:36 OUMBS.Definitions <> <> lib
+ax 50:50 <> a
+ax 52:52 <> b
+ax 54:54 <> c
+R58:62 OUMBS.Definitions <> Class defax
+ax 71:75 <> a_set
+R79:84 OUMBS.Definitions <> is_set def
+R86:86 OUMBS.chapter_1_exercises_7_point_7 <> a defax
+ax 95:99 <> b_set
+R103:108 OUMBS.Definitions <> is_set def
+R110:110 OUMBS.chapter_1_exercises_7_point_7 <> b defax
+ax 119:123 <> c_set
+R127:132 OUMBS.Definitions <> is_set def
+R134:134 OUMBS.chapter_1_exercises_7_point_7 <> c defax
+def 149:149 <> r
+R154:157 OUMBS.Definitions <> Pair defax
+R159:159 OUMBS.chapter_1_exercises_7_point_7 <> a defax
+R161:161 OUMBS.chapter_1_exercises_7_point_7 <> b defax
+def 175:175 <> s
+R180:183 OUMBS.Definitions <> Pair defax
+R185:185 OUMBS.chapter_1_exercises_7_point_7 <> b defax
+R187:187 OUMBS.chapter_1_exercises_7_point_7 <> c defax
+def 201:201 <> p
+R206:209 OUMBS.Definitions <> Pair defax
+R211:211 OUMBS.chapter_1_exercises_7_point_7 <> r def
+R213:213 OUMBS.chapter_1_exercises_7_point_7 <> s def
+def 228:230 <> P_r
+R235:242 OUMBS.Definitions <> PowerSet defax
+R244:244 OUMBS.chapter_1_exercises_7_point_7 <> r def
+def 258:262 <> P_P_r
+R267:274 OUMBS.Definitions <> PowerSet defax
+R277:284 OUMBS.Definitions <> PowerSet defax
+R286:286 OUMBS.chapter_1_exercises_7_point_7 <> r def
+def 301:305 <> P_u_r
+R310:317 OUMBS.Definitions <> PowerSet defax
+R320:327 OUMBS.Definitions <> GenUnion defax
+R329:329 OUMBS.chapter_1_exercises_7_point_7 <> p def

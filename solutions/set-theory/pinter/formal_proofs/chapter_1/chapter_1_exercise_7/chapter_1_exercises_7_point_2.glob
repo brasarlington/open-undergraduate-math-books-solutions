@@ -1,0 +1,19 @@
+DIGEST 3bd3abc7242750d96e2e706fb3a6c713
+FOUMBS.chapter_1_exercises_7_point_2
+R26:36 OUMBS.Definitions <> <> lib
+prf 48:57 <> exercise_2
+R75:79 OUMBS.Definitions <> Class defax
+binder 69:69 <> A:1
+binder 71:71 <> B:2
+R99:104 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R85:96 OUMBS.Definitions <> proper_class def
+R98:98 OUMBS.chapter_1_exercises_7_point_2 <> A:1 var
+R117:122 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R105:112 OUMBS.Definitions <> subclass def
+R114:114 OUMBS.chapter_1_exercises_7_point_2 <> A:1 var
+R116:116 OUMBS.chapter_1_exercises_7_point_2 <> B:2 var
+R123:134 OUMBS.Definitions <> proper_class def
+R136:136 OUMBS.chapter_1_exercises_7_point_2 <> B:2 var
+R155:166 OUMBS.Definitions <> proper_class def
+R217:231 OUMBS.Definitions <> A3_subclass_set prfax
+R217:231 OUMBS.Definitions <> A3_subclass_set prfax
